@@ -1,0 +1,158 @@
+/*
+Theme Name: Creative
+Theme URI: http://wordpress4startups.org/
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: wordpress4startups
+Author URI: http://wordpress4startups.org/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+*/
+
+@import url('css/animate.min.css');
+@import url('css/creative.css');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+@import url('http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic');
+@import url('font-awesome/css/font-awesome.min.css');
+@import url('css/bootstrap.min.css');
+@import url('css/bootstrap.css');
+
+.red {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60%;
+    
+    float: right;
+    top: 60px;
+    
+}
+.red-content {
+    width: 90%;
+    height: 40%;
+    background: black;
+    color: black;
+    
+}
+
+@media (min-width: 320px) { 
+    .carousel-caption {
+        text-align: left;
+        padding-right: 100px;
+    }
+    .red {
+        width: auto;
+        position: absolute;
+        height: auto;   
+        left: 85%;
+        top: 1;
+        bottom: 0;
+        padding: 20px 0;
+        margin-left: -90px;
+        float: right;
+
+    }
+    .red-content {
+        width: 170px;
+        float: right;
+        height: 70%;
+        background-color: white;
+        filter: alpha(opacity=60);
+        filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+        -moz-opacity: 0.60;
+        opacity: 0.6;
+        color: black;
+        margin-right:5px; /* width of .container gutter */
+    }
+}
+
+@media (min-width: 768px) { 
+    .carousel-caption {
+        text-align: left;
+        padding-right: 300px;
+    }
+    .red {
+        width: 750px;
+        position: absolute;
+        height: auto;
+        left: 45%;
+        top: 10;
+        bottom: 0;
+        padding: 20px 0;
+        margin-left: -375px;
+        float: right;
+
+    }
+    .red-content {
+        width: 350px;
+        float: right;
+        height: 60%;
+        background-color: white;
+        filter: alpha(opacity=60);
+        filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
+        -moz-opacity: 0.60;
+        opacity: 0.6;
+        color: black;
+        margin-right:15px; /* width of .container gutter */
+    }
+}
+@media (min-width: 992px) { 
+    .red {
+        width: 970px;
+        margin-left: -485px;
+
+    }
+}
+@media (min-width: 1200px) { 
+    .red {
+        width: 1170px;
+        margin-left: -585px;
+    }
+}
+
+/* MISC */
+#homepage-feature .item {
+    overflow: hidden;
+    height: 400px;
+    background-color: transparent;
+    background-size: cover;
+}
+#homepage-feature > .carousel-control {
+    width: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: none;
+    filter: none;
+    opacity: 1;
+}
+#homepage-feature > .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+/*body { 
+     padding-top: 60px; 
+     padding-bottom: 40px; 
+}*/
+
+
+
+/*<link rel="stylesheet" href="" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='' rel='stylesheet' type='text/css'>
+    <link href='' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="c" type="text/css">*/
