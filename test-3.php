@@ -6,6 +6,7 @@ session_start();
 <html>
 
 <head>
+	<title>ORYAC| Academic Personality Test</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
@@ -19,8 +20,7 @@ session_start();
 	
 	<div class="container">
 		<div class="progress" style="border-radius: 0px 10px;width: 97%">
-			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="24.9" aria-valuemin="0" aria-valuemax="100" style="width:24.99%">
-			24.9%
+			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="24.9" aria-valuemin="0" aria-valuemax="100" style="width:20.99%">
 			</div>
 		</div>
 		<div class="row">
@@ -39,23 +39,23 @@ session_start();
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q13" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q13" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q13" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q13" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q13" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q13" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q13" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q13" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q13" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q13" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -70,23 +70,23 @@ session_start();
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q14" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q14" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q14" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q14" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q14" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q14" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q14" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q14" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q14" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q14" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -101,23 +101,23 @@ session_start();
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q15" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q15" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q15" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q15" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q15" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q15" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q15" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q15" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q15" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q15" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -132,23 +132,23 @@ session_start();
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q16" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q16" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q16" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q16" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q16" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q16" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q16" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q16" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q16" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q16" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -163,23 +163,23 @@ session_start();
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q17" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q17" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q17" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q17" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q17" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q17" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q17" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q17" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q17" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q17" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -194,23 +194,23 @@ session_start();
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q18" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q18" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q18" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q18" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q18" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q18" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q18" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q18" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q18" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q18" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -237,12 +237,12 @@ session_start();
 
 	#if(isset($_POST["q7"]) && isset($_POST["q8"]) && isset($_POST["q9"] ) && isset($_POST["q10"]) && isset($_POST["q11"]) && isset($_POST["q12"])){
 	$test2_2 = isset($_POST["q7-7"]) + isset($_POST["q8-8"]) + isset($_POST["q9-9"]) + isset($_POST["q10-10"]) + isset($_POST["q11-11"]) + isset($_POST["q12-12"]);
-	#echo $test2;
+	#echo $test2_2;
 	#echo "<br/>";
 	#echo $_SESSION["test1"];
 
 	$test1_1 = $_SESSION["test1_1"];
-
+	#echo $test1_1;
 	$test1_2 = $test2_2 + $test1_1;
 	$_SESSION["test1_2"] = "$test1_2";
 	

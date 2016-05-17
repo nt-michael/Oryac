@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="">
 
-    <title>ORYAC | Academic Consultancy...</title>
+    <title>ORYAC | Academic Career Orientation...</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="style.css" rel="stylesheet">
@@ -58,7 +58,7 @@ img.emoji {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="http://localhost/foubs/foubs.org" style="color:white">ORYAC</a>
+                <a class="navbar-brand page-scroll" href="#" style="color:white">ORYAC</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

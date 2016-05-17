@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>FOUBS Sign-up | Get an account on FOUBS...</title>
+  <title>ORYAC Sign-up | Get an account on ORYAC...</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" style="color:black" href="#"><strong>FOUBS</strong> <small>Academic personality test Result...</small></a>
+      <a class="navbar-brand" style="color:black" href="#"><strong>ORYAC</strong> <small>Academic personality test Result...</small></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -37,18 +37,18 @@
 
   <div class="jumbotron">
     <h1>CONGRATULATIONS...</h1><br>
-    <h2>Your Academic Personality Test (A.P.T) Result is out, and you are a(n):<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <mark><strong>
+    <h2>Your Academic Personality Test (A.P.T) Result is out, and you have :<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <mark><strong>
 <?php
 
   #if(isset($_POST["q70"]) && isset($_POST["q71"]) && isset($_POST["q72"] ) && isset($_POST["q73"]) && isset($_POST["q74"])){
-  $test12 = isset($_POST["q70"]) + isset($_POST["q71"]) + isset($_POST["q72"]) + isset($_POST["q73"]) + isset($_POST["q74"]);
+  $test12_12 = isset($_POST["q67-67"]) + isset($_POST["q68-68"]) + isset($_POST["q69-69"]) + isset($_POST["q70-70"]) + isset($_POST["q71-71"]) + isset($_POST["q72-72"]);
   #echo $test12;
   #echo "<br/>";
   #echo $_SESSION["test11"];
 
-  $test11 = $_SESSION["test11"];
+  $test11_11 = $_SESSION["test11_11"];
 
-  $test11_12 = $test12 + $test11;
+  $test11_12 = $test12_12 + $test11_11;
   $_SESSION["test11_12"] = "$test11_12";
   
   #echo "<br/>";
@@ -66,36 +66,42 @@
   $r5 = $_SESSION["test9_10"];
   $r6 = $_SESSION["test11_12"]; 
 
-  /*echo $r1;
-  echo $r2;
-  echo $r3;
-  echo $r4;
-  echo $r5;
-  echo $r6;*/
+  echo $r1."<br>";
+  echo $r2."<br>";
+  echo $r3."<br>";
+  echo $r4."<br>";
+  echo $r5."<br>";
+  echo $r6."<br>";
 
   if(max($r1,$r2,$r3,$r4,$r5,$r6)==$r1){
-    $r1_text = "REALISTIC - Doer";
+    $r1_text = "A REALISTIC (Doer) A.P.T";
     $_SESSION["r"] = $r1_text;
+    $_SESSION["try"] = "1";
     echo $r1_text;
   } elseif (max($r1,$r2,$r3,$r4,$r5,$r6)==$r2) {
-    $r2_text = "INVESTIGATIVE - Thinkers";
+    $r2_text = "An INVESTIGATIVE (Thinker) A.P.T";
     $_SESSION["r"] = $r2_text;
+    $_SESSION["try"] = "2";
     echo $r2_text;
   } elseif (max($r1,$r2,$r3,$r4,$r5,$r6)==$r3) {
-    $r3_text = "ARTISTIC - Creators";
+    $r3_text = "An ARTISTIC (Creator) A.P.T";
     $_SESSION["r"] = $r3_text;
+    $_SESSION["try"] = "3";
     echo $r3_text;
   } elseif (max($r1,$r2,$r3,$r4,$r5,$r6)==$r4) {
-    $r4_text = "SOCIAL - Helpers";
+    $r4_text = "A SOCIAL (Helpers) A.P.T";
     $_SESSION["r"] = $r4_text;
+    $_SESSION["try"] = "4";
     echo $r4_text;
   } elseif (max($r1,$r2,$r3,$r4,$r5,$r6)==$r5) {
-    $r5_text = "INTREPRISING - Persuaders";
+    $r5_text = "An INTREPRISING (Persuaders) A.P.T";
     $_SESSION["r"] = $r5_text;
+    $_SESSION["try"] = "5";
     echo $r5_text;
   } elseif (max($r1,$r2,$r3,$r4,$r5,$r6)==$r6) {
-    $r6_text = "CONVENTIONAL - Organizers";
+    $r6_text = "A CONVENTIONAL (Organizers) A.P.T";
     $_SESSION["r"] = $r6_text;
+    $_SESSION["try"] = "6";
     echo $r6_text;
   }
 }
@@ -125,7 +131,7 @@
         
         <form role="form" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
              <div class="form-group">
-                <label for="name">email:</label>
+                <label for="name">name:</label>
                 <input type="text" name="name" class="form-control" placeholder="your name here..." required>
             </div>
 
@@ -140,20 +146,62 @@
             </div>
 
             <div class="form-group">
-                <label for="test">Select your Academic Personality Test Result:</label>
+                <label for="test">Your A.P.T:</label>
                 <select class="form-control" name="apt" placeholder="">
-                  <option>---please choose from  beneath your APT Result Category---</option>
-                  <option value="Realistic">REALISTIC <small>- Doer</small></option>
-                  <option value="Investigative">INVESTIGATIVE <small>- Thinkers</small></option>
-                  <option value="Artstic">ARTISTIC <small>- Creator</small></option>
-                  <option value="Social">SOCIAL <small>- Helper</small></option>
-                  <option value="Interprising">INTERPRISINNG <small>- Persuader</small></option>
-                  <option value="Conventional">CONVENTIONAL <small>- Organiser</small></option>
+                  <option value="<?php
+                  if($_SESSION["try"] == "1"){
+                        $r1_txt = "realistic";
+                        echo $r1_txt;
+                      } elseif ($_SESSION["try"] == "2") {
+                        $r2_txt = "investigative";
+                        echo $r2_txt;
+                      } elseif ($_SESSION["try"] == "3") {
+                        $r3_txt = "artistic";
+                        echo $r3_txt;
+                      } elseif ($_SESSION["try"] == "4") {
+                        $r4_txt = "social";
+                        echo $r4_txt;
+                      } elseif ($_SESSION["try"] == "5") {
+                        $r5_txt = "interprising";
+                        echo $r5_txt;
+                      } elseif ($_SESSION["try"] == "6") {
+                        $r6_txt = "conventional";
+                        echo $r6_txt;
+                      }
+                  ?>">
+                  <?php
+                  if($_SESSION["try"] == "1"){
+                        $r1_txt = "REALISTIC";
+                        $_SESSION["vx"] = $r1_txt;
+                        echo $r1_txt;
+                      } elseif ($_SESSION["try"] == "2") {
+                        $r2_txt = "INVESTIGATIVE";
+                        $_SESSION["vx"] = $r2_txt;
+                        echo $r2_txt;
+                      } elseif ($_SESSION["try"] == "3") {
+                        $r3_txt = "ARTISTIC";
+                        $_SESSION["vx"] = $r3_txt;
+                        echo $r3_txt;
+                      } elseif ($_SESSION["try"] == "4") {
+                        $r4_txt = "SOCIAL";
+                        $_SESSION["vx"] = $r4_txt;
+                        echo $r4_txt;
+                      } elseif ($_SESSION["try"] == "5") {
+                        $r5_txt = "INTREPRISING";
+                        $_SESSION["vx"] = $r5_txt;
+                        echo $r5_txt;
+                      } elseif ($_SESSION["try"] == "6") {
+                        $r6_txt = "CONVENTIONAL";
+                        $_SESSION["vx"] = $r6_txt;
+                        echo $r6_txt;
+                      }
+                  ?>
+                  </option>
                 </select>
             </div>
 
             <div class="form-group">
-               <label for="pwd">Password:</label>
+               <label for="pwd">password:</label>
                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
             </div>
 
@@ -182,7 +230,7 @@
 </html>
 <?php
 // remove all session variables
-session_unset(); 
+//session_unset(); 
 
 // destroy the session 
 //session_destroy(); 

@@ -8,7 +8,7 @@
 <html>
 
 <head>
-	<title>Take Test</title>
+	<title>ORYAC| Academic Personality Test</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
@@ -25,7 +25,6 @@
 	<div class="container">
 		<div class="progress" style="border-radius: 0px 10px;width: 97%">
 			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="8.33" aria-valuemin="0" aria-valuemax="100" style="width:8.33%; border-radius: 0px 10px">
-				8.3%
 			</div>
 		</div>
 		<div class="row">
@@ -35,7 +34,7 @@
 			<form class="form-inline" role="form" action="test-2.php" method="POST">
 				
 				<!-- Place there values -->
-				<div class="form-group">
+				<div class="f">
 					<!--<legend>N<sup>o</sup> 1</legend>-->
 					<legend>Are You?</legend>
 					<div class="row">
@@ -43,7 +42,7 @@
 							<strong>An Independent person in behavior</strong>
 						</div>
 						
-						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: 20px">
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom:">
 						    <label for="r_starkeAblehnung" class="css-label">
 						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q1" class="biggest">&nbsp;&nbsp;
 

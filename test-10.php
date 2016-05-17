@@ -6,7 +6,7 @@
 	
 	#if(isset($_POST["q51"]) && isset($_POST["q52"]) && isset($_POST["q53"] ) && isset($_POST["q54"]) && isset($_POST["q55"]) && isset($_POST["q56"])){
 
-		$test9 = isset($_POST["q51"]) + isset($_POST["q52"]) + isset($_POST["q53"]) + isset($_POST["q54"]) + isset($_POST["q55"]) + isset($_POST["q56"]);
+		$test9 = isset($_POST["q49"]) + isset($_POST["q50"]) + isset($_POST["q51"]) + isset($_POST["q52"]) + isset($_POST["q53"]) + isset($_POST["q54"]);
 		//echo "This is a variable:".  $test9;
 		$_SESSION["test9"] = "$test9";
 		//echo "<br/>";
@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Take Test</title>
+	<title>ORYAC| Academic Personality Test</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
@@ -30,8 +30,7 @@
 
 	<div class="container">
 		<div class="progress" style="border-radius: 0px 10px; width: 97%">
-		<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="83.3" aria-valuemin="0" aria-valuemax="100" style="width:83.3%">
-				83.3%
+		<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="83.3" aria-valuemin="0" aria-valuemax="100" style="width:70.3%">
 			</div>
 		</div>
 		<div class="row">
@@ -39,17 +38,36 @@
 		<div class="col-sm-6 col-md-6 col-lg-6">
 		
 		<div class="jumbotron" style="background-color:white; border-radius: 60px 0px;width: 100%; height: 60%;line-height: 100%">
-			<form class="form-inline" role="form" action="test-11.php" method="POST">
-				<div class="form-group">
+			<form class="form-inline" role="form" action="test-10-10.php" method="POST">
+				<div class="">
 					<!-- Place there values -->
 					<!--<legend>N<sup>o</sup> 57</legend>-->
+					<legend>Can you?</legend>
 					<div class="row">
-						<div class="col-md-8" style="text-align:right">
-							<strong> Be a member of the debate team:</strong>&nbsp;
+						<div class="col-md-6" style="text-align:right">
+							<strong>initiate projects</strong>&nbsp;
 						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med1"  title="TRUE" name="q57" value="1" type="radio" required><span for="med1" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med10"  title="FALSE" name="q57" value="0" type="radio" required><span for="med10" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: left; padding: 0px">
+						    <label for="r_starkeAblehnung" class="css-label">
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q55" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_ablehnung" class="css-label">
+						        <input type="radio" id="r_ablehnung" value="3" name="q55" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_neutral" class="css-label">
+						        <input type="radio" id="r_neutral" value="2" name="q55" class="neutral" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_zustimmung" class="css-label">
+						        <input type="radio" id="r_zustimmung" value="1" name="q55" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_starkeZustimmung" class="css-label">
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q55" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
 						</div>
 					</div>
 
@@ -57,12 +75,30 @@
 
 					<!--<legend>N<sup>o</sup> 58</legend>-->
 					<div class="row">
-						<div class="col-md-8" style="text-align:right">
-							<strong>Own or operate a small business or service :</strong>&nbsp;
+						<div class="col-md-6" style="text-align:right">
+							<strong>convince people to do things your way</strong>&nbsp;
 						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med2" title="TRUE" name="q58" value="1" type="radio" required><span for="med2" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med20" title="FALSE" name="q58" value="0" type="radio" required><span for="med20" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: left; padding: 0px">
+						    <label for="r_starkeAblehnung" class="css-label">
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q56" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_ablehnung" class="css-label">
+						        <input type="radio" id="r_ablehnung" value="3" name="q56" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_neutral" class="css-label">
+						        <input type="radio" id="r_neutral" value="2" name="q56" class="neutral" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_zustimmung" class="css-label">
+						        <input type="radio" id="r_zustimmung" value="1" name="q56" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_starkeZustimmung" class="css-label">
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q56" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
 						</div>
 					</div>
 
@@ -70,12 +106,30 @@
 
 					<!--<legend>N<sup>o</sup> 59</legend>-->
 					<div class="row">
-						<div class="col-md-8" style="text-align:right">
-							<strong>Manage a fund raising campaign for an organization or school</strong>&nbsp;
+						<div class="col-md-6" style="text-align:right">
+							<strong>sell things</strong>&nbsp;
 						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med3"  title="TRUE" name="q59" value="1" type="radio" required><span for="med3" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med30"  title="FALSE" name="q59" value="0" type="radio" required><span for="med30" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: left; padding: 0px">
+						    <label for="r_starkeAblehnung" class="css-label">
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q57" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_ablehnung" class="css-label">
+						        <input type="radio" id="r_ablehnung" value="3" name="q57" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_neutral" class="css-label">
+						        <input type="radio" id="r_neutral" value="2" name="q57" class="neutral" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_zustimmung" class="css-label">
+						        <input type="radio" id="r_zustimmung" value="1" name="q57" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_starkeZustimmung" class="css-label">
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q57" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
 						</div>
 					</div>
 
@@ -84,12 +138,30 @@
 
 					<!--<legend>N<sup>o</sup> 60</legend>-->
 					<div class="row">
-					<div class="col-md-8" style="text-align:right">
-							<strong>Entertain business clients:</strong>&nbsp;
+					<div class="col-md-6" style="text-align:right">
+							<strong>give talks or speeches</strong>&nbsp;
 						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med4"  title="TRUE" name="q60" value="1" type="radio" required><span for="med4" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med40"  title="FALSE" name="q60" value="0" type="radio" required><span for="med40" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: left; padding: 0px">
+						    <label for="r_starkeAblehnung" class="css-label">
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q58" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_ablehnung" class="css-label">
+						        <input type="radio" id="r_ablehnung" value="3" name="q58" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_neutral" class="css-label">
+						        <input type="radio" id="r_neutral" value="2" name="q58" class="neutral" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_zustimmung" class="css-label">
+						        <input type="radio" id="r_zustimmung" value="1" name="q58" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_starkeZustimmung" class="css-label">
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q58" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
 						</div>
 					</div>
 
@@ -97,12 +169,30 @@
 
 					<!--<legend>N<sup>o</sup> 61</legend>-->
 					<div class="row">
-						<div class="col-md-8" style="text-align:right">
-							<strong>Serve as a club leader:</strong>&nbsp;
+						<div class="col-md-6" style="text-align:right">
+							<strong>organize activities</strong>&nbsp;
 						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med5" title="TRUE" name="q61" value="1" type="radio" required><span for="med5" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med50" title="FALSE" name="q61" value="0" type="radio" required><span for="med50" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: left; padding: 0px">
+						    <label for="r_starkeAblehnung" class="css-label">
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q59" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_ablehnung" class="css-label">
+						        <input type="radio" id="r_ablehnung" value="3" name="q59" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_neutral" class="css-label">
+						        <input type="radio" id="r_neutral" value="2" name="q59" class="neutral" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_zustimmung" class="css-label">
+						        <input type="radio" id="r_zustimmung" value="1" name="q59" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_starkeZustimmung" class="css-label">
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q59" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
 						</div>
 					</div>
 
@@ -110,30 +200,33 @@
 
 					<!--<legend>N<sup>o</sup> 62</legend>-->
 					<div class="row">
-						<div class="col-md-8" style="text-align:right">
-							<strong>Supervise a group of people:</strong>&nbsp;
+						<div class="col-md-6" style="text-align:right">
+							<strong>lead a group</strong>&nbsp;
 						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med6" title="TRUE" name="q62" value="1" type="radio" required><span for="med6" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med60" title="FALSE" name="q62" value="0" type="radio" required><span for="med60" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: left; padding: 0px">
+						    <label for="r_starkeAblehnung" class="css-label">
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q60" class="biggest" required>&nbsp;&nbsp;
 
+						    </label>
+						    <label for="r_ablehnung" class="css-label">
+						        <input type="radio" id="r_ablehnung" value="3" name="q60" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_neutral" class="css-label">
+						        <input type="radio" id="r_neutral" value="2" name="q60" class="neutral" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_zustimmung" class="css-label">
+						        <input type="radio" id="r_zustimmung" value="1" name="q60" class="big" required>&nbsp;&nbsp;
+
+						    </label>
+						    <label for="r_starkeZustimmung" class="css-label">
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q60" class="biggest" required>&nbsp;&nbsp;
+
+						    </label>
 						</div>
 					</div>
 
-					<br/><br/>
-
-					<!--<legend>N<sup>o</sup> 63</legend>-->
-					<div class="row">
-						<div class="col-md-8" style="text-align:right">
-							<strong>Persuade others to accept your ideas:</strong>&nbsp;
-						</div>
-						<div class="col-md-4">
-							<label class="radio-inline"><input id="med7"  title="TRUE" name="q63" value="1" type="radio" required><span for="med7" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-up"></span></label>&nbsp;&nbsp;
-							<label class="radio-inline"><input id="med70"  title="FALSE" name="q63" value="0" type="radio" required><span for="med70" class="check"></span><span style="font-size: 30px;"class="glyphicon glyphicon-thumbs-down"></span></label>
-						</div>
-					</div>
-
-					<br/><br/>
 
 					<button type="submit" class="btn btn-success" name="BTN">GO NEXT&nbsp;&nbsp;<span class="glyphicon glyphicon-hand-right"></span></button>
 

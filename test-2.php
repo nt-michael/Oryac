@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Take Test</title>
+	<title>ORYAC| Academic Personality Test</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
@@ -18,16 +18,15 @@
 
 	<div class="container">
 		<div class="progress" style="border-radius: 0px 10px;width: 97%">
-		<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="16.66" aria-valuemin="0" aria-valuemax="100" style="width:16.66%; border-radius: 0px 10px">
-				16.7%
+		<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="16.66" aria-valuemin="0" aria-valuemax="100" style="width:10.66%; border-radius: 0px 10px">
 			</div>
 		</div>
 		<div class="row">
-		
-		<div class="col-md-8 col-sm-8 col-lg-8">
+		<div class="col-md-2"></div>
+		<div class="col-md-6 col-sm-6 col-lg-6">
 		<div class="jumbotron" style="background-color:white; border-radius: 60px 0px; width: 100%; height: 60%;line-height: 100%">
-			<form class="form-inline" role="form" action="test-3.php" method="POST">
-				<div class="form-group">
+			<form class="form-inline" role="form" action="test-2-2.php" method="POST">
+				<div class="">
 					
 					<!--<legend>N<sup>o</sup> 7</legend>-->
 					<legend>Can you?</legend>
@@ -37,23 +36,23 @@
 						</div>
 						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q7" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q7" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
-						        <input type="radio" id="r_ablehnung" value="3" name="q7" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_ablehnung" value="3" name="q7" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_neutral" class="css-label">
-						        <input type="radio" id="r_neutral" value="2" name="q7" class="neutral">&nbsp;&nbsp;
+						        <input type="radio" id="r_neutral" value="2" name="q7" class="neutral" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_zustimmung" class="css-label">
-						        <input type="radio" id="r_zustimmung" value="1" name="q7" class="big">&nbsp;&nbsp;
+						        <input type="radio" id="r_zustimmung" value="1" name="q7" class="big" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_starkeZustimmung" class="css-label">
-						        <input type="radio" id="r_starkeZustimmung" value="0" name="q7" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeZustimmung" value="0" name="q7" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						</div>
@@ -66,7 +65,7 @@
 						<div class="col-md-6" style="text-align: right;">
 							<strong>Solve electrical problems</strong>
 						</div>
-						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: 20px">
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom:">
 						    <label for="r_starkeAblehnung" class="css-label">
 						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q8" class="biggest">&nbsp;&nbsp;
 
@@ -97,9 +96,9 @@
 						<div class="col-md-6" style="text-align: right;">
 							<strong>Play a sport</strong>
 						</div>
-						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: 20px">
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom:">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q9" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q9" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
@@ -128,9 +127,9 @@
 						<div class="col-md-6"style="text-align: right;">
 							<strong>Read a graph</strong>
 						</div>
-						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: 20px">
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: ">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q10" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q10" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
@@ -159,9 +158,9 @@
 						<div class="col-md-6"style="text-align: right;">
 							<strong>plant a tree or flowers</strong>
 						</div>
-						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: 20px">
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom:">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q11" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q11" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
@@ -190,9 +189,9 @@
 						<div class="col-md-6"style="text-align: right;">
 							<strong>Operate tools and machine</strong>&nbsp;
 						</div>
-						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom: 20px">
+						<div id="questionAnswerRadio" class="col-md-6" style="text-align: right; padding-bottom:">
 						    <label for="r_starkeAblehnung" class="css-label">
-						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q12" class="biggest">&nbsp;&nbsp;
+						        <input type="radio" id="r_starkeAblehnung" style="" value="4" name="q12" class="biggest" required>&nbsp;&nbsp;
 
 						    </label>
 						    <label for="r_ablehnung" class="css-label">
