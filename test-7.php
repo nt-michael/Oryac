@@ -2,6 +2,27 @@
   session_start();
 ?>
 
+<?php
+
+if(isset($_POST["q31-31"]) && isset($_POST["q32-32"]) && isset($_POST["q33-33"] ) && isset($_POST["q34-34"]) && isset($_POST["q35-35"]) && isset($_POST["q36-36"]) ) {
+	$t6_6 = array( $_POST["q31-31"], $_POST["q32-32"], $_POST["q33-33"], $_POST["q34-34"], $_POST["q35-35"], $_POST["q36-36"] );
+	$test6_6 = array_sum($t6_6);
+	#echo $test6_6."<br>";
+
+	$test5_5 = $_SESSION["test5_5"];
+	#echo $test5_5;
+	$test5_6 = $test6_6 + $test5_5;
+	$_SESSION["test5_6"] = $test5_6;
+	
+	#echo "<br/>";
+	#echo $_SESSION["test5_6"];
+}
+else {
+	header('location: test.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -155,7 +176,7 @@
 
 					<br/><br/>
 
-					<!--<legend>N<sup>o</sup> 43</legend>-->
+					<!--<legend>N<sup>o</sup>41</legend>-->
 					<div class="row">
 						<div class="col-md-6" style="text-align:right">
 							<strong>forgiving</strong>&nbsp;
@@ -186,7 +207,7 @@
 
 					<br/><br/>
 
-					<!--<legend>N<sup>o</sup> 44</legend>-->
+					<!--<legend>N<sup>o</sup>42</legend>-->
 					<div class="row">
 						<div class="col-md-6" style="text-align:right">
 							<strong>patient</strong>&nbsp;
@@ -236,19 +257,3 @@
 	</div>
 </body>
 </html>
-
-<?php
-
-	#if(isset($_POST["q32"]) && isset($_POST["q33"]) && isset($_POST["q34"] ) && isset($_POST["q35"]) && isset($_POST["q36"]) && isset($_POST["q37"]) && isset($_POST["q38"])){
-	$test6_6 = isset($_POST["q31-31"]) + isset($_POST["q32-32"]) + isset($_POST["q33-33"]) + isset($_POST["q34-34"]) + isset($_POST["q35-35"]) + isset($_POST["q36-36"]);
-	echo $test6_6."<br>";
-
-	$test5_5 = $_SESSION["test5_5"];
-	#echo $test5_5;
-	$test5_6 = $test6_6 + $test5_5;
-	$_SESSION["test5_6"] = "$test5_6";
-	
-	#echo "<br/>";
-	echo $_SESSION["test5_6"];
-	#}
-?>

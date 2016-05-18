@@ -4,14 +4,19 @@
 
 <?php
 	
-	#if(isset($_POST["q51"]) && isset($_POST["q52"]) && isset($_POST["q53"] ) && isset($_POST["q54"]) && isset($_POST["q55"]) && isset($_POST["q56"])){
+if( isset($_POST["q49"]) && isset($_POST["q50"]) && isset($_POST["q51"] ) && isset($_POST["q52"]) && isset($_POST["q53"]) && isset($_POST["q54"])){
 
-		$test9 = isset($_POST["q49"]) + isset($_POST["q50"]) + isset($_POST["q51"]) + isset($_POST["q52"]) + isset($_POST["q53"]) + isset($_POST["q54"]);
+		$t9 = array( $_POST["q49"], $_POST["q50"], $_POST["q51"], $_POST["q52"], $_POST["q53"], $_POST["q54"] );
+		$test9 = array_sum($t9);
 		//echo "This is a variable:".  $test9;
-		$_SESSION["test9"] = "$test9";
+		$_SESSION["test9"] = $test9;
 		//echo "<br/>";
 		//echo "this is a session: ".  $_SESSION["test9"];
-	#}
+}
+else {
+	header('location: test.php');
+}
+
 ?>
 
 <!DOCTYPE html>

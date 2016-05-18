@@ -4,8 +4,10 @@
 
 <?php
 
-	#if(isset($_POST["q57"]) && isset($_POST["q58"]) && isset($_POST["q59"] ) && isset($_POST["q60"]) && isset($_POST["q61"]) && isset($_POST["q62"]) && isset($_POST["q63"])){
-	$test10 = isset($_POST["q55"]) + isset($_POST["q56"]) + isset($_POST["q57"]) + isset($_POST["q58"]) + isset($_POST["q59"]) + isset($_POST["q60"]);
+if( isset($_POST["q55"]) && isset($_POST["q56"]) && isset($_POST["q57"] ) && isset($_POST["q58"]) && isset($_POST["q59"]) && isset($_POST["q60"]) ) {
+
+	$t10 = array( $_POST["q55"], $_POST["q56"], $_POST["q57"], $_POST["q58"], $_POST["q59"], $_POST["q60"] );
+	$test10 = array_sum($t10);
 	//echo $test10;
 	//echo "<br/>";
 	//echo $_SESSION["test9"];
@@ -13,11 +15,15 @@
 	$test9 = $_SESSION["test9"];
 
 	$test9_9 = $test10 + $test9;
-	$_SESSION["test9_9"] = "$test9_9";
+	$_SESSION["test9_9"] = $test9_9;
 	
 	//echo "<br/>";
 	//echo $_SESSION["test9_10"];
-	#}
+}
+else {
+	header('location: test.php');
+}
+
 ?>
 
 <!DOCTYPE html>

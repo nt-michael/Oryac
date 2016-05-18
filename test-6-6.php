@@ -2,6 +2,28 @@
   session_start();
 ?>
 
+<?php
+
+if(isset($_POST["q31"]) && isset($_POST["q32"]) && isset($_POST["q33"] ) && isset($_POST["q34"]) && isset($_POST["q35"]) && isset($_POST["q36"]) ) {
+
+	$t6 = array( $_POST["q31"], $_POST["q32"], $_POST["q33"], $_POST["q34"], $_POST["q35"], $_POST["q36"] );
+	$test6 = array_sum($t6);
+	//echo "This is a variable:".  $test5;
+
+	#echo $_POST["q36"];
+	$test5 = $_SESSION["test5"];
+	#echo $test5;
+	$test5_5 = $test6 + $test5;
+	$_SESSION["test5_5"] = $test5_5;
+	//echo "<br/>";
+	//echo "this is a session: ".  $_SESSION["test5"];
+}
+else {
+	header('location: test.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -228,19 +250,3 @@
 	</div>
 </body>
 </html>
-
-<?php
-
-	#if(isset($_POST["q26"]) && isset($_POST["q27"]) && isset($_POST["q28"] ) && isset($_POST["q29"]) && isset($_POST["q30"]) && isset($_POST["q31"])){
-	$test6 = isset($_POST["q31"]) + isset($_POST["q32"]) + isset($_POST["q33"]) + isset($_POST["q34"]) + isset($_POST["q35"]) + isset($_POST["q36"]);
-	//echo "This is a variable:".  $test5;
-	$_SESSION["test6"] = "$test6";
-	echo $_POST["36"];
-	$test5 = $_SESSION["test5"];
-	#echo $test5;
-	$test5_5 = $test6 + $test5;
-	$_SESSION["test5_5"] = "$test5_5";
-	//echo "<br/>";
-	//echo "this is a session: ".  $_SESSION["test5"];
-	#}
-?>

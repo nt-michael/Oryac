@@ -2,10 +2,33 @@
 	session_start();
 ?>
 
+<?php
+
+if(isset($_POST["q7"]) && isset($_POST["q8"]) && isset($_POST["q9"] ) && isset($_POST["q10"]) && isset($_POST["q11"]) && isset($_POST["q12"]) ){
+	$t2 = array( $_POST["q7"], $_POST["q8"], $_POST["q9"], $_POST["q10"], $_POST["q11"], $_POST["q12"] );
+	$test2 = array_sum($t2);
+	#echo $test2;
+	#echo "<br/>";
+	#echo $_SESSION["test1"];
+
+	$test = $_SESSION["test1"];
+
+	$test1_1 = $test2 + $test;
+	$_SESSION["test1_1"] = $test1_1;
+	
+	#echo "<br/>";
+	#echo $_SESSION["test1_1"];
+}
+
+else {
+	header('location: test.php');
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Take Test</title>
+	<title>ORYAC| Academic Personality Test</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
@@ -231,20 +254,3 @@
 	</div>
 </body>
 </html>
-<?php
-
-	#if(isset($_POST["q7"]) && isset($_POST["q8"]) && isset($_POST["q9"] ) && isset($_POST["q10"]) && isset($_POST["q11"]) && isset($_POST["q12"])){
-	$test2 = isset($_POST["q7"]) + isset($_POST["q8"]) + isset($_POST["q9"]) + isset($_POST["q10"]) + isset($_POST["q11"]) + isset($_POST["q12"]);
-	#echo $test2;
-	#echo "<br/>";
-	#echo $_SESSION["test1"];
-
-	$test = $_SESSION["test1"];
-
-	$test1_1 = $test2 + $test;
-	$_SESSION["test1_1"] = "$test1_1";
-	
-	#echo "<br/>";
-	#echo $_SESSION["test1_1"];
-	#}
-?>

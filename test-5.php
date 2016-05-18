@@ -2,6 +2,32 @@
 	session_start();
 ?>
 
+<?php
+
+if(isset($_POST["q19-19"]) && isset($_POST["q20-20"]) && isset($_POST["q21-21"] ) && isset($_POST["q22-22"]) && isset($_POST["q23-23"]) && isset($_POST["q24-24"]) ) {
+	$t4_4 = array( $_POST["q19-19"], $_POST["q20-20"], $_POST["q21-21"], $_POST["q22-22"], $_POST["q23-23"], $_POST["q24-24"] );
+	$test4_4 = array_sum($t4_4);
+	
+	#echo $test4;
+	#echo "<br/>";
+	#echo $_SESSION["test3"];
+
+	$test3_3 = $_SESSION["test3_3"];
+
+	$test3_4 = $test4_4 + $test3_3;
+
+	#echo $test3_4;
+	$_SESSION["test3_4"] = $test3_4;
+	
+	#echo "<br/>";
+	#echo $_SESSION["test3_4"];
+}
+else {
+	header('location: test.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -229,22 +255,3 @@
 	</div>
 </body>
 </html>
-
-<?php
-
-	#if(isset($_POST["q20"]) && isset($_POST["q21"]) && isset($_POST["q22"] ) && isset($_POST["q23"]) && isset($_POST["q24"]) && isset($_POST["q25"])){
-	$test4_4 = isset($_POST["q19-19"]) + isset($_POST["q20-20"]) + isset($_POST["q21-21"]) + isset($_POST["q22-22"]) + isset($_POST["q23-23"]) + isset($_POST["q24-24"]);
-	#echo $test4;
-	#echo "<br/>";
-	#echo $_SESSION["test3"];
-
-	$test3_3 = $_SESSION["test3_3"];
-
-	$test3_4 = $test4_4 + $test3_3;
-	#echo $test3_4;
-	$_SESSION["test3_4"] = "$test3_4";
-	
-	#echo "<br/>";
-	#echo $_SESSION["test3_4"];
-	#}
-?>

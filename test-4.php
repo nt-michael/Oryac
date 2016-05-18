@@ -2,6 +2,21 @@
 	session_start();
 ?>
 
+<?php
+
+if(isset($_POST["q13"]) && isset($_POST["q14"]) && isset($_POST["q15"] ) && isset($_POST["q16"]) && isset($_POST["q17"]) && isset($_POST["q18"]) ) {
+	$t3 = array( $_POST["q13"], $_POST["q14"], $_POST["q15"], $_POST["q16"], $_POST["q17"], $_POST["q18"] );
+	$test3 = array_sum($t3);
+	#echo "This is a variable:".  $test3;
+	$_SESSION["test3"] = $test3;
+	#echo "<br/>";
+	#echo "this is a session: ".  $_SESSION["test3"];
+}
+else {
+	header('location: test.php');
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -229,14 +244,3 @@
 	</div>
 </body>
 </html>
-
-<?php
-
-	#if(isset($_POST["q13"]) && isset($_POST["q14"]) && isset($_POST["q15"] ) && isset($_POST["q16"]) && isset($_POST["q17"]) && isset($_POST["q18"]) && isset($_POST["q19"])){
-	$test3 = isset($_POST["q13"]) + isset($_POST["q14"]) + isset($_POST["q15"]) + isset($_POST["q16"]) + isset($_POST["q17"]) + isset($_POST["q18"]);
-	#echo "This is a variable:".  $test3;
-	$_SESSION["test3"] = "$test3";
-	echo "<br/>";
-	echo "this is a session: ".  $_SESSION["test3"];
-	#}
-?>

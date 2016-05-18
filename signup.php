@@ -41,7 +41,8 @@
 <?php
 
   #if(isset($_POST["q70"]) && isset($_POST["q71"]) && isset($_POST["q72"] ) && isset($_POST["q73"]) && isset($_POST["q74"])){
-  $test12_12 = isset($_POST["q67-67"]) + isset($_POST["q68-68"]) + isset($_POST["q69-69"]) + isset($_POST["q70-70"]) + isset($_POST["q71-71"]) + isset($_POST["q72-72"]);
+  $t12_12 = array( $_POST["q67-67"], $_POST["q68-68"], $_POST["q69-69"], $_POST["q70-70"], $_POST["q71-71"], $_POST["q72-72"] );
+  $test12_12 = array_sum($t12_12);
   #echo $test12;
   #echo "<br/>";
   #echo $_SESSION["test11"];
@@ -57,7 +58,7 @@
 ?>
 
 <?php
-  if(isset($_SESSION["test1_2"]) && isset($_SESSION["test3_4"]) && isset($_SESSION["test5_6"]) && isset($_SESSION["test7_8"]) && isset($_SESSION["test9_10"]) && isset($_SESSION["test11_12"]) ) {
+  if( isset($_SESSION["test1_2"]) && isset($_SESSION["test3_4"]) && isset($_SESSION["test5_6"]) && isset($_SESSION["test7_8"]) && isset($_SESSION["test9_10"]) && isset($_SESSION["test11_12"]) ) {
 
   $r1 = $_SESSION["test1_2"];
   $r2 = $_SESSION["test3_4"];
@@ -105,6 +106,10 @@
     echo $r6_text;
   }
 }
+else {
+header('location: index.php');
+}
+
 ?></strong></mark></h2>      
     <p>Discover what's so special about your Academic Personality, lot of interesting things you should know about!<br><strong>What to do next ?</strong><br>Get an account to get started...</p>
   </div>
@@ -230,7 +235,7 @@
 </html>
 <?php
 // remove all session variables
-//session_unset(); 
+session_unset(); 
 
 // destroy the session 
 //session_destroy(); 
