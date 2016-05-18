@@ -103,7 +103,7 @@ img.emoji {
               <h4><span class="glyphicon glyphicon-globe"></span>About ORYAC</h4>
           </div>
           <div class="modal-body" style="padding:40px 50px;">
-          <h3><strong>Foubs Orientation</strong></h3><br>
+          <h3><strong>ORYAC Orientation</strong></h3><br>
           <p>
               ORYAC Academic Career Orientation is an online academic career orientation platform. We use cutting edge technologies to provide Counselling Support to youths in-order for them to discover their true career, provide information and a RoadMap on how to get into and SUCCEED in that Career.<br>
               <strong>Mission:</strong><br>
