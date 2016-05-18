@@ -105,7 +105,7 @@ img.emoji {
           <div class="modal-body" style="padding:40px 50px;">
           <h3><strong>Foubs Orientation</strong></h3><br>
           <p>
-              Foubs orientation is an online academic orientation platform. We use cutting edge technologies to provide Counselling Support to youths in-order for them to discover their true career, provide information and a RoadMap on how to get into and SUCCEED in that Career.<br>
+              ORYAC Academic Career Orientation is an online academic career orientation platform. We use cutting edge technologies to provide Counselling Support to youths in-order for them to discover their true career, provide information and a RoadMap on how to get into and SUCCEED in that Career.<br>
               <strong>Mission:</strong><br>
               To constantly provide Quality Counselling Support and information to youths in Secondary and high School for them to discover their true career.
           </p>
