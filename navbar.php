@@ -65,19 +65,19 @@ img.emoji {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" data-toggle="modal" href="#about">ABOUT</a>
+                        <a class="page-scroll" href="/about.php">ABOUT</a>
                     </li>
             
                     <li>
-                        <a class="page-scroll" data-toggle="modal" href="#services">SERVICES</a>
+                        <a class="page-scroll" data-toggle="modal" href="/services.php">SERVICES</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" data-toggle="modal" href="#team">TEAM</a>
+                        <a class="page-scroll" data-toggle="modal" href="/team.php">TEAM</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" data-toggle="modal" href="#contact">CONTACT</a>
+                        <a class="page-scroll" data-toggle="modal" href="/contact.php">CONTACT</a>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,27 @@
+.module {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 150px;
+  float: left;
+  background: url(https://www.stopthehacker.com/wp-content/uploads/2013/01/Fotolia_48220935_Subscription_Monthly_L.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
+}
+
+.opp h3 {
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+}
