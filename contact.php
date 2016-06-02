@@ -81,7 +81,7 @@
 					</form>
 				</div>
 				<div class="col-md-5" style="padding-right: 15%">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25267.36627502466!2d9.224282763767324!3d4.149245461390779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x9e7b8a1e56109934!2sActivSpaces%2C+FakoShip+Plaza!5e0!3m2!1sen!2scm!4v1464798398473" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15917.39829693825!2d9.261248275683585!3d4.15148440040013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x678ab270427d3276!2sCatholic+University+Institute+of+Buea!5e0!3m2!1sfr!2scm!4v1464890068440" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
