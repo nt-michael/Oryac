@@ -113,13 +113,13 @@
     }elseif (max($r5,$r6)==$r5) {
       $r1r5_text = "An Intreprising (Persuader) A.P.T";
       if (max($r2,$r3,$r4,$r6)==$r2) {
-        $r1r5r2 = "An Investigative (Thinker) A.P.T";
+        $r1r5r2_text = "An Investigative (Thinker) A.P.T";
       }elseif (max($r3,$r4,$r6)==$r3) {
-        $r1r5r3 = "An Artistic (Creator) A.P.T";
+        $r1r5r3_text = "An Artistic (Creator) A.P.T";
       }elseif (max($r4,$r6)==$r4) {
-        $r1r5r4 = "A Social (Helper) A.p.t";
+        $r1r5r4_text = "A Social (Helper) A.p.t";
       }else {
-        $r1r5r6 = "A Conventional (Organizer) A.P.T";
+        $r1r5r6_text = "A Conventional (Organizer) A.P.T";
       }
     }else {
       $r1r6 = "A Conventional (Organizer) A.P.T";
@@ -128,9 +128,9 @@
       }elseif (max($r3,$r4,$r5)==$r3) {
         $r1r6r3_text = "An Artistic (Creator) A.P.T";
       }elseif (max($r4,$r5)==$r4) {
-        $r1r6r4 = "A Social (Helper) A.P.T";
+        $r1r6r4_text = "A Social (Helper) A.P.T";
       }else {
-        $r1r6r5 = "An Intreprising (Persuader) A.P.T"
+        $r1r6r5_text = "An Intreprising (Persuader) A.P.T";
       }
     }
     $_SESSION["r"] = $r1_text;
@@ -175,13 +175,13 @@
     }elseif (max($r5,$r6)==$r5) {
       $r2r5_text = "An Intreprising (Persuader) A.P.T";
       if (max($r1,$r3,$r4,$r6)==$r1) {
-        $r2r5r1 = "An Realistic (Doer) A.P.T";
+        $r2r5r1_text = "An Realistic (Doer) A.P.T";
       }elseif (max($r3,$r4,$r6)==$r3) {
-        $r2r5r3 = "An Artistic (Creator) A.P.T";
+        $r2r5r3_text = "An Artistic (Creator) A.P.T";
       }elseif (max($r4,$r6)==$r4) {
-        $r2r5r4 = "A Social (Helper) A.p.t";
+        $r2r5r4_text = "A Social (Helper) A.p.t";
       }else {
-        $r2r5r6 = "A Conventional (Organizer) A.P.T";
+        $r2r5r6_text = "A Conventional (Organizer) A.P.T";
       }
     }else {
       $r2r6 = "A Conventional (Organizer) A.P.T";
@@ -190,9 +190,9 @@
       }elseif (max($r3,$r4,$r5)==$r3) {
         $r2r6r3_text = "An Artistic (Creator) A.P.T";
       }elseif (max($r4,$r5)==$r4) {
-        $r2r6r4 = "A Social (Helper) A.P.T";
+        $r2r6r4_text = "A Social (Helper) A.P.T";
       }else {
-        $r2r6r5 = "An Intreprising (Persuader) A.P.T"
+        $r2r6r5_text = "An Intreprising (Persuader) A.P.T";
       }
     }
     $_SESSION["r"] = $r2_text;
@@ -241,9 +241,9 @@
       }elseif (max($r2,$r4,$r6)==$r2) {
         $r3r5r2 = "An Investigative (Thinker) A.P.T";
       }elseif (max($r4,$r6)==$r4) {
-        $r3r5r4 = "A Social (Helper) A.p.t";
+        $r3r5r4_text = "A Social (Helper) A.p.t";
       }else {
-        $r3r5r6 = "A Conventional (Organizer) A.P.T";
+        $r3r5r6_text = "A Conventional (Organizer) A.P.T";
       }
     }else {
       $r3r6 = "A Conventional (Organizer) A.P.T";
@@ -252,9 +252,9 @@
       }elseif (max($r2,$r4,$r5)==$r2) {
         $r3r6r2_text = "An Investigative (Thinker) A.P.T";
       }elseif (max($r4,$r5)==$r4) {
-        $r3r6r4 = "A Social (Helper) A.P.T";
+        $r3r6r4_text = "A Social (Helper) A.P.T";
       }else {
-        $r3r6r5 = "An Intreprising (Persuader) A.P.T"
+        $r3r6r5_text = "An Intreprising (Persuader) A.P.T";
       }
     }
     $_SESSION["r"] = $r3_text;
@@ -280,16 +280,16 @@
       if (max($r1,$r3,$r5,$r6)==$r1) {
         $r4r2r1_text == "An  Realistic (Doer) A.P.T";
       }elseif (max($r3,$r5,$r6)==$r3) {
-      $r2r2r3_text == "A Artistic (Creator) A.P.T";
+      $r4r2r3_text == "An Artistic (Creator) A.P.T";
       }elseif (max($r5,$r6)==$r5) {
       $r4r2r5_text == "An Intreprising (Persuader) A.P.T";
       }else {
       $r4r2r6_text == "A Conventional (Organizer) A.P.T";
       }
     }elseif (max($r3,$r5,$r6)==$r3) {
-      $r4r3_text = "A Realistic (Doer) A.P.T";
+      $r4r3_text = "An Artistic (Creator) A.P.T";
       if (max($r1,$r2,$r5,$r6)==$r1) {
-        $r4r2r1_text = "An Realistic (Doer) A.P.T";
+        $r4r3r1_text = "An Realistic (Doer) A.P.T";
       }elseif (max($r3,$r5,$r6)==$r3) {
         $r4r3r2_text = "An Investigative (Thinker) A.P.T";
       }elseif (max($r5,$r6)==$r5) {
@@ -300,39 +300,154 @@
     }elseif (max($r5,$r6)==$r5) {
       $r4r5_text = "An Intreprising (Persuader) A.P.T";
       if (max($r1,$r2,$r3,$r6)==$r1) {
-        $r4r5r1 = "An Realistic (Doer) A.P.T";
+        $r4r5r1_text = "An Realistic (Doer) A.P.T";
       }elseif (max($r3,$r2,$r6)==$r2) {
-        $r4r5r2 = "An Investigative (Thinker) A.P.T";
+        $r4r5r2_text = "An Investigative (Thinker) A.P.T";
       }elseif (max($r3,$r6)==$r3) {
-        $r4r5r3 = "An Artistic (Creator) A.p.t";
+        $r4r5r3_text = "An Artistic (Creator) A.p.t";
       }else {
-        $r4r5r6 = "A Conventional (Organizer) A.P.T";
+        $r4r5r6_text = "A Conventional (Organizer) A.P.T";
       }
     }else {
-      $r4r6 = "A Conventional (Organizer) A.P.T";
+      $r4r6_text = "A Conventional (Organizer) A.P.T";
       if(max($r1,$r2,$r3,$r5)==$r1) {
         $r4r6r1_text = "A Realistic (Doer) A.P.t";
       }elseif (max($r3,$r2,$r5)==$r2) {
         $r4r6r2_text = "An Investigative (Thinker) A.P.T";
-      }elseif (max($r4,$r5)==$r4) {
-        $r4r6r3 = "An Artistic (Creator) A.P.T";
+      }elseif (max($r3,$r5)==$r3) {
+        $r4r6r3_text = "An Artistic (Creator) A.P.T";
       }else {
-        $r4r6r5 = "An Intreprising (Persuader) A.P.T"
+        $r4r6r5_text = "An Intreprising (Persuader) A.P.T";
       }
     }
-
-/* continue */
 
     $_SESSION["r"] = $r4_text;
     $_SESSION["try"] = "4";
     echo $r4_text;
   } elseif (max($r5,$r6)==$r5) {
     $r5_text = "An INTREPRISING (Persuader) A.P.T";
+
+    if (max($r1,$r2,$r3,$r4,$r6)==$r1) {
+      $r5r1_text = "A Realistic (Doer) A.P.T";
+      if (max($r2,$r3,$r4,$r6)==$r2) {
+        $r5r1r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r3,$r5,$r6)==$r3) {
+        $r5r1r3_text = "An Artistic (Creator) A.P.T";
+      }elseif (max($r5,$r6)==$r4) {
+        $r5r1r4_text = "A Social (Helper) A.P.T";
+      }else {
+        $r5r1r6_text = "A Conventional (Organizer) A.P.T";
+      }/* Continue */
+    }elseif (max($r2,$r3,$r4,$r6)==$r2) {
+      $r5r2_text = "An Investigative (Thinker) A.P.T";
+      if (max($r1,$r3,$r4,$r6)==$r1) {
+        $r5r2r1_text == "An  Realistic (Doer) A.P.T";
+      }elseif (max($r3,$r4,$r6)==$r3) {
+      $r5r2r3_text == "A Artistic (Creator) A.P.T";
+      }elseif (max($r4,$r6)==$r5) {
+      $r5r2r4_text == "A Social (Helper) A.P.T";
+      }else {
+      $r5r2r6_text == "A Conventional (Organizer) A.P.T";
+      }
+    }elseif (max($r3,$r4,$r6)==$r3) {
+      $r5r3_text = "An Artistic (Creator) A.P.T";
+      if (max($r1,$r2,$r4,$r6)==$r1) {
+        $r5r3r1_text = "An Realistic (Doer) A.P.T";
+      }elseif (max($r3,$r5,$r6)==$r3) {
+        $r5r3r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r5,$r6)==$r5) {
+        $r5r3r4_text = "An Interesting (Persuader) A.P.T";
+      }else {
+        $r5r3r6_text = "A Conventional (Organizer) A.P.T";
+      }
+    }elseif (max($r5,$r6)==$r5) {
+      $r5r4_text = "An Intreprising (Persuader) A.P.T";
+      if (max($r1,$r2,$r3,$r6)==$r1) {
+        $r5r4r1_text = "An Realistic (Doer) A.P.T";
+      }elseif (max($r3,$r2,$r6)==$r2) {
+        $r5r4r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r3,$r6)==$r3) {
+        $r5r4r3_text = "An Artistic (Creator) A.p.t";
+      }else {
+        $r5r4r6_text = "A Conventional (Organizer) A.P.T";
+      }
+    }else {
+      $r5r6_text = "A Conventional (Organizer) A.P.T";
+      if(max($r1,$r2,$r3,$r4)==$r1) {
+        $r5r6r1_text = "A Realistic (Doer) A.P.t";
+      }elseif (max($r3,$r2,$r5)==$r2) {
+        $r5r6r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r3,$r4)==$r3) {
+        $r5r6r3_text = "An Artistic (Creator) A.P.T";
+      }else {
+        $r5r6r4_text = "A Social (Helper) A.P.T";
+      }
+    }
+
     $_SESSION["r"] = $r5_text;
     $_SESSION["try"] = "5";
     echo $r5_text;
   } else {
     $r6_text = "A CONVENTIONAL (Organizers) A.P.T";
+
+        if (max($r1,$r2,$r3,$r4,$r5)==$r1) {
+      $r6r1_text = "A Realistic (Doer) A.P.T";
+      if (max($r2,$r3,$r4,$r5)==$r2) {
+        $r6r1r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r3,$r4,$r5)==$r3) {
+        $r6r1r3_text = "An Artistic (Creator) A.P.T";
+      }elseif (max($r4,$r5)==$r4) {
+        $r6r1r4_text = "A Social (Helper) A.P.T";
+      }else {
+        $r6r1r5_text = "An Intreprising (Persuader) A.P.T";
+      }/* Continue */
+    }elseif (max($r2,$r3,$r4,$r5)==$r2) {
+      $r6r2_text = "An Investigative (Thinker) A.P.T";
+      if (max($r1,$r3,$r4,$r5)==$r1) {
+        $r6r2r1_text == "A  Realistic (Doer) A.P.T";
+      }elseif (max($r3,$r4,$r5)==$r3) {
+      $r6r2r3_text == "An Artistic (Creator) A.P.T";
+      }elseif (max($r4,$r5)==$r4) {
+      $r6r2r4_text == "A Social (Helper) A.P.T";
+      }else {
+      $r6r2r5_text == "An Intreprising (Persuader) A.P.T";
+      }
+    }elseif (max($r3,$r4,$r5)==$r3) {
+      $r6r3_text = "An Artistic (Creator) A.P.T";
+      if (max($r1,$r2,$r4,$r5)==$r1) {
+        $r6r3r1_text = "An Realistic (Doer) A.P.T";
+      }elseif (max($r3,$r4,$r5)==$r3) {
+        $r5r3r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r4,$r5)==$r5) {
+        $r5r3r4_text = "A Social (Helper) A.P.T";
+      }else {
+        $r6r3r5_text = "An Intreprising (Persuader) A.P.T";
+      }
+    }elseif (max($r4,$r5)==$r4) {
+      $r6r4_text = "An Intreprising (Persuader) A.P.T";
+      if (max($r1,$r2,$r3,$r5)==$r1) {
+        $r6r4r1_text = "A Realistic (Doer) A.P.T";
+      }elseif (max($r3,$r2,$r5)==$r2) {
+        $r6r4r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r3,$r5)==$r3) {
+        $r6r4r3_text = "An Artistic (Creator) A.p.t";
+      }else {
+        $r6r4r5_text = "An Intreprising (Persuader) A.P.T";
+      }
+    }else {
+      $r6r5_text = "An Intreprising (Persuader) A.P.T";
+      if(max($r1,$r2,$r3,$r4)==$r1) {
+        $r6r5r1_text = "A Realistic (Doer) A.P.t";
+      }elseif (max($r3,$r2,$r4)==$r2) {
+        $r6r5r2_text = "An Investigative (Thinker) A.P.T";
+      }elseif (max($r3,$r4)==$r3) {
+        $r6r5r3_text = "An Artistic (Creator) A.P.T";
+      }else {
+        $r6r5r4_text = "A Social (Helper) A.P.T";
+      }
+    }
+
+
     $_SESSION["r"] = $r6_text;
     $_SESSION["try"] = "6";
     echo $r6_text;
