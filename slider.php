@@ -51,20 +51,20 @@
                         </p>
 
                     <div class="" style="padding:20px;">
-                        <form role="form" style="text-align: left">
-                                <div class="form-group">
-                                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                                  <input type="text" class="form-control" name="usrname" id="usrname" placeholder="Enter email">
-                              </div>
-                              <div class="form-group">
-                                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                                  <input type="password" class="form-control" name="psw" id="psw" placeholder="Enter password">
-                              </div>
-                              <div class="checkbox">
-                                 <!-- <label><input type="checkbox" value="" checked>Remember me</label> -->
-                             </div>
+                        <form role="form" style="text-align: left" method="POST" action="login.php">
+                            <div class="form-group">
+                                <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" required>
+                            </div>
+                            <div class="checkbox">
+                                <!-- <label><input type="checkbox" value="" checked>Remember me</label> -->
+                            </div>
                        
-                        <button type="button" class="btn btn-md btn-primary pull-left">Login&nbsp;<span class="glyphicon glyphicon-log-in"></span></button>
+                            <button type="submit" name="submit" class="btn btn-md btn-primary pull-left">Login&nbsp;<span class="glyphicon glyphicon-log-in"></span></button>
                         </form>
                         <p>Not a member yet? <a href="test.php">Join Us</a></p>
                   </div>
@@ -83,5 +83,23 @@
 
     </header>
     
+    <!-- jQuery -->
+    <script type='text/javascript' src="js/jquery.js"></script>
 
+     <!--Bootstrap Core JavaScript -->
+   <script type='text/javascript' src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script type='text/javascript' src="js/jquery.easing.min.js"></script>
+   <script type='text/javascript' src="js/jquery.fittext.js"></script>
+   <script type='text/javascript' src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+  <script type='text/javascript' src="js/creative.js"></script>
+  <script type='text/javascript' src="js/cbpAnimatedHeader.js"></script>
+  <script>
+    $('.carousel').carousel({
+        interval: 4000 //changes the speed
+    })
+    </script>
     <!-- /.container -->

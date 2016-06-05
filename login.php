@@ -1,30 +1,25 @@
 <?php
-include("connection.php");
+// Include the database connection file
+require_once("connection.php");
 
-if(isset($_POST["submit"])) {
+//checking POST request and then logging 
+//the user into the system.
+if(isset($_POST["submit"])){
     $email = $_POST["email"];
-    $pass = $_POST["pass"];
+    $password = md5($_POST["password"]);
 
     $sql = "SELECT * FROM users
-            WHERE email='$email' AND password='$pass'";
+            WHERE email='$email' AND password='$password'";
     $result = mysql_query($sql);
     $numRows = mysql_num_rows($result);
-    if($numRows==1) {
+
+    if($numRows === 1) {
         session_start();
-        $_SESSION["userid"] = $userid;
-        header("Location: ./profile_page.php");
+        $_SESSION["email"] = $email;
+        //header("Location: ./profile_page.php");
+        echo "You logged in successfully";
     } else {
         echo "Invalid Login Information";   
     }
 }
 ?>
-
-<!--<form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="post">
-<table>
-<tr><td>User Name</td><td><input type="text" name="username" /></td></tr>
-<tr><td>Password</td><td><input type="password" name="pass" /></td></tr>
-<tr><td></td><td><input type="submit" name="submit" value="Login" /></td></tr>
-</table>
-</form>
-<?php echo htmlspecialchars($url) ?>
--->

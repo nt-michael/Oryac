@@ -478,23 +478,38 @@
       <ul class="nav nav-pills nav-stacked">
         <legend class="" style="color:#337ab7"><strong>SignUp</strong></legend>
         
-        <form role="form" action="<?php echo $_SERVER['SCRIPT_NAME']; ?>">
-             <div class="form-group">
-                <label for="name">name:</label>
-                <input type="text" name="name" class="form-control" placeholder="your name here..." required>
+        <form role="form" action="register.php" method="POST">
+            <div class="form-group col-md-6">
+                <label for="name">First name:</label>
+                <input type="text" name="fname" class="form-control" placeholder="your name here..." required>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-6">
+                <label for="name">Last name:</label>
+                <input type="text" name="lname" class="form-control" placeholder="your name here..." required>
+            </div>
+
+            <div class="form-group col-md-12">
                 <label for="email">email:</label>
                 <input type="email" name="email" class="form-control" placeholder="name@host.com" required>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-12">
                 <label for="tel">phone n<sup>o</sup>:</label>
                 <input type="number" name="tel" class="form-control" placeholder="XXXXXXXXX" required>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-6">
+                <label for="name">Date of birth:</label>
+                <input type="date" name="dob" class="form-control" placeholder="your name here..." required>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="name">Country:</label>
+                <input type="text" name="country" class="form-control" placeholder="your name here..." required>
+            </div>
+
+            <div class="form-group col-md-12">
                 <label for="test">Your A.P.T:</label>
                 <select class="form-control" name="apt" placeholder="">
                   <option value="<?php
@@ -549,17 +564,17 @@
                 </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-6">
                <label for="pwd">password:</label>
-               <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+               <input type="password" name="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-6">
                <label for="pwd">Retype your Password:</label>
-               <input type="password" class="form-control" id="pwd" placeholder="Confirm password" required>
+               <input type="password" name="cpassword" class="form-control" id="pwd" placeholder="Confirm password" required>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-12">
               <label for="policy">Agree to our <a href="#">Terms And Condition</a></label>
               <input type="checkbox" required>
             </div>

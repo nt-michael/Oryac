@@ -1,9 +1,19 @@
 <?php
-$mysql_host = "localhost";
-$mysql_user = "root";
-$mysql_pass = "";
-$mysl_database = "foubs";
+/*---------------------------------------------------------------------*/
+/* Database file that creates a connection to the DB anytime the file */
+/* is imported. 													  */
 
-$conn = mysql_connect($mysql_host, $mysql_user, $mysql_pass);
-mysql_select_db($mysl_database, $conn);
+	$HOST = "localhost";
+	$USER = "root";
+	$PASSWORD = "root";
+	$DATABASE = "ORYAC";
+
+//creates a connection
+$conn = mysql_connect($HOST, $USER, $PASSWORD);
+if(!$conn){
+	die('Error while connecting to the Database.');
+}
+
+//uses a database in the server.
+mysql_select_db($DATABASE, $conn);
 ?>
