@@ -5,6 +5,6 @@ Mission:
 To constantly provide Quality Counselling Support and information to youths in Secondary and high School for them to discover their true career.
 
 
-Foubs Academic Orientation is based on the [Bootstrap](http://getbootstrap.com/) framework created by Ioudum Foubi Jephte,[NT Michael](https://twitter.com/nde_michael) and [Alangi Derick](alangiderick@gmail.com).
+ORYAC Academic Career Orientation is based on the [Bootstrap](http://getbootstrap.com/) framework created by Ioudum Foubi Jephte,[NT Michael](https://twitter.com/nde_michael) and [Alangi Derick](alangiderick@gmail.com).
 
 ## Copyright
