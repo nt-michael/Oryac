@@ -5,8 +5,8 @@
 
 	$HOST = "localhost";
 	$USER = "root";
-	$PASSWORD = "Je+5*sus";
-	$DATABASE = "oryac";
+	$PASSWORD = "root";
+	$DATABASE = "ORYAC";
 
 //creates a connection
 $conn = mysql_connect($HOST, $USER, $PASSWORD);
