@@ -14,6 +14,7 @@
 	width: 100%;
 	height: 50px;
 }
+
 </style>
 
 </head>
@@ -24,6 +25,10 @@
 
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
+	<div style="text-align: right;padding-right: 20%;">
+		<a href="profile.php">View profile&nbsp;<span style="font-size: 40px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;&nbsp;
+		<a href="#">Log out&nbsp;<span style="font-size: 30px;color:black" class="glyphicon glyphicon-hand-right"></span></a>
+	</div>
 		<div class="row" style="padding-top: 7%">
 				<div class="col-md-3" style="text-align: left;padding-left: 6%;">
 					<img src="" title="home ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
@@ -46,7 +51,21 @@
 		</div>
 		<div class="row" style="padding-bottom: 5%">
 			<div class="row">
-				<div class="col-md-3" style="text-align: left;padding-left: 7%">
+				<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+						deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="col-md-5" style="text-align: left;padding-right: 15%">
+					<img src="" title="Co-founder ORYAC" alt="cofounder.jpg" style="width:70%;height: 130px">
+				</div>
+			</div>
+			<div class="row"><br>
+				<div class="col-md-3" style="text-align:right;padding-left: 2%">
 					<img src="" title="home ORYAC" alt="founder.jpg" style="width:70%;height: 130px">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
@@ -60,20 +79,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
-					<p><br>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div class="col-md-5" style="text-align: left;padding-right: 15%">
-					<img src="" title="Co-founder ORYAC" alt="cofounder.jpg" style="width:60%;height: 130px">
-				</div>
-			</div>
+			
 		</div>
 		<div class="row" style="padding-left: 5%">
 			<h2 style="text-align:;"><strong>What Are Majors</strong></h2>
@@ -82,15 +88,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="row" style="text-align:justify;padding-left:10%">
-					<h2>Personality Of User</h2>
+	<div class="row" style="text-align:justify;padding-left:10%;padding-right: 35%;text-align: justify;">
 					<p><ul>
-						<li>Learn more about your Academic Personality</li>
-						<li>What is trending about this personality</li>
-						<li>What next?...</li>
+						<li>What is a Major:</li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+						aute irure dolor in reprehenderit </p>
+
+						<li>Why should you take the IQ test:</li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+						aute irure dolor in reprehenderit </p>
 						</ul>
 					</p>
 	</div>
+	<p style="text-align: right;padding-right: 22%;font-size: 20px;"><a href="major.php" style="color:black;text-decoration: overline;background-color:orange ">View Majors</a></p>
 
 	<?php include('footer.php'); ?>
 </body>
