@@ -49,8 +49,14 @@
                 <div class="red-content">
                         <p style="font-size: 200%;margin-top: 20%"><span class="glyphicon glyphicon-lock"></span> ORYAC Login
                         </p>
-
+                    <?php
+                        if (!empty($_GET['msg'])) {
+                           //echo $_GET['msg'];
+                           echo  $_GET['msg'];
+                        }
+                    ?>
                     <div class="" style="padding:20px;">
+                    
                         <form role="form" style="text-align: left" method="POST" action="login.php">
                             <div class="form-group">
                                 <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>

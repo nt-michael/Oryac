@@ -25,8 +25,10 @@
 
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
-		<div style="text-align: right;padding-right: 20%;">
-			<a href="profile.php">View profile&nbsp;<span style="font-size: 40px" class="glyphicon glyphicon-user"></span></a>
+		<div style="text-align: right;padding-right: 18%;">
+			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
+			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
+			<a href="#">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 		</div>
 		<div class="row" style="text-align:justify;padding-left:5%;padding-bottom: 5%">
 			<p>Hello User_name...</p>
@@ -55,7 +57,7 @@
 					<div class="module" style="background-image: url(https://www.stopthehacker.com/wp-content/uploads/2013/01/Fotolia_48220935_Subscription_Monthly_L.jpg);">
 						<header>
 							<h3>
-								<a style="color:white" href="#">Sample Major A</a>
+								<a style="color:white" href="single.php">Sample Major A</a>
 							</h3>
 						</header>
 					</div>

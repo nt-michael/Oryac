@@ -25,9 +25,15 @@
 
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
-	<div style="text-align: right;padding-right: 20%;">
-		<a href="profile.php">View profile&nbsp;<span style="font-size: 40px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;&nbsp;
-		<a href="#">Log out&nbsp;<span style="font-size: 30px;color:black" class="glyphicon glyphicon-hand-right"></span></a>
+	<?php
+        if (!empty($_GET['msg2'])) {
+         echo $_GET['msg2'];
+       }
+    ?>
+	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
+			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
+			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
+			<a href="#">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 	</div>
 		<div class="row" style="padding-top: 7%">
 				<div class="col-md-3" style="text-align: left;padding-left: 6%;">

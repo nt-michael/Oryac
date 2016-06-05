@@ -24,9 +24,11 @@
 
     <div class="container"> 
     <?php include('navbar2.php'); ?>
-    <div style="text-align: right;padding-right: 20%;">
-            <a href="profile.php">Home&nbsp;<span style="font-size: 40px" class="glyphicon glyphicon-home"></span></a>
-        </div>
+    <div style="text-align: right;padding-right: 14%;">
+            <a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
+            <a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
+            <a href="#">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+    </div>
         <div class="row" style="padding-left: 5%">
             <h2><strong>My Profile</strong></h2>
             <div style="padding-right: 20%">
@@ -36,7 +38,7 @@
         <div class="row" style="">
             <div class="row">
             <div style="padding-left: 6%">
-                <div class="col-md-5" style="text-align: left;border:1px solid black;height: auto;padding: 2%">
+                <div class="col-md-5" style="text-align: left;border:1px solid black;height: auto;padding: 2%;border-radius: 2%">
                     <label>Update your settings...</label><br>
                     <form class="form-group" action="">
                         <label class="form-group">First name:</label>
@@ -70,10 +72,10 @@
                 </div>
             </div>
 
-                <div class="col-md-6" style="text-align:justify;padding-right: 12%;padding-left: 2%">
+                <div class="col-md-6" style="text-align:justify;padding-right: 12%;padding-left: 2%;">
                     <form class="form-group" action="">
                         <label class="form-group">Background Info:</label>
-                        <textarea class="form-control" name="bg-info" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; resize: none"></textarea>
+                        <textarea class="form-control" name="bg-info" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"></textarea>
                         <br><input class="form-group btn btn-warning" type="submit" value="Save information">
                     </form><br><br>
 
@@ -84,7 +86,7 @@
 
                     </form><br><br>
 
-                    <form class="form-group" action="" style="border:1px solid black;padding: 2%">
+                    <form class="form-group" action="" style="border:1px solid black;padding: 2%; border-radius: 2%">
                         <legend>Update Just Password...</legend>
                         <label class="form-group">Current password:</label>
                         <input class="form-control" name="past-psw" placeholder="current password" type="password">

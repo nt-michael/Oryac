@@ -17,9 +17,12 @@ if(isset($_POST["submit"])){
         session_start();
         $_SESSION["email"] = $email;
         //header("Location: ./profile_page.php");
-        echo "You logged in successfully";
+        header("location:home.php?msg2=You logged in successfully");
+        exit;
+        //echo "You logged in successfully";
     } else {
-        echo "Invalid Login Information";   
+        header("location:index.php?msg=Invalid Login Information");
+        exit;
     }
 }
 ?>
