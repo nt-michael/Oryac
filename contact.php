@@ -57,25 +57,25 @@
 			</div>
 			<div class="row">
 				<div class="col-md-5" style="padding-left: 5%">
-					<form role="form">
+					<form role="form" action="contactus.php" enctype="multipart/form-data" method="POST">
 						<div class="form-group">
 							<label for="usrname"><span class="glyphicon glyphicon-user"></span> Full Name</label>
-							<input type="text" class="form-control" name="usrname" placeholder="Enter your full name here...">
+							<input type="text" class="form-control" name="username" placeholder="Enter your full name here...">
 						</div>
 
 						<div class="form-group">
 							<label for="email"><span class="glyphicon glyphicon-envelope"></span></span> Email Address</label>
-							<input type="email" class="form-control" name="usrname" placeholder="Enter your full name here...">
+							<input type="email" class="form-control" name="email" placeholder="Enter your full name here...">
 						</div>
 
 						<div class="form-group">
 							<label for="object"><span class="glyphicon glyphicon-eye-open"></span> Object</label>
-							<input type="text" class="form-control" name="psw" placeholder="Enter Object of your message here...">
+							<input type="text" class="form-control" name="subject" placeholder="Enter Object of your message here...">
 						</div>
 
 						<div class="form-group">
 							<label for="textarea"><span class="glyphicon glyphicon-edit"></span>Place your Message</label><br>
-							<textarea placeholder="Type your message here..." style="resize: none; width: 100%; height: 200px" maxlength="500"></textarea>Maximum of 500 words.
+							<textarea name="text" placeholder="Type your message here..." style="resize: none; width: 100%; height: 200px" maxlength="500"></textarea>Maximum of 500 words.
 						</div>
 
 						<button type="submit" class="btn btn-success"><i class="glyphicon glyphicon-send"></i> Send</button>

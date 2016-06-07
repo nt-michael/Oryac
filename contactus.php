@@ -1,12 +1,19 @@
 <?php
-$to_name = "Recipient Name";
-$to = "recipien_id@domain.com";
-$subject = "Subject";
-$message = "A quick brown fox juumped over the lazy dog.";
+require 'PHPMailer/PHPMailerAutoload.php';
+
+$name = $_POST['username'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$msg = $_POST['text'];
+
+$to_name = "noreply@oryac.org";
+$to = "ndemikel@gmail.com";
+$subject = $subject;
+$message = $msg;
 $message = wordwrap($message,70);
  
-$from_name = "your_gmail_ID";
-$from = "your_gmail_ID@gmail.com";
+$from_name = $name;
+$from = $email;
 // phpMailer
 $mail = new PHPMailer();
  
@@ -15,8 +22,8 @@ $mail->Host = "smtp.gmail.com"; //enable php socks to make SSL it working
 $mail->Port = 465;
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
-$mail->Username = "your_gmail_ID@gmail.com";
-$mail->Password = "your_gmail_password";
+$mail->Username = "ndemikel@gmail.com";
+$mail->Password = "Je+5*sus";
  
 $mail->FromName = $from_name;
 $mail->From = $from;
