@@ -15,7 +15,7 @@
 
 </head>
 
-<body style="font-family: times new roman; background-color:#F8F8F8">
+<body style="font-family: times new roman; background-color:#F8F8F8;padding-bottom: 5%">
 <div class="container">
 <nav class="navbar navbar-default" style="background-color:#337ab7">
   <div class="container-fluid">

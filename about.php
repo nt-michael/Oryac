@@ -24,6 +24,7 @@
 
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
+	<?php require_once('displayif.php'); ?>
 		<div class="row" style="padding-left: 5%">
 			<h2><strong>About ORYAC</strong></h2>
 			<div style="padding-right: 20%">
