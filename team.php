@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ORYAC | About Us...</title>
+	<title>ORYAC | Team...</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">

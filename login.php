@@ -1,4 +1,7 @@
 <?php
+    session_start();
+?>
+<?php
 // Include the database connection file
 require_once("connection.php");
 
@@ -14,9 +17,9 @@ if(isset($_POST["submit"])){
     $numRows = mysql_num_rows($result);
 
     if($numRows === 1) {
-        session_start();
         $_SESSION["email"] = $email;
         //header("Location: ./profile_page.php");
+        $_SESSION["in"] = 1;
         header("location:home.php?msg2=You logged in successfully");
         exit;
         //echo "You logged in successfully";

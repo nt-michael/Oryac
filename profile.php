@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ORYAC | About Us...</title>
+    <title>ORYAC | User profile...</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -20,14 +20,15 @@
 
 <body style="">
 
-    <?php //include('navbar2.php'); ?>
-
+<?php
+    require_once('verify.php');
+?>
     <div class="container"> 
     <?php include('navbar2.php'); ?>
     <div style="text-align: right;padding-right: 14%;">
             <a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
             <a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
-            <a href="#">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+            <a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
     </div>
         <div class="row" style="padding-left: 5%">
             <h2><strong>My Profile</strong></h2>
