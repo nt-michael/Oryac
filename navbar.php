@@ -16,22 +16,32 @@
     <link href="style.css" rel="stylesheet">
     <link href="css/full-slider.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+
     <!---->
-          
-        <style type="text/css">
-img.wp-smiley,
-img.emoji {
-    display: inline !important;
-    border: none !important;
-    box-shadow: none !important;
-    height: 1em !important;
-    width: 1em !important;
-    margin: 0 .07em !important;
-    vertical-align: -0.1em !important;
-    background: none !important;
-    padding: 0 !important;
-}
-</style>
+    <script src="js/jquery.js"></script>
+    <style type="text/css">
+          .no-js #loader { display: none;  }
+          .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+          .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(img/Preloader_10.gif) center no-repeat #fff;
+    }
+    </style>
+
+    <script type="text/javascript">
+      //paste this code under the head tag or in a separate js file.
+      // Wait for window load
+        $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
 
 <meta name="generator" content="" />
 
@@ -47,7 +57,7 @@ img.emoji {
 </head>
 
 <body id="page-top" style=" font-family:Times New Roman">
-
+  <div class="se-pre-con"></div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -177,7 +187,6 @@ img.emoji {
           <h3 style="text-align: center;"><strong>Our Team</strong></h3><br>
           <div class="row">
             <div class="col-md-6" style="text-align: center;">
-                <img src="img/back3.jpg" style="width: 70%;height: 100%" class="img-rounded" alt="Ioudum Foubi Jephte"><br>
                 <strong style="font-size: 16px">Managing Director &amp; Co-Founder</strong></br>
                 <p style="font-size: 16px">Ioudum Foubi Jephte</p><br>
                 2015 Study of the United States Institute on Social Entrepreneurship,<br>
@@ -185,7 +194,6 @@ img.emoji {
             </div>
 
             <div class="col-md-6" style="text-align: center;">
-                <img src="img/back3.jpg" style="width: 70%;height: 100%" class="img-rounded" alt="Nde Tabefor Michael"><br>
                 <strong style="font-size: 16px">Chief Tech Officer &amp; Co-Founder</strong><br>
                 <p style="font-size: 16px">Micha&euml;l Nde T.</p><br><br>
                 Web Platform Development,<br>
