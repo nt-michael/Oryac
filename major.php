@@ -9,6 +9,33 @@
   	<link rel="stylesheet" type="text/css" href="css/image.css">
  	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+
+    <!---->
+    <script src="js/jquery.js"></script>
+    <style type="text/css">
+          .no-js #loader { display: none;  }
+          .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+          .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(img/Preloader_10.gif) center no-repeat #fff;
+    }
+    </style>
+
+    <script type="text/javascript">
+      //paste this code under the head tag or in a separate js file.
+      // Wait for window load
+        $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
+
 <style type="text/css">
 	hr.style1{
 	border-top: 1px solid #8c8b8b;
@@ -20,6 +47,11 @@
 </head>
 
 <body style="">
+<div class="se-pre-con"></div>
+
+<?php
+    require_once('verify.php');
+?>
 
 	<?php //include('navbar2.php'); ?>
 
@@ -28,7 +60,7 @@
 		<div style="text-align: right;padding-right: 18%;">
 			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
 			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
-			<a href="#">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+			<a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 		</div>
 		<div class="row" style="text-align:justify;padding-left:5%;padding-bottom: 5%">
 			<p>Hello User_name...</p>

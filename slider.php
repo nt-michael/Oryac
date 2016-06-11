@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-        <div class="red">
+        <div class="red" style="height: auto">
 
                 <div class="red-content">
                         <p style="font-size: 200%;margin-top: 20%"><span class="glyphicon glyphicon-lock"></span> ORYAC Login
