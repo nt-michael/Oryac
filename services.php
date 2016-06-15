@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,7 +96,7 @@
 				<!-- Third Service -->
 				<div class="col-md-4">
 					<div class="causes-image">
-						<img alt="thumb1" src="http://affairstoday.co.uk/wp-content/uploads/2015/10/elibrary.jpg" style="" />
+						<img alt="thumb1" src="https://i.kinja-img.com/gawker-media/image/upload/s--RS66RXsR--/c_fit,fl_progressive,q_80,w_636/1865wp0dmssq2jpg.jpg" style="" />
 						<div class="cause-heading">
 							<h3>Academic Personality Test...</h3>
 							<p>Discover your trueself...</p>
@@ -115,7 +114,7 @@
 			<div class="row" style="margin-top: 1%;">
 				<div class="col-md-4">
 					<div class="causes-image">
-						<img alt="thumb1" src="http://www.study-habits.com/wp-content/uploads/2012/04/prepare-exams.jpg" style="" />
+						<img alt="thumb1" src="http://dailygenius.com/wp-content/uploads/2014/12/university-search.png" style="" />
 						<div class="cause-heading">
 							<h3>University Search and placement facilitation</h3>
 							<p>Get knowledge in...</p>
@@ -133,7 +132,7 @@
 				<!-- Second Service -->
 				<div class="col-md-4">
 					<div class="causes-image">
-						<img alt="thumb1" src="http://www.lawsonstate.edu/sites/www/Uploads/images/Programs_Of_Study/Academic_Programs/finalex.jpg" style="" />
+						<img alt="thumb1" src="http://2020lead.com/wp-content/uploads/2014/05/Follow-UP.jpg" style="" />
 						<div class="cause-heading">
 							<h3>Academic Follow-up.</h3>
 							<p>We gat your back...</p>
@@ -151,7 +150,7 @@
 				<!-- Third Service -->
 				<div class="col-md-4">
 					<div class="causes-image">
-						<img alt="thumb1" src="http://www.careerealism.com/wp-content/uploads/2012/10/Good-Resume-Featured.png" style="" />
+						<img alt="thumb1" src="http://move4ward.webs.com/Counselling-Decisions2b.jpg" style="" />
 						<div class="cause-heading">
 							<h3>Counsellor Support</h3>
 							<p>Talk to a counsellor...</p>
@@ -172,7 +171,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4">
 					<div class="causes-image">
-						<img alt="thumb1" src="http://www.study-habits.com/wp-content/uploads/2012/04/prepare-exams.jpg" style="" />
+						<img alt="thumb1" src="http://www.bricksandclicks2.org.uk/wp-content/uploads/2014/03/shutterstock_183254327.jpg" style="" />
 						<div class="cause-heading">
 							<h3>Tutor/Mentor Program</h3>
 							<p>Get assistance...</p>
@@ -190,7 +189,7 @@
 				<!-- Second Service -->
 				<div class="col-md-4">
 					<div class="causes-image">
-						<img alt="thumb1" src="http://www.lawsonstate.edu/sites/www/Uploads/images/Programs_Of_Study/Academic_Programs/finalex.jpg" style="" />
+						<img alt="thumb1" src="https://i.ytimg.com/vi/82tqf-RaxE8/maxresdefault.jpg" style="" />
 						<div class="cause-heading">
 							<h3>Academic&nbsp;&amp;&nbsp;Career Counselling Outtreach Workshops.</h3>
 							<p>On-site outreach...</p>
