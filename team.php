@@ -4,6 +4,7 @@
 <head>
 	<title>ORYAC | Team...</title>
 	<link href="style.css" rel="stylesheet">
+	<link href="css/agency.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">
  	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,6 +15,23 @@
 	width: 100%;
 	height: 50px;
 }
+.box{
+	background-color: white;
+	height: auto;
+	width: 20%;
+	padding:5px;
+	text-align: center;
+	font-size: 30px;
+	font-family:roboto;
+
+	
+    -webkit-border-radius:10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    -ms-border-radius:10px 10px 0 0;
+    -o-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+	}
+
 </style>
 
 </head>
@@ -21,58 +39,49 @@
 <body style="">
 
 	<?php //include('navbar2.php'); ?>
-
-	<div class="container">	
 	<?php include('navbar2.php'); ?>
+	<div class="container">	
 	<?php require_once('displayif.php'); ?>
 		<div class="row" style="padding-left: 5%">
-			<h2><strong>Team</strong></h2>
-			<div style="padding-right: 20%">
-			<?php include('line.php'); ?>
+
+			<div class="box">
+				<strong>Our <span style="color:orange">Team</span></strong>
 			</div>
+			 <br>
+			 <br>
+			 <br>
 		</div>
 		<div class="row" style="">
 			<div class="row">
 				<div class="col-md-3" style="text-align: right;">
-					<img src="" title="Founder ORYAC" alt="founder.jpg" style="width:80%;height: 200px">
+					<img src="img/jeph.jpg" title="Founder ORYAC" alt="founder.jpg" style="width:80%">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-						aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
+					<legend>- Founder</legend>
+						Ioudom Foubi Jephte is a final year student at the Catholic University Institute of Buea , studying management. He is a fellow of the Study of the United States Institutes on Social Entrepreneurship. He is passionate about education , leadership and youth empowerment.
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
 					<p><br>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
+						<legend>- Co-Founder &amp; Software Engineer</legend>
+						NDE T. Micha&euml;l is a Software Developer, and Community Manager for Buea WordPress Meetup in Cameroon, currently doing his studies at the Catholic University Institute of Buea, Cameroon
 					</p>
 				</div>
 				<div class="col-md-5" style="text-align: left;padding-right: 15%">
-					<img src="" title="Co-founder ORYAC" alt="cofounder.jpg" style="width:80%;height: 200px">
+					<img src="img/mike.jpg" class="img-rounded" title="Co-founder ORYAC" alt="cofounder.jpg" style="width: 60%">
 				</div>
 			</div>
 			<div class="row"><br>
 				<div class="col-md-3" style="text-align: right;">
-					<img src="" title="Founder ORYAC" alt="Collaborator.jpg" style="width:80%;height: 200px">
+					<img src="img/derick.png" class="img-rounded" title="Founder ORYAC" alt="Collaborator.jpg" style="width:70%">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-						aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
+					<legend>- Software Engineer</legend>
+						ALANGI Derick is a Software Engineer, and representative of Wikidata Foundation in Cameroon, Currently doing his studies at the University of Buea.
 					</p>
 				</div>
 			</div>

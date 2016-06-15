@@ -4,6 +4,7 @@
 <head>
 	<title>ORYAC | Contact Us...</title>
 	<link href="style.css" rel="stylesheet">
+	<link href="css/agency.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">
  	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,22 +15,39 @@
 	width: 100%;
 	height: 50px;
 }
+.box{
+	background-color: white;
+	height: auto;
+	width: 20%;
+	padding:5px;
+	text-align: center;
+	font-size: 30px;
+	font-family:roboto;
+
+	
+    -webkit-border-radius:10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    -ms-border-radius:10px 10px 0 0;
+    -o-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+	}
 </style>
 
 </head>
 
 <body style="">
 
-	<?php //include('navbar2.php'); ?>
+	<?php include('navbar2.php'); ?>
 
 	<div class="container">	
-	<?php include('navbar2.php'); ?>
 	<?php require_once('displayif.php'); ?>
 		<div class="row" style="padding-left: 5%">
-			<h2><strong>Contact Us</strong></h2>
-			<div style="padding-right: 20%">
-			<?php include('line.php'); ?>
+			<div class="box">
+				<strong>Contact <span style="color:orange">Us</span></strong>
 			</div>
+			 <br>
+			 <br>
+			 <br>
 		</div>
 		<div class="row" style="">
 			<div class="row" style="margin-bottom: 5%">
@@ -41,13 +59,12 @@
 						Use the form below to to send us your message or your feedbacks.<br/>
 						<ul>
 						<li>Office Hours: 08h:00am - 05:00pm</li>
-						<li>Email: info@oryac.org</li>
-						<li>Tel: +237 xxx xxx xxx</li>
+						<li><span class="yphicon glyphicon-envelope"></span> oryac@gmail.com</li>
+						<li><span class="glyphicon glyphicon-phone-alt"></span> +237 671 053 149</li>
 						<li>Social Media:
 							<ul>
 							<li>Facebook</li>
 							<li>Twitter</li>
-							<li>RSS</li>
 							<li>Instagram</li>
 							</ul>
 						</li>

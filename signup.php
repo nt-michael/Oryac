@@ -12,10 +12,34 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+    <style type="text/css">
+          .no-js #loader { display: none;  }
+          .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+          .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(img/Preloader_10.gif) center no-repeat #fff;
+    }
+    </style>
+
+    <script type="text/javascript">
+      //paste this code under the head tag or in a separate js file.
+      // Wait for window load
+        $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+    </script>
 
 </head>
 
 <body style="font-family: times new roman; background-color:#F8F8F8;padding-bottom: 5%">
+  <div class="se-pre-con"></div>
 <div class="container">
 <nav class="navbar navbar-default" style="background-color:#337ab7">
   <div class="container-fluid">
@@ -25,7 +49,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" style="color:black" href="#"><strong>ORYAC</strong> <small>Academic personality test Result...</small></a>
+      <a class="navbar-brand" style="color:black"><strong>ORYAC</strong> <small>Academic Career personality test Result...</small></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -37,7 +61,7 @@
 
   <div class="jumbotron">
     <h1>CONGRATULATIONS...</h1><br>
-    <h2>Your Academic Personality Test (A.P.T) Result is out, and you have :<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <mark><strong>
+    <h2>Your Academic Career Personality Test (A.C.P.T) Result is out, and you have :<br/>&nbsp;&nbsp;
 <?php
 
   #if(isset($_POST["q70"]) && isset($_POST["q71"]) && isset($_POST["q72"] ) && isset($_POST["q73"]) && isset($_POST["q74"])){
@@ -396,21 +420,28 @@
         $r6r1r2_text = "An Investigative (Thinker) A.P.T";
       }elseif (max($r3,$r4,$r5)==$r3) {
         $r6r1r3_text = "An Artistic (Creator) A.P.T";
+        //echo "C.R.A";
       }elseif (max($r4,$r5)==$r4) {
         $r6r1r4_text = "A Social (Helper) A.P.T";
+        //echo "C.R.S";
       }else {
         $r6r1r5_text = "An Intreprising (Persuader) A.P.T";
+        //echo "C.R.Int";
       }/* Continue */
     }elseif (max($r2,$r3,$r4,$r5)==$r2) {
       $r6r2_text = "An Investigative (Thinker) A.P.T";
       if (max($r1,$r3,$r4,$r5)==$r1) {
         $r6r2r1_text == "A  Realistic (Doer) A.P.T";
+        //echo "C.Inv.R";
       }elseif (max($r3,$r4,$r5)==$r3) {
       $r6r2r3_text == "An Artistic (Creator) A.P.T";
+      //echo "C.Inv.A";
       }elseif (max($r4,$r5)==$r4) {
       $r6r2r4_text == "A Social (Helper) A.P.T";
+      //echo "C.Inv.S";
       }else {
       $r6r2r5_text == "An Intreprising (Persuader) A.P.T";
+      //echo "C.Inv.Int";
       }
     }elseif (max($r3,$r4,$r5)==$r3) {
       $r6r3_text = "An Artistic (Creator) A.P.T";
@@ -450,17 +481,17 @@
 
     $_SESSION["r"] = $r6_text;
     $_SESSION["try"] = "6";
-    echo $r6_text;
+    echo "<strong>".$r6_text."</strong>";
   }
 //}
 
 ?></strong></mark></h2>      
-    <p>Discover what's so special about your Academic Personality, lot of interesting things you should know about!<br><strong>What to do next ?</strong><br>Get an account to get started...</p>
+    <p>Discover what's so special about your Academic Career Personality, lot of interesting things you should know about!<br><strong>What to do next ?</strong><br>Get an account to get started...</p>
   </div>
 
   <div class="row">
     <div class="col-md-4" style="text-align:justify">
-    <legend><strong>Get A Premium Account</strong></legend>
+    <legend><strong>Get An Account</strong></legend>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -566,12 +597,12 @@
 
             <div class="form-group col-md-6">
                <label for="pwd">password:</label>
-               <input type="password" name="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+               <input type="password" name="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" maxlength="50" required>
             </div>
 
             <div class="form-group col-md-6">
                <label for="pwd">Retype your Password:</label>
-               <input type="password" name="cpassword" class="form-control" id="pwd" placeholder="Confirm password" required>
+               <input type="password" onfocusout="check();" name="cpassword" class="form-control" id="pwd2" placeholder="Confirm password" maxlength="50" required>
             </div>
 
             <div class="form-group col-md-12">
@@ -588,6 +619,24 @@
     <div class="clearfix visible-lg"></div>
   </div>
 </div>
+<div id="error"></div>
+
+<script type="text/javascript">
+  function check(){
+    var psw = document.getElementById("pwd").value;
+    var psw2 = document.getElementById("pwd2").value;
+    var max = 49;
+    var success = "Password Matches";
+    var er = "Password didn't match";
+   /* for (var i = 0; i = max; i++) {
+      if (psw[i] == psw2[i] ) {
+       // document.getElementById("error").innerHTML = er;
+      }
+      else
+      document.getElementById("error").innerHTML = er;
+    }
+  }*/
+</script>
 
 </body>
 

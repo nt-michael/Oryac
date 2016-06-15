@@ -1,4 +1,5 @@
 <!-- Full Page Image Background Carousel Header -->
+<link rel="stylesheet" type="text/css" href="css/radio.css">
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators" style="text-align: center;color:black;">
@@ -16,7 +17,7 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/good.jpg');"></div>
                 <div class="carousel-caption" style="height: 80%;float: top;">
-                    <h1><strong style="font-size:150%">ORYAC </strong></h1><h1><small style="color:#f5f5f5;"><strong>Academic Orientation Platform</strong></small></h1><br>
+                    <h1><strong style="font-size:150%">ORYAC </strong></h1><h1><small style="color:#f5f5f5;"><strong>Academic Career Orientation Platform</strong></small></h1><br>
                     <strong style="font-size: 160%;color:lightblue">Join Us &amp; Get To Know Your Values &amp; Many More To Keep You Focused...</strong>
                     
                 </div>
@@ -72,7 +73,7 @@
                        
                             <button type="submit" name="submit" class="btn btn-md btn-primary pull-left">Login&nbsp;<span class="glyphicon glyphicon-log-in"></span></button>
                         </form>
-                        <p>Not a member yet? <a href="test.php">Join Us</a></p>
+                        <p>Not a member yet? <a data-toggle="modal" href="#brief">Join Us</a></p>
                   </div>
                   
               </div>
@@ -88,6 +89,61 @@
         </a>
 
     </header>
+<!-- Modal for Briefness -->
+<div class="modal fade" id="brief" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><i class="glyphicon glyphicon-edit"></i>Steps To Follow</h4>
+            </div>
+            <div class="modal-body">
+                You are required to take an Academic Career Test before you may have an account with us, for accurate and good results, kindly follow these steps:-<br/>
+                <ul>
+                <li>DFirst point</li>
+                <li><label for="r_starkeAblehnung" class="css-label">
+                                A&nbsp;<input type="radio" id="r_starkeAblehnung" style="" value="4" name="q1" class="biggest" disabled="" checked="">&nbsp;&nbsp;
+
+                            </label>
+                            <label for="r_ablehnung" class="css-label">
+                                B&nbsp;<input type="radio" id="r_ablehnung" value="3" name="q1" class="big" disabled="">&nbsp;&nbsp;
+
+                            </label>
+                            <label for="r_neutral" class="css-label">
+                                C&nbsp;<input type="radio" id="r_neutral" value="2" name="q1" class="neutral" disabled="">&nbsp;&nbsp;
+
+                            </label>
+                            <label for="r_zustimmung" class="css-label">
+                                D&nbsp;<input type="radio" id="r_zustimmung" value="1" name="q1" class="big" disabled="">&nbsp;&nbsp;
+
+                            </label>
+                            <label for="r_starkeZustimmung" class="css-label">
+                                E&nbsp;<input type="radio" id="r_starkeZustimmung" value="0" name="q1" class="biggest" disabled="">&nbsp;&nbsp;
+
+                            </label>
+
+                    <ul>
+                        <li>A: Strongly Agree</li>
+                        <li>B: Agree</li>
+                        <li>C: Not to sure</li>
+                        <li>D: Disagree</li>
+                        <li>E: Strongly Disagree</li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                All Done, <a href="test.php">Start</a> the test <a href="test.php">Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
     <!-- jQuery -->
     <script type='text/javascript' src="js/jquery.js"></script>
 

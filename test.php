@@ -12,6 +12,7 @@
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
+	<link rel="stylesheet" type="text/css" href="css/test-well.css">
 	<!-- The background image in css/bg.css is use with this link http://localhost:2000/img/foubs2.jpg... please take note of the port number when working with it on your machine
 	-->
 </head>
@@ -30,7 +31,7 @@
 		<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-6 col-sm-6 col-lg-6">
-		<div class="jumbotron" style="background-color:white; border-radius: 60px 0px; width: 100%; height: 60%;line-height: 100%">
+		<div class="jumbotron" style="background-color:white; border-radius: 60px 0px; width: 100%; height: auto;line-height: 100%">
 			<form class="form-inline" role="form" action="test-2.php" method="POST">
 				
 				<!-- Place there values -->
@@ -232,7 +233,7 @@
 		</div>
 
 		<div class="col-md-4 col-sm-4 col-lg-4">
-		<div class="well" style="width:90%; height:500px; border-right-color: green;border-right-width: 5px; border-bottom-width: 5px; border-bottom-color: green">
+		<div class="well border">
 		<p style="font-size: 110%">
                     Following the vocational theory by John Holland, the activities people engage in and the work environments in the society can be categorized by a set of common characteristics.
 		</div>

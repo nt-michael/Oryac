@@ -4,6 +4,7 @@
 <head>
 	<title>ORYAC | About Us...</title>
 	<link href="style.css" rel="stylesheet">
+	<link href="css/agency.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">
  	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,22 +15,39 @@
 	width: 100%;
 	height: 50px;
 }
+.box{
+	background-color: white;
+	height: auto;
+	width: 20%;
+	padding:5px;
+	text-align: center;
+	font-size: 30px;
+	font-family:roboto;
+
+	
+    -webkit-border-radius:10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    -ms-border-radius:10px 10px 0 0;
+    -o-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+	}
 </style>
 
 </head>
 
 <body style="">
 
-	<?php //include('navbar2.php'); ?>
+	<?php include('navbar2.php'); ?>
 
 	<div class="container">	
-	<?php include('navbar2.php'); ?>
 	<?php require_once('displayif.php'); ?>
 		<div class="row" style="padding-left: 5%">
-			<h2><strong>About ORYAC</strong></h2>
-			<div style="padding-right: 20%">
-			<?php include('line.php'); ?>
+			<div class="box">
+				<strong>About <span style="color:orange">Us</span></strong>
 			</div>
+			 <br>
+			 <br>
+			 <br>
 		</div>
 		<div class="row" style="">
 			<div class="row">
@@ -38,23 +56,15 @@
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-						aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
+						Oryac is a leading technology education solution provider in Africa. We use cutting edge technologies to reach out to secondary and high school students and provide them with access to academic and career orientation services.
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12" style="text-align: justify;padding-left: 6%;padding-right: 20%">
 					<p><br>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
+						<strong>Vision:</strong> A world full of passion driven students and working population.<br/><br/>
+						<strong>Mission:</strong> Provide the best Academic and Career orientation services to help students identify their true academic and career passion.
 					</p>
 				</div>
 			</div>

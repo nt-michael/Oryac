@@ -24,6 +24,7 @@ else {
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/radio.css">
 	<link rel="stylesheet" type="text/css" href="css/bg.css">
+	<link rel="stylesheet" type="text/css" href="css/test-well.css">
 	<!-- The background image in css/bg.css is use with this link http://localhost:2000/img/foubs2.jpg... please take note of the port number when working with it on your machine
 	-->
 </head>
@@ -237,7 +238,7 @@ else {
 		</div>
 		</div>
 		<div class="col-md-4 col-sm-4 col-lg-4">
-			<div class="well" style="width:90%; height:500px; border-right-color: green;border-right-width: 5px; border-bottom-width: 5px; border-bottom-color: green">
+			<div class="well border">
 				
 			</div>
 		</div>

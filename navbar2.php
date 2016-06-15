@@ -1,5 +1,5 @@
     <!-- Navigation -->
-    <div style="height: 100px">
+    <div style="height: 50px">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,7 +38,8 @@
         <!-- /.container-fluid -->
     </nav>
     </div>
-        <header>
+    <!--
+    <header >
         <div class="container" style="height: 260px">
             <div class="intro-text">
                 <div class="intro-lead-in" style="color:black">
@@ -47,10 +48,19 @@
                             <img src="/img/sample-logo.jpg" style="width: 80%;height: 200px;" title="sample-logo" alt="sample-logo">
                         </div>
                         <div class="col-md-9" style="text-align: left;padding-right: 22%">
-                            <h1><strong>Academic Carier Orientation</strong></h1>
+                            <h1><strong>Academic&nbsp;&amp;&nbsp;Career Orientation</strong></h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </header>-->
+    <header style="height: 200px; margin-bottom: -6%; z-index: -20">
+        <div class="container">
+       
+            <div class="intro-text">
+                
+            </div>
+        </div>
     </header>
+    
