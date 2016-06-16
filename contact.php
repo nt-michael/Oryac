@@ -40,7 +40,6 @@
 	<?php include('navbar2.php'); ?>
 
 	<div class="container">	
-	<?php require_once('displayif.php'); ?>
 		<div class="row" style="padding-left: 5%">
 			<div class="box">
 				<strong>Contact <span style="color:orange">Us</span></strong>
@@ -49,6 +48,7 @@
 			 <br>
 			 <br>
 		</div>
+		<?php require_once('displayif.php'); ?>
 		<div class="row" style="">
 			<div class="row" style="margin-bottom: 5%">
 				<div class="col-md-3" style="text-align: right;">
