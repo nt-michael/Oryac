@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <?php 
 session_start();
 	if ( $_SESSION["in"] != 1 ) {

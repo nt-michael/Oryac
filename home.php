@@ -1,4 +1,6 @@
-
+<?php
+	include('verify.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,9 +52,7 @@
 <body style="">
 <div class="se-pre-con"></div>
 
-<?php
-	require_once('verify.php');
-?>
+
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
 	<?php
