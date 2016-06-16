@@ -52,9 +52,9 @@
 <body style="">
 <div class="se-pre-con"></div>
 
-
-	<div class="container">	
 	<?php include('navbar2.php'); ?>
+	
+	<div class="container">	
 	<?php
         if (!empty($_GET['msg2'])) {
          echo $_GET['msg2'];

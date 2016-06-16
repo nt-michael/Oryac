@@ -10,6 +10,9 @@ require_once("connection.php");
 if(isset($_POST["submit"])){
     $email = $_POST["email"];
     $password = md5($_POST["password"]);
+    $psw = $_POST["password"];
+
+    $_SESSION["psw"] = $psw;
 
     $sql = "SELECT * FROM users
             WHERE email='$email' AND password='$password'";

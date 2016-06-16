@@ -1,5 +1,6 @@
 <?php
     include('verify.php');
+    include('profile/profile.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,9 +50,9 @@
 
 <body style="">
 <div class="se-pre-con"></div>
+    <?php include('navbar2.php'); ?>
 
     <div class="container"> 
-    <?php include('navbar2.php'); ?>
     <div style="text-align: right;padding-right: 14%;">
             <a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
             <a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
@@ -68,30 +69,36 @@
             <div style="padding-left: 6%">
                 <div class="col-md-5" style="text-align: left;border:1px solid black;height: auto;padding: 2%;border-radius: 2%">
                     <label>Update your settings...</label><br>
-                    <form class="form-group" action="">
+                    <form class="form-group" action="profile/full-update.php" method="POST">
                         <label class="form-group">First name:</label>
-                        <input class="form-control" name="fname" placeholder="firstname" type="text">
+                        <input class="form-control" name="fname" type="text" value="<?php echo $_SESSION["fname"]; ?>" required>
 
                         <label class="form-group">Last name:</label>
-                        <input class="form-control" name="lname" placeholder="last name" type="text">
+                        <input class="form-control" name="lname" type="text" value="<?php echo $_SESSION["lname"]; ?>" required>
+
+                        <label class="form-group">Email:</label>
+                        <input class="form-control" name="email" type="email" value="<?php echo $_SESSION["email"]; ?>" required>
 
                         <label class="form-group">BirthDate:</label>
-                        <input class="form-control" name="birth" placeholder="birthdate" type="date">
+                        <input class="form-control" name="birth" type="date" value="<?php echo $_SESSION["dob"]; ?>" required>
+
+                        <label class="form-group">Country:</label>
+                        <input class="form-control" name="country" type="text" value="<?php echo $_SESSION["country"]; ?>" required>
 
                         <label class="form-group">Current Level:</label>
-                        <input class="form-control" name="level" placeholder="form level" type="text">
+                        <input class="form-control" name="level" placeholder="form level" type="text" value="<?php echo $_SESSION["level"]; ?>" required>
 
                         <label class="form-group">Phone number:</label>
-                        <input class="form-control" name="tel1" placeholder="telephone1" type="number">
+                        <input class="form-control" name="tel" placeholder="telephone1" type="number" value="<?php echo $_SESSION["tel"]; ?>" required>
 
                         <label class="form-group">Other number:</label>
-                        <input class="form-control" name="tel2" placeholder="telephone2" type="number">
+                        <input class="form-control" name="tel2" placeholder="telephone2" type="number" value="<?php echo $_SESSION["tel2"]; ?>" required>
 
                         <label class="form-group">Current password:</label>
-                        <input class="form-control" name="past-psw" placeholder="current password" type="password">
+                        <input class="form-control" name="psw" placeholder="current password" type="password" value="" required>
 
                         <label class="form-group">New password:</label>
-                        <input class="form-control" name="new-psw" placeholder="new password" type="password">
+                        <input class="form-control" name="psw2" placeholder="new password" type="password" value="" required>
 
                         <div style="text-align: center"><br>
                             <input class="form-group btn btn-warning" type="submit" value="Update Settings">
@@ -102,8 +109,8 @@
 
                 <div class="col-md-6" style="text-align:justify;padding-right: 12%;padding-left: 2%;">
                     <form class="form-group" action="">
-                        <label class="form-group">Background Info:</label>
-                        <textarea class="form-control" name="bg-info" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"></textarea>
+                        <label class="form-group">Background Info: <small style="color:red">Maximum 500 word*</small></label>
+                        <textarea class="form-control" name="bg-info" value="<?php echo $_SESSION["tel2"]; ?>" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"></textarea>
                         <br><input class="form-group btn btn-warning" type="submit" value="Save information">
                     </form><br><br>
 
@@ -112,12 +119,12 @@
 
                             <input class="form-group btn btn-warning" type="submit" value="Click here...">
 
-                    </form><br><br>
+                    </form><br/><br/><br/><br/><br/>
 
                     <form class="form-group" action="" style="border:1px solid black;padding: 2%; border-radius: 2%">
                         <legend>Update Just Password...</legend>
                         <label class="form-group">Current password:</label>
-                        <input class="form-control" name="past-psw" placeholder="current password" type="password">
+                        <input class="form-control" name="past-psw" placeholder="current password" type="password" value="<?php echo $_SESSION["psw"]; ?>">
 
                         <label class="form-group">New password:</label>
                         <input class="form-control" name="new-psw" placeholder="new password" type="password">
