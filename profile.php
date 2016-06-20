@@ -1,6 +1,6 @@
 <?php
+session_start();
     include('verify.php');
-    include('profile/profile.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -80,7 +80,7 @@
                         <input class="form-control" name="email" type="email" value="<?php echo $_SESSION["email"]; ?>" required>
 
                         <label class="form-group">BirthDate:</label>
-                        <input class="form-control" name="birth" type="date" value="<?php echo $_SESSION["dob"]; ?>" required>
+                        <input class="form-control" name="dob" type="date" value="<?php echo $_SESSION["dob"]; ?>" required>
 
                         <label class="form-group">Country:</label>
                         <input class="form-control" name="country" type="text" value="<?php echo $_SESSION["country"]; ?>" required>
@@ -110,7 +110,7 @@
                 <div class="col-md-6" style="text-align:justify;padding-right: 12%;padding-left: 2%;">
                     <form class="form-group" action="">
                         <label class="form-group">Background Info: <small style="color:red">Maximum 500 word*</small></label>
-                        <textarea class="form-control" name="bg-info" value="<?php echo $_SESSION["tel2"]; ?>" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"></textarea>
+                        <textarea class="form-control" name="bg-info" value="" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"><?php echo $_SESSION["info"]; ?></textarea>
                         <br><input class="form-group btn btn-warning" type="submit" value="Save information">
                     </form><br><br>
 
