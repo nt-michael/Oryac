@@ -57,7 +57,7 @@ session_start();
 	
 	<div class="container">	
 	<?php
-         echo "Welcome home ".$_SESSION("lname");
+         echo 'Welcome home $_SESSION["lname"]';
     ?>
 	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
 			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;

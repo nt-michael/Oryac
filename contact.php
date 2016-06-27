@@ -59,7 +59,7 @@
 						Use the form below to to send us your message or your feedbacks.<br/>
 						<ul>
 						<li>Office Hours: 08h:00am - 05:00pm</li>
-						<li><span class="yphicon glyphicon-envelope"></span> oryac@gmail.com</li>
+						<li><span class="yphicon glyphicon-envelope"></span> oryacc@gmail.com</li>
 						<li><span class="glyphicon glyphicon-phone-alt"></span> +237 671 053 149</li>
 						<li>Social Media:
 							<ul>
@@ -75,6 +75,13 @@
 			<div class="row">
 				<div class="col-md-5" style="padding-left: 5%">
 					<form role="form" action="contactus.php" enctype="multipart/form-data" method="POST">
+						<div class="form-group">
+							<?php
+								if (!empty($_GET['email']) ) {
+									echo "<label>".$_GET['email']."</label>";
+								}
+							?>
+						</div>
 						<div class="form-group">
 							<label for="usrname"><span class="glyphicon glyphicon-user"></span> Full Name</label>
 							<input type="text" class="form-control" name="username" placeholder="Enter your full name here...">
