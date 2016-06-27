@@ -1,4 +1,5 @@
 <?php
+session_start();
 	include('verify.php');
 ?>
 <!DOCTYPE html>
@@ -56,9 +57,7 @@
 	
 	<div class="container">	
 	<?php
-        if (!empty($_GET['msg2'])) {
-         echo $_GET['msg2'];
-       }
+         echo "Welcome home ".$_SESSION("lname");
     ?>
 	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
 			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;

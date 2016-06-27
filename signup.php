@@ -102,386 +102,960 @@
     $r1_text = "A Realistic (Doer) A.P.T";
     /* Get Second and Third Highest */
     if (max($r2,$r3,$r4,$r5,$r6)==$r2) {
-      $r1r2_text = "An Investigative (Thinker) A.P.T";
+      $r1r2_text = "I";
+
       if (max($r3,$r4,$r5,$r6)==$r3) {
-        $r1r2r3_text = "An Artistic (Creator) A.P.T";
+        $r1r2r3_text = "(RIA)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r2r3_text; 
+         /*-----Still on first APT-----------*/
+             
       }elseif (max($r4,$r5,$r6)==$r4) {
-        $r1r2r4_text = "A Social (Helper) A.P.T";
+        $r1r2r4_text = "(RIS)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r2r4_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r1r2r5_text = "An Intreprising (Persuader) A.P.T";
+        $r1r2r5_text = "(RIE)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r2r5_text; 
+         /*-----Still on first APT-----------*/
+
       }else {
-        $r1r2r6_text = "A Conventional (Organizer) A.P.T";
+        $r1r2r6_text = "(RIC)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r2r6_text; 
+         /*-----Still on first APT-----------*/
+
       }
     }elseif (max($r3,$r4,$r5,$r6)==$r3) {
-      $r1r3_text = "An Artistic (Creator) A.P.T";
+      $r1r3_text = "A";
+
       if (max($r2,$r4,$r5,$r6)==$r4) {
-        $r1r3r4_text == "A Social (Helper) A.P.T";
+        $r1r3r4_text == "(RAS)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r3r4_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r2,$r5,$r6)==$r2) {
-      $r1r3r2_text == "An Investigative (Thinker) A.P.T";
+      $r1r3r2_text == "(RAI)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r3r2_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-      $r1r3r5_text == "An Intreprising (Persuader) A.P.T";
+      $r1r3r5_text == "(RAE)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r3r5_text; 
+         /*-----Still on first APT-----------*/
       }else {
-      $r1r3r6_text == "A Conventional (Organizer) A.P.T";
+      $r1r3r6_text == "(RAC) A.P.T";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r3r6_text; 
+         /*-----Still on first APT-----------*/
       }
     }elseif (max($r4,$r5,$r6)==$r4) {
-      $r1r4_text = "A Social (Helper) A.P.T";
+      $r1r4_text = "S";
+
       if (max($r2,$r3,$r5,$r6)==$r2) {
-        $r1r4r2_text = "An Investigative (Thinker) A.P.T";
+        $r1r4r2_text = "(RSI)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r4r2_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r3,$r5,$r6)==$r3) {
-        $r1r4r3_text = "An Artistic (Creator) A.P.T";
+        $r1r4r3_text = "(RSA)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r4r3_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r1r4r5_text = "An Interesting (Persuader) A.P.T";
+        $r1r4r5_text = "(RSE)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r4r5_text; 
+         /*-----Still on first APT-----------*/
+
       }else {
-        $r1r4r6_text = "A Conventional (Organizer) A.P.T";
+        $r1r4r6_text = "(RSC)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r4r6_text; 
+         /*-----Still on first APT-----------*/
+
       }
     }elseif (max($r5,$r6)==$r5) {
-      $r1r5_text = "An Intreprising (Persuader) A.P.T";
+      $r1r5_text = "E";
+
       if (max($r2,$r3,$r4,$r6)==$r2) {
-        $r1r5r2_text = "An Investigative (Thinker) A.P.T";
+        $r1r5r2_text = "(REI)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r5r2_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r3,$r4,$r6)==$r3) {
-        $r1r5r3_text = "An Artistic (Creator) A.P.T";
+        $r1r5r3_text = "(REA)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r5r3_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r4,$r6)==$r4) {
-        $r1r5r4_text = "A Social (Helper) A.p.t";
+        $r1r5r4_text = "(RES)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r5r4_text; 
+         /*-----Still on first APT-----------*/
+
       }else {
-        $r1r5r6_text = "A Conventional (Organizer) A.P.T";
+        $r1r5r6_text = "(REC)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r5r6_text; 
+         /*-----Still on first APT-----------*/
+
       }
     }else {
-      $r1r6 = "A Conventional (Organizer) A.P.T";
+      $r1r6 = "C";
       if(max($r2,$r3,$r4,$r5)==$r2) {
-        $r1r6r2_text = "An Investigative (Thinker) A.P.t";
+        $r1r6r2_text = "(RCI)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r6r2_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r3,$r4,$r5)==$r3) {
-        $r1r6r3_text = "An Artistic (Creator) A.P.T";
+        $r1r6r3_text = "(RCA)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r6r3_text; 
+         /*-----Still on first APT-----------*/
+
       }elseif (max($r4,$r5)==$r4) {
-        $r1r6r4_text = "A Social (Helper) A.P.T";
+        $r1r6r4_text = "(RCS)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r6r4_text; 
+         /*-----Still on first APT-----------*/
+
       }else {
-        $r1r6r5_text = "An Intreprising (Persuader) A.P.T";
+        $r1r6r5_text = "(RCE)";
+            $_SESSION["r"] = $r1_text;
+            $_SESSION["try"] = "1";
+            echo $r1_text." - ".$r1r6r5_text; 
+         /*-----First APT Ends Here-----------*/
+
       }
     }
-    $_SESSION["r"] = $r1_text;
-    $_SESSION["try"] = "1";
-    echo $r1_text;
+/*--------------Second APT Starts Here------------------*/
+
   } elseif (max($r2,$r3,$r4,$r5,$r6)==$r2) {
     $r2_text = "An INVESTIGATIVE (Thinker) A.P.T";
 
     if (max($r1,$r3,$r4,$r5,$r6)==$r1) {
-      $r2r1_text = "A Realistic (Doer) A.P.T";
+      $r2r1_text = "R";
       if (max($r3,$r4,$r5,$r6)==$r3) {
-        $r2r1r3_text = "An Artistic (Creator) A.P.T";
+        $r2r1r3_text = "(IRA)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r1r3_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }elseif (max($r4,$r5,$r6)==$r4) {
-        $r2r1r4_text = "A Social (Helper) A.P.T";
+        $r2r1r4_text = "(IRS)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r1r4_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r2r1r5_text = "An Intreprising (Persuader) A.P.T";
+        $r2r1r5_text = "(IRE)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r1r5_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }else {
-        $r2r1r6_text = "A Conventional (Organizer) A.P.T";
+        $r2r1r6_text = "(IRC)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r1r6_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }
     }elseif (max($r3,$r4,$r5,$r6)==$r3) {
-      $r2r3_text = "An Artistic (Creator) A.P.T";
+      $r2r3_text = "A";
       if (max($r1,$r4,$r5,$r6)==$r4) {
-        $r2r3r4_text == "A Social (Helper) A.P.T";
+        $r2r3r4_text == "(IAS)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r3r4_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }elseif (max($r1,$r5,$r6)==$r1) {
-      $r2r3r1_text == "A Realistic (Doer) A.P.T";
+      $r2r3r1_text == "(IAR)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r3r1_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }elseif (max($r5,$r6)==$r5) {
-      $r2r3r5_text == "An Intreprising (Persuader) A.P.T";
+      $r2r3r5_text == "(IAE)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r3r5_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }else {
-      $r2r3r6_text == "A Conventional (Organizer) A.P.T";
+      $r2r3r6_text == "(IAC)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r3r6_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }
     }elseif (max($r4,$r5,$r6)==$r4) {
-      $r2r4_text = "A Social (Helper) A.P.T";
+      $r2r4_text = "S";
       if (max($r1,$r3,$r5,$r6)==$r1) {
-        $r2r4r1_text = "An Realistic (Doer) A.P.T";
+        $r2r4r1_text = "(ISR)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r4r1_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }elseif (max($r3,$r5,$r6)==$r3) {
-        $r2r4r3_text = "An Artistic (Creator) A.P.T";
+        $r2r4r3_text = "(ISA)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r4r3_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }elseif (max($r5,$r6)==$r5) {
-        $r2r4r5_text = "An Interesting (Persuader) A.P.T";
+        $r2r4r5_text = "(ISE)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r4r5_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }else {
-        $r2r4r6_text = "A Conventional (Organizer) A.P.T";
+        $r2r4r6_text = "(ISC)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r4r6_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }
     }elseif (max($r5,$r6)==$r5) {
-      $r2r5_text = "An Intreprising (Persuader) A.P.T";
+      $r2r5_text = "E";
       if (max($r1,$r3,$r4,$r6)==$r1) {
-        $r2r5r1_text = "An Realistic (Doer) A.P.T";
+        $r2r5r1_text = "(IER)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r5r1_text; 
+         /*-----Second APT Continuous Here-----------*/
+         
       }elseif (max($r3,$r4,$r6)==$r3) {
-        $r2r5r3_text = "An Artistic (Creator) A.P.T";
+        $r2r5r3_text = "(IEA)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r5r3_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }elseif (max($r4,$r6)==$r4) {
-        $r2r5r4_text = "A Social (Helper) A.p.t";
+        $r2r5r4_text = "(IES)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r5r4_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }else {
-        $r2r5r6_text = "A Conventional (Organizer) A.P.T";
+        $r2r5r6_text = "(IEC)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r5r6_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }
     }else {
-      $r2r6 = "A Conventional (Organizer) A.P.T";
+      $r2r6 = "C";
       if(max($r1,$r3,$r4,$r5)==$r1) {
-        $r1r6r2_text = "A Realistic (Doer) A.P.t";
+        $r2r6r1_text = "(ICR)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r6r1_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }elseif (max($r3,$r4,$r5)==$r3) {
-        $r2r6r3_text = "An Artistic (Creator) A.P.T";
+        $r2r6r3_text = "(ICA)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r6r3_text; 
+         /*-----Second APT Continuous Here-----------*/
+
       }elseif (max($r4,$r5)==$r4) {
-        $r2r6r4_text = "A Social (Helper) A.P.T";
+        $r2r6r4_text = "(ICS)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r6r4_text; 
+         /*-----Second APT Ends Here-----------*/
+
       }else {
-        $r2r6r5_text = "An Intreprising (Persuader) A.P.T";
+        $r2r6r5_text = "(ICE)";
+            $_SESSION["r"] = $r2_text;
+            $_SESSION["try"] = "2";
+            echo $r2_text." - ".$r2r6r5_text; 
+         /*-----Second APT Ends Here-----------*/
+
       }
     }
-    $_SESSION["r"] = $r2_text;
-    $_SESSION["try"] = "2";
-    echo $r2_text;
+/*---------------Third APT Starts Here----------------------*/
   } elseif (max($r3,$r4,$r5,$r6)==$r3) {
     $r3_text = "An ARTISTIC (Creator) A.P.T";
 
     if (max($r1,$r2,$r4,$r5,$r6)==$r1) {
-      $r3r1_text = "A Realistic (Doer) A.P.T";
+      $r3r1_text = "R";
       if (max($r2,$r4,$r5,$r6)==$r2) {
-        $r3r1r3_text = "An Investigative (Thinker) A.P.T";
+        $r3r1r2_text = "(ARI)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "2";
+            echo $r3_text." - ".$r3r1r2_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r4,$r5,$r6)==$r4) {
-        $r3r1r4_text = "A Social (Helper) A.P.T";
+        $r3r1r4_text = "(ARS)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r1r4_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r3r1r5_text = "An Intreprising (Persuader) A.P.T";
+        $r3r1r5_text = "(ARE)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r1r5_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }else {
-        $r3r1r6_text = "A Conventional (Organizer) A.P.T";
+        $r3r1r6_text = "(ARC)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r1r6_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }
     }elseif (max($r2,$r4,$r5,$r6)==$r2) {
-      $r3r2_text = "An Investigative (Thinker) A.P.T";
+
+      $r3r2_text = "I";
       if (max($r1,$r4,$r5,$r6)==$r4) {
-        $r3r2r4_text == "A Social (Helper) A.P.T";
+        $r3r2r4_text == "(AIS)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r2r4_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r1,$r5,$r6)==$r1) {
-      $r2r3r1_text == "A Realistic (Doer) A.P.T";
+      $r3r2r1_text == "(AIR)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r2r1_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-      $r3r2r5_text == "An Intreprising (Persuader) A.P.T";
+      $r3r2r5_text == "(AIE)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r2r5_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }else {
-      $r3r2r6_text == "A Conventional (Organizer) A.P.T";
+      $r3r2r6_text == "(AIC)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r2r6_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }
     }elseif (max($r4,$r5,$r6)==$r4) {
-      $r3r4_text = "A Social (Helper) A.P.T";
+      $r3r4_text = "S";
+
       if (max($r1,$r2,$r5,$r6)==$r1) {
-        $r3r4r1_text = "An Realistic (Doer) A.P.T";
+        $r3r4r1_text = "(ASR)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r4r1_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r2,$r5,$r6)==$r2) {
-        $r3r4r2_text = "An Investigative (Thinker) A.P.T";
+        $r3r4r2_text = "(ASI)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r4r2_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r3r4r5_text = "An Interesting (Persuader) A.P.T";
+        $r3r4r5_text = "(ASE)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r4r5_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }else {
-        $r3r4r6_text = "A Conventional (Organizer) A.P.T";
+        $r3r4r6_text = "(ASC)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r4r6_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }
     }elseif (max($r5,$r6)==$r5) {
-      $r3r5_text = "An Intreprising (Persuader) A.P.T";
+      $r3r5_text = "E";
+
       if (max($r1,$r2,$r4,$r6)==$r1) {
-        $r3r5r1 = "An Realistic (Doer) A.P.T";
+        $r3r5r1 = "(AER)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r5r1_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r2,$r4,$r6)==$r2) {
-        $r3r5r2 = "An Investigative (Thinker) A.P.T";
+        $r3r5r2 = "(AEI)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r5r2_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r4,$r6)==$r4) {
-        $r3r5r4_text = "A Social (Helper) A.p.t";
+        $r3r5r4_text = "(AES)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r5r4_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }else {
-        $r3r5r6_text = "A Conventional (Organizer) A.P.T";
+        $r3r5r6_text = "(AEC)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r5r6_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }
     }else {
-      $r3r6 = "A Conventional (Organizer) A.P.T";
+      $r3r6 = "C";
+
       if(max($r1,$r2,$r4,$r5)==$r1) {
-        $r3r6r1_text = "A Realistic (Doer) A.P.t";
+        $r3r6r1_text = "(ACR)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r6r1_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r2,$r4,$r5)==$r2) {
-        $r3r6r2_text = "An Investigative (Thinker) A.P.T";
+        $r3r6r2_text = "(ACI)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r6r2_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }elseif (max($r4,$r5)==$r4) {
-        $r3r6r4_text = "A Social (Helper) A.P.T";
+        $r3r6r4_text = "(ACS)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r6r4_text; 
+         /*-----Third APT Continuous Here-----------*/
+
       }else {
-        $r3r6r5_text = "An Intreprising (Persuader) A.P.T";
+        $r3r6r5_text = "(ACE)";
+            $_SESSION["r"] = $r3_text;
+            $_SESSION["try"] = "3";
+            echo $r3_text." - ".$r3r6r5_text; 
+         /*-----Third APT Ends Here-----------*/
+
       }
     }
-    $_SESSION["r"] = $r3_text;
-    $_SESSION["try"] = "3";
-    echo $r3_text;
+/*---------------Fourth APT Starts Here-------------*/
   } elseif (max($r4,$r5,$r6)==$r4) {
     $r4_text = "A SOCIAL (Helper) A.P.T";
 
 /*  TO BE CONTINUED   */
     if (max($r1,$r2,$r3,$r5,$r6)==$r1) {
-      $r4r1_text = "A Realistic (Doer) A.P.T";
+      $r4r1_text = "R";
+
       if (max($r2,$r3,$r5,$r6)==$r2) {
-        $r4r1r2_text = "An Investigative (Thinker) A.P.T";
+        $r4r1r2_text = "(SRI)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r1r2_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r5,$r6)==$r3) {
-        $r4r1r3_text = "An Artistic (Creator) A.P.T";
+        $r4r1r3_text = "(SRA)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r1r3_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r4r1r5_text = "An Intreprising (Persuader) A.P.T";
+        $r4r1r5_text = "(SRE)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r1r5_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }else {
-        $r2r1r6_text = "A Conventional (Organizer) A.P.T";
+        $r2r1r6_text = "(SRC)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r1r6_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }
     }elseif (max($r2,$r3,$r5,$r6)==$r2) {
-      $r4r2_text = "An Investigative (Thinker) A.P.T";
+      $r4r2_text = "I";
+
       if (max($r1,$r3,$r5,$r6)==$r1) {
-        $r4r2r1_text == "An  Realistic (Doer) A.P.T";
+        $r4r2r1_text == "(SIR)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r2r1_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r5,$r6)==$r3) {
-      $r4r2r3_text == "An Artistic (Creator) A.P.T";
+      $r4r2r3_text == "(SIA)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r2r3_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-      $r4r2r5_text == "An Intreprising (Persuader) A.P.T";
+      $r4r2r5_text == "(SIE)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r2r5_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }else {
-      $r4r2r6_text == "A Conventional (Organizer) A.P.T";
+      $r4r2r6_text == "(SIC)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r2r6_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }
     }elseif (max($r3,$r5,$r6)==$r3) {
-      $r4r3_text = "An Artistic (Creator) A.P.T";
+      $r4r3_text = "A";
+
       if (max($r1,$r2,$r5,$r6)==$r1) {
-        $r4r3r1_text = "An Realistic (Doer) A.P.T";
+        $r4r3r1_text = "(SAR)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r3r1_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r5,$r6)==$r3) {
-        $r4r3r2_text = "An Investigative (Thinker) A.P.T";
+        $r4r3r2_text = "(SAI)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r3r2_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r4r3r5_text = "An Interesting (Persuader) A.P.T";
+        $r4r3r5_text = "(SAE)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r3r5_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }else {
-        $r4r3r6_text = "A Conventional (Organizer) A.P.T";
+        $r4r3r6_text = "(SAC)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r3r6_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }
     }elseif (max($r5,$r6)==$r5) {
-      $r4r5_text = "An Intreprising (Persuader) A.P.T";
+      $r4r5_text = "E";
+
       if (max($r1,$r2,$r3,$r6)==$r1) {
-        $r4r5r1_text = "An Realistic (Doer) A.P.T";
+        $r4r5r1_text = "(SER)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r5r1_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r2,$r6)==$r2) {
-        $r4r5r2_text = "An Investigative (Thinker) A.P.T";
+        $r4r5r2_text = "(SEI)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r5r2_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r6)==$r3) {
-        $r4r5r3_text = "An Artistic (Creator) A.p.t";
+        $r4r5r3_text = "(SEA)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r5r3_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }else {
-        $r4r5r6_text = "A Conventional (Organizer) A.P.T";
+        $r4r5r6_text = "(SEC)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r5r6_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }
     }else {
-      $r4r6_text = "A Conventional (Organizer) A.P.T";
+      $r4r6_text = "C";
+
       if(max($r1,$r2,$r3,$r5)==$r1) {
-        $r4r6r1_text = "A Realistic (Doer) A.P.t";
+        $r4r6r1_text = "(SCR)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r6r1_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r2,$r5)==$r2) {
-        $r4r6r2_text = "An Investigative (Thinker) A.P.T";
+        $r4r6r2_text = "(SCI)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r6r2_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r5)==$r3) {
-        $r4r6r3_text = "An Artistic (Creator) A.P.T";
+        $r4r6r3_text = "(SCA)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r6r3_text; 
+         /*-----Fourth APT Continuous Here-----------*/
+
       }else {
-        $r4r6r5_text = "An Intreprising (Persuader) A.P.T";
+        $r4r6r5_text = "(SCE)";
+            $_SESSION["r"] = $r4_text;
+            $_SESSION["try"] = "4";
+            echo $r4_text." - ".$r4r6r5_text; 
+         /*-----Fourth APT Ends Here-----------*/
+
       }
     }
-
-    $_SESSION["r"] = $r4_text;
-    $_SESSION["try"] = "4";
-    echo $r4_text;
+/*---------------Fifth APT Starts Here----------------*/
   } elseif (max($r5,$r6)==$r5) {
-    $r5_text = "An INTREPRISING (Persuader) A.P.T";
+    $r5_text = "An ENTREPRISING (Persuader) A.P.T";
 
     if (max($r1,$r2,$r3,$r4,$r6)==$r1) {
-      $r5r1_text = "A Realistic (Doer) A.P.T";
+      $r5r1_text = "R";
+
       if (max($r2,$r3,$r4,$r6)==$r2) {
-        $r5r1r2_text = "An Investigative (Thinker) A.P.T";
+        $r5r1r2_text = "(ERI)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r1r2_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r5,$r6)==$r3) {
-        $r5r1r3_text = "An Artistic (Creator) A.P.T";
+        $r5r1r3_text = "(ERA)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r1r3_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r4) {
-        $r5r1r4_text = "A Social (Helper) A.P.T";
+        $r5r1r4_text = "(ERS)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r4_text." - ".$r5r1r4_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }else {
-        $r5r1r6_text = "A Conventional (Organizer) A.P.T";
+        $r5r1r6_text = "(ERC)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r1r6_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }/* Continue */
     }elseif (max($r2,$r3,$r4,$r6)==$r2) {
-      $r5r2_text = "An Investigative (Thinker) A.P.T";
+      $r5r2_text = "I";
       if (max($r1,$r3,$r4,$r6)==$r1) {
-        $r5r2r1_text == "An  Realistic (Doer) A.P.T";
+        $r5r2r1_text == "(EIR)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r2r1_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r4,$r6)==$r3) {
-      $r5r2r3_text == "A Artistic (Creator) A.P.T";
+      $r5r2r3_text == "(EIA)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r2r3_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r4,$r6)==$r5) {
-      $r5r2r4_text == "A Social (Helper) A.P.T";
+      $r5r2r4_text == "(EIS)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r2r4_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }else {
-      $r5r2r6_text == "A Conventional (Organizer) A.P.T";
+      $r5r2r6_text == "(EIC)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r2r6_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }
     }elseif (max($r3,$r4,$r6)==$r3) {
-      $r5r3_text = "An Artistic (Creator) A.P.T";
+      $r5r3_text = "A";
       if (max($r1,$r2,$r4,$r6)==$r1) {
-        $r5r3r1_text = "An Realistic (Doer) A.P.T";
+        $r5r3r1_text = "(EAR)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r3r1_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r5,$r6)==$r3) {
-        $r5r3r2_text = "An Investigative (Thinker) A.P.T";
+        $r5r3r2_text = "(EAI)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r3r2_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r5,$r6)==$r5) {
-        $r5r3r4_text = "An Interesting (Persuader) A.P.T";
+        $r5r3r4_text = "(EAI)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r3r4_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }else {
-        $r5r3r6_text = "A Conventional (Organizer) A.P.T";
+        $r5r3r6_text = "(EAC)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r3r6_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }
-    }elseif (max($r5,$r6)==$r5) {
-      $r5r4_text = "An Intreprising (Persuader) A.P.T";
+    }elseif (max($r4,$r6)==$r4) {
+      $r5r4_text = "S";
+
       if (max($r1,$r2,$r3,$r6)==$r1) {
-        $r5r4r1_text = "An Realistic (Doer) A.P.T";
+        $r5r4r1_text = "(ESR";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r4r1_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r2,$r6)==$r2) {
-        $r5r4r2_text = "An Investigative (Thinker) A.P.T";
+        $r5r4r2_text = "(ESI)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r4r2_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r6)==$r3) {
-        $r5r4r3_text = "An Artistic (Creator) A.p.t";
+        $r5r4r3_text = "(ESA)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r4r3_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }else {
-        $r5r4r6_text = "A Conventional (Organizer) A.P.T";
+        $r5r4r6_text = "(ESC)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r4r6_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }
     }else {
-      $r5r6_text = "A Conventional (Organizer) A.P.T";
+      $r5r6_text = "C";
+
       if(max($r1,$r2,$r3,$r4)==$r1) {
-        $r5r6r1_text = "A Realistic (Doer) A.P.t";
+        $r5r6r1_text = "(ECR)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r6r1_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r2,$r5)==$r2) {
-        $r5r6r2_text = "An Investigative (Thinker) A.P.T";
+        $r5r6r2_text = "(ECI)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r6r2_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }elseif (max($r3,$r4)==$r3) {
-        $r5r6r3_text = "An Artistic (Creator) A.P.T";
+        $r5r6r3_text = "(ECA)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r6r3_text; 
+         /*-----Fifth APT Continuous Here-----------*/
+
       }else {
-        $r5r6r4_text = "A Social (Helper) A.P.T";
+        $r5r6r4_text = "(ECS)";
+            $_SESSION["r"] = $r5_text;
+            $_SESSION["try"] = "5";
+            echo $r5_text." - ".$r5r6r4_text; 
+         /*-----Fifth APT Ends Here-----------*/
+
       }
     }
-
-    $_SESSION["r"] = $r5_text;
-    $_SESSION["try"] = "5";
-    echo $r5_text;
+/*--------------------Sixth APT Starts Here---------*/
   } else {
     $r6_text = "A CONVENTIONAL (Organizers) A.P.T";
 
-        if (max($r1,$r2,$r3,$r4,$r5)==$r1) {
-      $r6r1_text = "A Realistic (Doer) A.P.T";
+      if (max($r1,$r2,$r3,$r4,$r5)==$r1) {
+      $r6r1_text = "R";
       if (max($r2,$r3,$r4,$r5)==$r2) {
-        $r6r1r2_text = "An Investigative (Thinker) A.P.T";
+        $r6r1r2_text = "(CRI)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r1r2_text; 
+
       }elseif (max($r3,$r4,$r5)==$r3) {
-        $r6r1r3_text = "An Artistic (Creator) A.P.T";
-        //echo "C.R.A";
+        $r6r1r3_text = "(CRA)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r1r3_text; 
+
       }elseif (max($r4,$r5)==$r4) {
-        $r6r1r4_text = "A Social (Helper) A.P.T";
-        //echo "C.R.S";
+        $r6r1r4_text = "(CRS)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r1r4_text; 
+
       }else {
-        $r6r1r5_text = "An Intreprising (Persuader) A.P.T";
-        //echo "C.R.Int";
+        $r6r1r5_text = "(CRE)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r1r5_text; 
+
       }/* Continue */
     }elseif (max($r2,$r3,$r4,$r5)==$r2) {
-      $r6r2_text = "An Investigative (Thinker) A.P.T";
+      $r6r2_text = "I";
       if (max($r1,$r3,$r4,$r5)==$r1) {
-        $r6r2r1_text == "A  Realistic (Doer) A.P.T";
-        //echo "C.Inv.R";
+        $r6r2r1_text == "(CIR)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r2r1_text; 
+
       }elseif (max($r3,$r4,$r5)==$r3) {
-      $r6r2r3_text == "An Artistic (Creator) A.P.T";
-      //echo "C.Inv.A";
+      $r6r2r3_text == "(CIA)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r2r3_text; 
+
       }elseif (max($r4,$r5)==$r4) {
-      $r6r2r4_text == "A Social (Helper) A.P.T";
-      //echo "C.Inv.S";
+      $r6r2r4_text == "(CIS)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r2r4_text; 
+
       }else {
-      $r6r2r5_text == "An Intreprising (Persuader) A.P.T";
-      //echo "C.Inv.Int";
+      $r6r2r5_text == "(CIE)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r2r5_text; 
+
       }
     }elseif (max($r3,$r4,$r5)==$r3) {
-      $r6r3_text = "An Artistic (Creator) A.P.T";
+      $r6r3_text = "A";
       if (max($r1,$r2,$r4,$r5)==$r1) {
-        $r6r3r1_text = "An Realistic (Doer) A.P.T";
+        $r6r3r1_text = "(CAR)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r3r1_text; 
+
       }elseif (max($r3,$r4,$r5)==$r3) {
-        $r5r3r2_text = "An Investigative (Thinker) A.P.T";
+        $r6r3r2_text = "(CAI)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r3r2_text; 
+
       }elseif (max($r4,$r5)==$r5) {
-        $r5r3r4_text = "A Social (Helper) A.P.T";
+        $r6r3r4_text = "(CAS)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r3r4_text; 
+
       }else {
-        $r6r3r5_text = "An Intreprising (Persuader) A.P.T";
+        $r6r3r5_text = "(CAE)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r3r5_text; 
+
       }
+
     }elseif (max($r4,$r5)==$r4) {
-      $r6r4_text = "An Intreprising (Persuader) A.P.T";
+      $r6r4_text = "S";
+
       if (max($r1,$r2,$r3,$r5)==$r1) {
-        $r6r4r1_text = "A Realistic (Doer) A.P.T";
+        $r6r4r1_text = "(CSR)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r4r1_text; 
+
       }elseif (max($r3,$r2,$r5)==$r2) {
-        $r6r4r2_text = "An Investigative (Thinker) A.P.T";
+        $r6r4r2_text = "(CSI)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r4r2_text; 
+
       }elseif (max($r3,$r5)==$r3) {
-        $r6r4r3_text = "An Artistic (Creator) A.p.t";
+        $r6r4r3_text = "(CSA)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r4r3_text; 
+
       }else {
-        $r6r4r5_text = "An Intreprising (Persuader) A.P.T";
+        $r6r4r5_text = "(CSE)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r4r5_text; 
+
       }
     }else {
-      $r6r5_text = "An Intreprising (Persuader) A.P.T";
+      $r6r5_text = "E";
       if(max($r1,$r2,$r3,$r4)==$r1) {
-        $r6r5r1_text = "A Realistic (Doer) A.P.t";
+        $r6r5r1_text = "(CER)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r5r1_text; 
+
       }elseif (max($r3,$r2,$r4)==$r2) {
-        $r6r5r2_text = "An Investigative (Thinker) A.P.T";
+        $r6r5r2_text = "(CEI)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r5r2_text; 
+
       }elseif (max($r3,$r4)==$r3) {
-        $r6r5r3_text = "An Artistic (Creator) A.P.T";
+        $r6r5r3_text = "(CEA)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r5r3_text; 
+
       }else {
-        $r6r5r4_text = "A Social (Helper) A.P.T";
+        $r6r5r4_text = "(CES)";
+            $_SESSION["r"] = $r6_text;
+            $_SESSION["try"] = "6";
+            echo $r6_text." - ".$r6r5r4_text; 
+
       }
     }
 
-
-    $_SESSION["r"] = $r6_text;
-    $_SESSION["try"] = "6";
-    echo "<strong>".$r6_text."</strong>";
   }
 //}
 
@@ -545,22 +1119,22 @@
                 <select class="form-control" name="apt" placeholder="">
                   <option value="<?php
                   if($_SESSION["try"] == "1"){
-                        $r1_txt = "realistic";
+                        $r1_txt = "Realistic";
                         echo $r1_txt;
                       } elseif ($_SESSION["try"] == "2") {
-                        $r2_txt = "investigative";
+                        $r2_txt = "Investigative";
                         echo $r2_txt;
                       } elseif ($_SESSION["try"] == "3") {
-                        $r3_txt = "artistic";
+                        $r3_txt = "Artistic";
                         echo $r3_txt;
                       } elseif ($_SESSION["try"] == "4") {
-                        $r4_txt = "social";
+                        $r4_txt = "Social";
                         echo $r4_txt;
                       } elseif ($_SESSION["try"] == "5") {
-                        $r5_txt = "interprising";
+                        $r5_txt = "Enterprising";
                         echo $r5_txt;
                       } elseif ($_SESSION["try"] == "6") {
-                        $r6_txt = "conventional";
+                        $r6_txt = "Conventional";
                         echo $r6_txt;
                       }
                   ?>">
@@ -582,7 +1156,7 @@
                         $_SESSION["vx"] = $r4_txt;
                         echo $r4_txt;
                       } elseif ($_SESSION["try"] == "5") {
-                        $r5_txt = "INTREPRISING";
+                        $r5_txt = "ENTREPRISING";
                         $_SESSION["vx"] = $r5_txt;
                         echo $r5_txt;
                       } elseif ($_SESSION["try"] == "6") {

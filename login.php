@@ -1,7 +1,6 @@
 <?php
     session_start();
-?>
-<?php
+
 // Include the database connection file
 require_once("connection.php");
 
@@ -48,7 +47,7 @@ $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`
        
     }
 
-        header("location:home.php?msg2= Welcom home $_SESSION[\"lname\"]");
+        header("location:home.php?msg2 = succesfully logged in");
         exit;
         //echo "You logged in successfully";
     } else {
@@ -56,5 +55,32 @@ $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`
         exit;
     }
 }
+
+    function personality($type)
+    {
+        switch ($type) {
+            case 'Realistic':
+                # code...
+                break;
+            case 'Investigative':
+                # code...
+                break;
+            case 'Artistic':
+                # code...
+                break;
+            case 'Social':
+                # code...
+                break;
+            case 'Enterprising':
+                # code...
+                break;
+            case 'Conventional':
+                # code...
+                break;
+            default:
+                # code...
+                break;
+        }
+    }
 
 ?>

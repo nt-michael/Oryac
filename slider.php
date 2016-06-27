@@ -98,9 +98,9 @@
                 <h4><i class="glyphicon glyphicon-edit"></i>Steps To Follow</h4>
             </div>
             <div class="modal-body">
-                You are required to take an Academic Career Test before you may have an account with us, for accurate and good results, kindly follow these steps:-<br/>
+                You are required to take an Academic Career Test before you may have an account with us, for accurate and good results, kindly follow these steps:-<br/><br>
                 <ul>
-                <li>DFirst point</li>
+                <li>Here after you will have to take the test, and below is the format for which you will be required to answer each question point where-which you are suposed to just select eighter<br> one option of the following:-</li>
                 <li><label for="r_starkeAblehnung" class="css-label">
                                 A&nbsp;<input type="radio" id="r_starkeAblehnung" style="" value="4" name="q1" class="biggest" disabled="" checked="">&nbsp;&nbsp;
 
@@ -130,10 +130,13 @@
                         <li>E: Strongly Disagree</li>
                     </ul>
                 </li>
+                <li>
+                    Please as you have seen the above pattern (A,B,C,D,E), it is the very pattern used in the test.
+                </li>
                 </ul>
             </div>
             <div class="modal-footer">
-                All Done, <a href="test.php">Start</a> the test <a href="test.php">Now</a>
+                All Done, <a href="test.php"><strong>Start</strong></a> the test <a href="test.php"><strong>Now</strong></a>
             </div>
         </div>
     </div>

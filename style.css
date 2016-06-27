@@ -90,12 +90,12 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
     .red-content {
         width: 350px;
         float: right;
-        height: 60%;
+        height: auto;
         background-color: white;
         filter: alpha(opacity=60);
         filter: progid: DXImageTransform.Microsoft.Alpha(opacity=30);
         -moz-opacity: 0.60;
-        opacity: 0.6;
+        opacity: 0.8;
         color: black;
         margin-right:15px; /* width of .container gutter */
     }

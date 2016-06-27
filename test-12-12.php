@@ -1,8 +1,5 @@
 <?php
   session_start();
-?>
-
-<?php
 
 if( isset($_POST["q67"]) && isset($_POST["q68"]) && isset($_POST["q69"] ) && isset($_POST["q70"]) && isset($_POST["q71"]) && isset($_POST['72']) ){
   $t12 = array( $_POST["q67"], $_POST["q68"], $_POST["q69"], $_POST["q70"], $_POST["q71"], $_POST["q72"] );
@@ -245,7 +242,7 @@ else {
 		</div>
 		</div>
 		<div class="col-sm-4 col-md-4 col-lg-4">
-			<div class="well" style="width:90%; height:500px; border-right-color: green;border-right-width: 5px; border-bottom-width: 5px; border-bottom-color: green">	
+			<div class="well" style="width:90%; height:auto; border-right-color: green;border-right-width: 5px; border-bottom-width: 5px; border-bottom-color: green">	
 			</div>
 		</div>
 		</div>
