@@ -26,10 +26,10 @@ if(isset($_POST)){
     $numRows = mysql_num_rows($res);
 
     if($numRows > 0){
-        die("User already exist in the Database, can't create account.");
+        die("User email already exist in the Database, can't create account.");
     }
 
-    $query = "INSERT INTO users VALUES ('', '$fname', '$lname', '$dob', '$email', '$tel', '$country', '$password', '$password', '$apt');";
+    $query = "INSERT INTO `users`(`id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`, `password`, `cpassword`, `personality`) VALUES ('', '$fname', '$lname', '$dob', '$email', '$tel', '$country', '$password', '$password', '$apt');";
 
     $results = mysql_query($query);
     if($results){
@@ -40,77 +40,28 @@ if(isset($_POST)){
         date_default_timezone_set('Etc/UTC');
 
         //Create a new PHPMailer instance
-        $mail = new PHPMailer;
+        $mail = new PHPMailer();
 
-        //Tell PHPMailer to use SMTP
-        $mail->isSMTP();
+        $message = "Hi,\n You have successfully registered to ORYAC...";
+        $subject = "ORYAC Registration successful";
 
-        //Enable SMTP debugging
-        // 0 = off (for production use)
-        // 1 = client messages
-        // 2 = client and server messages
-        $mail->SMTPDebug = 0;
-
-        //Ask for HTML-friendly debug output
-        //$mail->Debugoutput = 'html';
-
-        //Set the hostname of the mail server
-        $mail->Host = 'smtp.sendgrid.net';
-        // use
-        // $mail->Host = gethostbyname('smtp.gmail.com');
-        // if your network does not support SMTP over IPv6
-
-        //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-        $mail->Port = 587;
-
-        //Set the encryption system to use - ssl (deprecated) or tls
-        $mail->SMTPSecure = 'tls';
-
-        //Whether to use SMTP authentication
+        $mail->IsSMTP();
+        $mail->Host = "smtp.gmail.com"; //enable php socks to make SSL it working
+        $mail->Port = 465;
         $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Username = "oryacc@gmail.com";
+        $mail->Password = "foubizle";
+         
+        $mail->FromName = "ORYAC Academic Career";
+        $mail->From = "oryacc@gmail.com";
+        $mail->AddAddress($email, $lname);
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+        $mail->IsHTML(true);    
+        $result = $mail->Send();
 
-        //Username to use for SMTP authentication - use full email address for gmail
-        $mail->Username = "d3r1ck";
-
-        //Password to use for SMTP authentication
-        $mail->Password = "concatenate7801";
-
-        //Set who the message is to be sent from
-        $mail->setFrom($email, $fname);
-
-        //Set an alternative reply-to address
-        //$mail->addReplyTo('replyto@example.com', 'First Last');
-
-        //Set who the message is to be sent to
-        $mail->addAddress('no-reply@oryac.org', 'ORYAC');
-
-        //Set the subject line
-        $mail->Subject = 'ORYAC Registration successful';
-
-        //Read an HTML message body from an external file, convert referenced images to embedded,
-        //convert HTML into a basic plain-text alternative body
-        //$mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
-
-        //Replace the plain text body with one created manually
-        $mail->Body = "Hi,\n You have successfully registered to ORYAC...";
-
-        //Attach an image file
-        //$mail->addAttachment('images/phpmailer_mini.png');
-
-        //send the message, check for errors
-        if (!$mail->send()) {
-            $status = "Mailer Error: " . $mail->ErrorInfo;
-        } else {
-            $status = "Account created successfully, activate it!!!";
-        }
-        //echo "User registration successful";
-        echo $status;
-    } else {
-        die("Error while creating user");
+        echo $result ? 'Activation email Sent' : 'Account Created but email not sent'; // this line is optional - comment out as your need
     }
-}
-//there was a problem with the post request
-else {
-    die("Bad request Error 400");
 }
 ?>

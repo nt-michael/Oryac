@@ -8,7 +8,7 @@ require_once("connection.php");
 //the user into the system.
 if(isset($_POST["submit"])){
     $email = $_POST["email"];
-    $password = ($_POST["password"]);
+    $password = md5($_POST["password"]);
     $psw = $_POST["password"];
 
     $_SESSION["psw"] = $psw;

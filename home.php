@@ -50,14 +50,14 @@ session_start();
 
 </head>
 
-<body style="">
+<body>
 <div class="se-pre-con"></div>
 
 	<?php include('navbar2.php'); ?>
 	
 	<div class="container">	
 	<?php
-         echo 'Welcome home $_SESSION["lname"]';
+         echo "Welcome home". $_SESSION["lname"];
     ?>
 	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
 			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
@@ -122,8 +122,7 @@ session_start();
 			<?php include('line.php'); ?>
 			</div>
 		</div>
-	</div>
-	<div class="row" style="text-align:justify;padding-left:10%;padding-right: 35%;text-align: justify;">
+		<div class="row" style="text-align:justify;padding-left:10%;padding-right: 35%;text-align: justify;">
 					<p><ul>
 						<li>What is a Major:</li>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -140,7 +139,21 @@ session_start();
 					</p>
 	</div>
 	<p style="text-align: right;padding-right: 22%;font-size: 20px;"><a href="major.php" style="color:black;text-decoration: overline;background-color:orange ">View Majors</a></p>
+	</div>
 
 	<?php include('footer.php'); ?>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/577fa4633c10d2ff1c99c288/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>

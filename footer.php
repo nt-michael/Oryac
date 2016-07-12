@@ -1,4 +1,4 @@
-        <footer class="page-footer" style="background-color: #eee; color:#626262;font-size: 10px;margin-top: 10%;padding-top: 4%;padding-bottom: 2%">
+        <footer class="page-footer" style="background-color: #eee; color:#626262;font-size: 10px;margin-top: 10%;padding-top: 4%;padding-bottom: 2%;width: auto">
           <div class="container">
             <div class="row"><!--
              <div class="col l6 s12">
