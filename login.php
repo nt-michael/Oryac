@@ -23,7 +23,7 @@ if(isset($_POST["submit"])){
         //header("Location: ./profile_page.php");
         $_SESSION["in"] = 1;
 
-$sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`, `password`, `cpassword`, `level`, `tel2`, `info` FROM users
+$sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`, `password`, `cpassword`, `personality`, `level`, `tel2`, `info` FROM users
             WHERE email='$email'";
 
     $result = mysql_query($sql) or die(mysql_error());
@@ -39,6 +39,7 @@ $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`
         $_SESSION["country"]     = $profile['country'];
         $_SESSION["password"]    = $profile['password'];
         $_SESSION["cpassword"]   = $profile['cpassword'];
+        $_SESSION["apt"]         = $profile['personality'];
         $_SESSION["level"]       = $profile['level'];
         $_SESSION["tel2"]        = $profile['tel2'];
         $_SESSION["info"]        = $profile['info'];

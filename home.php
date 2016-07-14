@@ -57,7 +57,7 @@ session_start();
 	
 	<div class="container">	
 	<?php
-         echo "Welcome home". $_SESSION["lname"];
+         echo "<strong>Welcome ". $_SESSION["lname"]."!</strong>";
     ?>
 	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
 			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
@@ -69,7 +69,7 @@ session_start();
 					<img src="" title="home ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-left:10%">
-					<h2>Personality Of User</h2>
+					<h2><?php echo $_SESSION["apt"]; ?></h2>
 					<p><ul>
 						<li>Learn more about your Academic Personality</li>
 						<li>What is trending about this personality</li>
@@ -141,7 +141,7 @@ session_start();
 	<p style="text-align: right;padding-right: 22%;font-size: 20px;"><a href="major.php" style="color:black;text-decoration: overline;background-color:orange ">View Majors</a></p>
 	</div>
 
-	<?php include('footer.php'); ?>
+	<?php include('footer.php'); ?><br>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

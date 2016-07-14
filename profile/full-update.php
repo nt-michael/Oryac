@@ -20,21 +20,25 @@ $id = $_SESSION["id"];
 	//echo $fname.$lname.$email.$dob.$tel.$tel2.$country.$level.$psw.$psw2;
 
 
-	$new = " UPDATE `oryac`.`users` SET `first_name`= '$fname',`last_name`= '$lname',`dob`= '$dob',`email`= '$email',`tel`= '$tel',`country`= '$country',`password`= '$psw',`cpassword`= '$psw2',`level`= '$level',`tel2`= '$tel2' WHERE `users`.`id` = '$id' ";
-echo "<br>$new";
-	//$update = mysql_query($new) or die(mysql_error());
+	$new = "UPDATE `users` SET `first_name`= '$fname',`last_name`= '$lname',`dob`= '$dob',`email`= '$email',`tel`= '$tel',`country`= '$country',`password`= '$psw2',`cpassword`= '$psw2',`level`= '$level',`tel2`= '$tel2' WHERE `id` = '$id'";
 
-	//if ($update) {
+	echo "<br>$new";
+	
+	$update = mysql_query($new) or die(mysql_error());
+
+if ($update) {
 		echo "<br>Successfully updated";
-    $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`, `password`, `cpassword`, `level`, `tel2`, `info` FROM users
-            WHERE `id`='$id'";
+		
+	$_SESSION["psw"] = $_POST["psw2"];
+	
+    $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`, `password`, `cpassword`, `level`, `tel2`, `info` FROM `users` WHERE `id`='$id'";
 
     echo "$sql";
     $result = mysql_query($sql) or die(mysql_error());
 
     while ($profile = mysql_fetch_assoc($result)) {
-
-        $_SESSION["id"]          = $profile['id'];
+		
+		$_SESSION["id"]          = $profile['id'];
         $_SESSION["fname"]       = $profile['first_name'];
         $_SESSION["lname"]       = $profile['last_name'];
         $_SESSION["dob"]         = $profile['dob'];
@@ -48,12 +52,29 @@ echo "<br>$new";
         $_SESSION["info"]        = $profile['info'];
         $_SESSION["country"]     = $profile['country'];
         //$_SESSION["personality"] = $profile['personality'];
-       
     }
-	//}
-	//else {
+    header("location:../profile.php?Successfully updated your full profile.");
+}
+	else {
 		echo "<br>Unsuccessfull";
-	//}
-
-	//header("location:../profile.php?Successfully updated your full profile.");
+	}
+  
 ?>
+
+<!--
+ echo "
+       {$profile['id']
+       {$profile['first_name']}
+       {$profile['last_name']}
+       {$profile['dob']}
+       {$profile['email']}
+       {$profile['tel']}
+       {$profile['country']}
+       {$profile['password']}
+       {$profile['cpassword']}
+       {$profile['level']}
+       {$profile['tel2']}
+       {$profile['info']}
+       {$profile['country']}
+       ";
+-->

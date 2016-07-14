@@ -95,7 +95,7 @@ session_start();
                         <input class="form-control" name="tel2" placeholder="telephone2" type="number" value="<?php echo $_SESSION["tel2"]; ?>" required>
 
                         <label class="form-group">Current password:</label>
-                        <input class="form-control" name="psw" placeholder="current password" type="password" value="" required>
+                        <input class="form-control" name="psw" placeholder="current password" type="text" value="<?php echo $_SESSION["psw"]; ?>" required>
 
                         <label class="form-group">New password:</label>
                         <input class="form-control" name="psw2" placeholder="new password" type="password" value="" required>
@@ -108,9 +108,9 @@ session_start();
             </div>
 
                 <div class="col-md-6" style="text-align:justify;padding-right: 12%;padding-left: 2%;">
-                    <form class="form-group" action="">
+                    <form class="form-group" action="profile/bg-info.php" method="POST">
                         <label class="form-group">Background Info: <small style="color:red">Maximum 500 word*</small></label>
-                        <textarea class="form-control" name="bg-info" value="" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"><?php echo $_SESSION["info"]; ?></textarea>
+                        <textarea class="form-control" name="bg-info" value="<?php echo $_SESSION["info"]; ?>" placeholder="Background Info" type="text" style="height: 200px;border:1px solid black; border-radius: 2%;resize: none"><?php echo $_SESSION["info"]; ?></textarea>
                         <br><input class="form-group btn btn-warning" type="submit" value="Save information">
                     </form><br><br>
 
@@ -124,7 +124,7 @@ session_start();
                     <form class="form-group" action="" style="border:1px solid black;padding: 2%; border-radius: 2%">
                         <legend>Update Just Password...</legend>
                         <label class="form-group">Current password:</label>
-                        <input class="form-control" name="past-psw" placeholder="current password" type="password" value="<?php echo $_SESSION["psw"]; ?>">
+                        <input class="form-control" name="past-psw" placeholder="current password" type="text" value="<?php echo $_SESSION["psw"]; ?>">
 
                         <label class="form-group">New password:</label>
                         <input class="form-control" name="new-psw" placeholder="new password" type="password">
@@ -140,18 +140,6 @@ session_start();
     </div>
 
     <?php include('footer.php'); ?>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/577fa4633c10d2ff1c99c288/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
 </body>
 </html>

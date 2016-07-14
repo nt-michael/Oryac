@@ -103,7 +103,7 @@
 						<div class="our-causes-hover">
 							<h3 contenteditable="">Academic Personality Test</h3>
 							
-							<p>Oryac Platform through it's academic career personality test developed from the Holland Code, helps students to identify their academic personality, in line with this it will help them to identify teir true academic and career field based on passion.</p>
+							<p>Oryac Platform through it's academic career personality test developed from the Holland Code, helps students to identify their academic personality, in line with this it will help them to identify their true academic and career field based on passion.</p>
 							
 						</div>
 					</div>
