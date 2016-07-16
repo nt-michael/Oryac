@@ -52,10 +52,10 @@
 		<div class="row" style="">
 			<div class="row">
 				<div class="col-md-3" style="text-align: right;">
-					<img src="" title="About ORYAC" alt="about-oryac.jpg" style="width:80%;height: 200px">
+					<img src="img/logo-ii.png" title="About ORYAC" alt="ORYAC| Career Focused Orientation" style="width:100%;">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
-					<p>
+					<p style="margin-top: 7%">
 						Oryac is a leading technology education solution provider in Africa. We use cutting edge technologies to reach out to secondary and high school students and provide them with access to academic and career orientation services.
 					</p>
 				</div>
