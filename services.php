@@ -3,6 +3,8 @@
 <head>
 	<title>ORYAC | Services...</title>
 	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
 	<link href="css/agency.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">

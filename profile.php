@@ -7,6 +7,8 @@ session_start();
 <head>
     <title>ORYAC | User profile...</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

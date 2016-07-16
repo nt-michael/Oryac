@@ -55,7 +55,7 @@
             </div>
         </div>
     </header>-->
-    <header style="height: 200px; margin-bottom: -6%; z-index: -20">
+    <header style="height:50px; margin-bottom: -6%; z-index: -20">
         <div class="container">
        
             <div class="intro-text">

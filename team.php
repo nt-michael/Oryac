@@ -4,6 +4,8 @@
 <head>
 	<title>ORYAC | Team...</title>
 	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
 	<link href="css/agency.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">
@@ -58,7 +60,7 @@
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
-					<legend>- Founder</legend>
+					<legend>- Founder &amp; CEO</legend>
 						Ioudom Foubi Jephte is a final year student at the Catholic University Institute of Buea , studying management. He is a fellow of the Study of the United States Institutes on Social Entrepreneurship. He is passionate about education , leadership and youth empowerment.
 					</p>
 				</div>
@@ -66,8 +68,8 @@
 			<div class="row">
 				<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
 					<p><br>
-						<legend>- Co-Founder &amp; Software Engineer</legend>
-						NDE T. Micha&euml;l is a Software Developer, and Community Manager for Buea WordPress Meetup in Cameroon, currently doing his studies at the Catholic University Institute of Buea, Cameroon
+						<legend>- Co-Founder &amp; CTO</legend>
+						NDE T. Micha&euml;l is a Software Developer, and Regional Co-organiser and representative for WordPress in Buea. Very muc passionate about Entrepreneurship, Technology, Education.
 					</p>
 				</div>
 				<div class="col-md-5" style="text-align: left;padding-right: 15%">

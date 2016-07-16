@@ -8,9 +8,9 @@
               <div class="col l4 offset-l2 s12" style="padding-left: 0%;text-align:left;">
                 <h5 class="white-text" style="font-family:roboto;">Follow us</h5>
                 <div style="padding-left: 3%">
-                  <a class="grey-text text-lighten-4" style="color:#626262" href="#!" target="_blank"><img src="/img/fb.png" style="width:30px;height: 30px;margin-right: 2%" alt="Oryac facebook" title="ORYAC facebook"></a>
-                  <a class="grey-text text-lighten-4" style="color:#626262" href="#!" target="_blank"><img src="/img/twitter1.png" style="width:30px;height: 30px;margin-right: 2%" alt="Oryac twitter" title="ORYAC twitter"></a>
-                  <a class="grey-text text-lighten-4" style="color:#626262" href="#!" target="_blank"><img src="/img/instagram.png" style="width:30px;height: 30px;margin-right: 2%" alt="Oryac Instagram" title="ORYAC Instagram"></a>
+                  <a class="grey-text text-lighten-4" style="color:#626262" href="https://www.facebook.com/oryac.org/" target="_blank"><i class="ion-social-facebook" style="font-size: 45px;margin-right: 4%"></i></a>
+
+                  <a class="grey-text text-lighten-4" style="color:#626262" href="#!" target="_blank"><i class="ion-social-twitter" style="font-size: 45px;"></i></a>
                 </div>  <br>
               </div>
             </div>

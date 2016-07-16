@@ -4,6 +4,8 @@
 <head>
 	<title>ORYAC | Contact Us...</title>
 	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
 	<link href="css/agency.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">
@@ -52,20 +54,19 @@
 		<div class="row" style="">
 			<div class="row" style="margin-bottom: 5%">
 				<div class="col-md-3" style="text-align: right;">
-					<img src="" title="About ORYAC" alt="contact-oryac.jpg" style="width:80%;height: 200px">
+					<img src="img/logo-ii.png" title="Contact ORYAC" alt="ORYAC| Academic Career Orientation" style="width:80%;height: 200px">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-left: 10%">
 					<p>
 						Use the form below to to send us your message or your feedbacks.<br/>
 						<ul>
 						<li>Office Hours: 08h:00am - 05:00pm</li>
-						<li><span class="yphicon glyphicon-envelope"></span> oryacc@gmail.com</li>
+						<li><span class="yphicon glyphicon-envelope"></span><a href="mailto:oryacc@gmail.com" target="_blank" title="Send us an email">oryacc@gmail.com</a></li>
 						<li><span class="glyphicon glyphicon-phone-alt"></span> +237 671 053 149</li>
 						<li>Social Media:
 							<ul>
-							<li>Facebook</li>
-							<li>Twitter</li>
-							<li>Instagram</li>
+							<li><a href="https://www.facebook.com/oryac.org/" target="_blank" title="ORYAC Facebook">Facebook</a></li>
+							<li><a href="#" target="_blank" title="ORYAC Twitter">Twitter</a></li>
 							</ul>
 						</li>
 						</ul>

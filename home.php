@@ -7,6 +7,8 @@ session_start();
 <head>
 	<title>ORYAC | Welcome Home...</title>
 	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
+	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   	<link rel="stylesheet" href="css/bootstrap.css">
  	<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -69,7 +71,7 @@ session_start();
 					<img src="" title="home ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-left:10%">
-					<h2><?php echo $_SESSION["apt"]; ?></h2>
+					<h2><?php echo $_SESSION["apt"]; ?> A</h2>
 					<p><ul>
 						<li>Learn more about your Academic Personality</li>
 						<li>What is trending about this personality</li>
