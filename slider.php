@@ -60,11 +60,11 @@
                     
                         <form role="form" style="text-align: left" method="POST" action="login.php">
                             <div class="form-group">
-                                <label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                                <label for="username"><span class="glyphicon glyphicon-user"></span> Email or phone n<sup>o</sup></label>
+                                <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email or phone" required>
                             </div>
                             <div class="form-group">
-                                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                                <label for="psw"><span class="glyphicon glyphicon-eye-close"></span> Password</label>
                                 <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" required>
                             </div>
                             <div class="checkbox">

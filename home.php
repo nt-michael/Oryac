@@ -1,6 +1,9 @@
 <?php
 session_start();
 	include('verify.php');
+	if ($_SESSION['status'] != 1) {
+	header('location:payment.php?sorry your account is not up-to date');
+}
 ?>
 <!DOCTYPE html>
 <html>

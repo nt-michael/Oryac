@@ -14,7 +14,7 @@ if(isset($_POST["submit"])){
     $_SESSION["psw"] = $psw;
 
     $sql = "SELECT * FROM users
-            WHERE email='$email' AND password='$password'";
+            WHERE email='$email' || tel='$email' AND password='$password'";
     $result = mysql_query($sql);
     $numRows = mysql_num_rows($result);
 
