@@ -2,12 +2,21 @@
 session_start();
 	include('verify.php');
 	if ($_SESSION['status'] != 1) {
-	header('location:payment.php?sorry your account is not up-to date');
+	header('location:payment.php?status=sorry your account is not up-to date');
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="orientation, academic, career, guide, focus, mentor, counsellor, personality, tips.">
+    <meta name="description" content="Academic Career Orientation.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Oryac">
+    <link rel="icon" type="image/x-icon" href="">
+
 	<title>ORYAC | Welcome Home...</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
@@ -57,15 +66,19 @@ session_start();
 
 <body>
 <div class="se-pre-con"></div>
-
-	<?php include('navbar2.php'); ?>
 	
-	<div class="container">	
+	<div class="container">
+		<?php include('navbar2.php'); ?>
+	<div style="margin-top: 10%">
 	<?php
+        if (!empty($_GET['status'])) {
+            echo  $_GET['status']."<br/>";
+        }
+
          echo "<strong>Welcome ". $_SESSION["lname"]."!</strong>";
     ?>
+    </div>
 	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
-			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
 			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
 			<a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 	</div>
@@ -74,7 +87,7 @@ session_start();
 					<img src="" title="home ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-left:10%">
-					<h2><?php echo $_SESSION["apt"]; ?> A</h2>
+					<h2><?php echo $_SESSION["apt"]; ?></h2>
 					<p><ul>
 						<li>Learn more about your Academic Personality</li>
 						<li>What is trending about this personality</li>

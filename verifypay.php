@@ -3,7 +3,8 @@ session_start();
 $id = $_SESSION['id'];
 $y = date(Y);
 $i = 1;
-$s = "SELECT * FROM `payment` WHERE `user_id`='".$id."' AND year = '".$y."' AND status = '".$i."'";
+require_once("connection.php");
+$s = "SELECT * FROM `payment` WHERE `user`='".$id."' AND year = '".$y."' AND status = '".$i."'";
 
 $q = mysql_query($s);
 $num = mysql_num_rows($q);

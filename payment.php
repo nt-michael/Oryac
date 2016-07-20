@@ -2,19 +2,19 @@
 session_start();
 require 'verify.php';
 if ($_SESSION['status'] == 1) {
-	header('location:home.php? your account is up-to date');
+	header('location:home.php?status=your account is up-to date');
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
+<hea<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="orientation, academic, career, guide, focus, mentor, counsellor, personality, tips.">
+    <meta name="description" content="Academic Career Orientation.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Oryac">
     <link rel="icon" type="image/x-icon" href="">
 
     <title>ORYAC | Payment...</title>
@@ -83,19 +83,19 @@ if ($_SESSION['status'] == 1) {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="/about.php">ABOUT</a>
+                        <a class="page-scroll" style="color:black" href="/about.php">ABOUT</a>
                     </li>
             
                     <li>
-                        <a class="page-scroll" href="/services.php">SERVICES</a>
+                        <a class="page-scroll" style="color:black" href="/services.php">SERVICES</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="/team.php">TEAM</a>
+                        <a class="page-scroll" style="color:black" href="/team.php">TEAM</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" data-toggle="modal" href="/contact.php">CONTACT</a>
+                        <a class="page-scroll" style="color:black" href="/contact.php">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -106,6 +106,15 @@ if ($_SESSION['status'] == 1) {
     </nav>
     <div class="container">
     	<div class="row" style="margin-top: 12%">
+        <div>
+            <?php
+                if (!empty($_GET['status'])) {
+                           //echo $_GET['msg'];
+                           echo  $_GET['status'];
+                        }
+            ?>
+        </div>
+        <a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
     		<h2>ORYAC Payment</h2>
     		<div class="col-md-6 col-lg-6 col-sm-12">
     			<address>Hello <?php echo $_SESSION['lname']; ?>, ORYAC.ORG is free but a fee of 1,000 XAF is required to keep the site up and running.<br>We provide two means by which you can pay this fee either by MTN Mobile Money directly on our platform or by doing the transfer your way and send us the details of the payment using the form at the right side of the screen.</address>
@@ -119,7 +128,7 @@ if ($_SESSION['status'] == 1) {
     					</label>
     				<label class="form-control">
     					PIN
-    					<input class="form-control" type="number" placeholder="place your PIN number here..." />
+    					<input class="form-control" type="password" placeholder="place your PIN number here..." />
     				</label>
 
     				<button class="btn btn-info btn-md active" style="margin-top: 10%" type="submit">Activate</button>
@@ -129,7 +138,7 @@ if ($_SESSION['status'] == 1) {
     		<div class="col-md-4 col-lg-4 col-sm-12">
     		<form style="margin-left: 5%" action="">
     			<h4>Other payment method<br>NB://Your Account will be activated in 24hrs</h4>
-    			<textarea class="form-control" style="width: 100%;height: 250px; resize: none; margin:5%" placeholder="place payment info here...Maximum of 500words"></textarea>
+    			<textarea class="form-control" style="width: 100%;height: 250px; resize: none; margin:5%" placeholder="place payment info here, please include your email and phone number...Maximum of 500words"></textarea>
     			<button class="btn btn-info btn-md active" style="margin-left: 5%" type="submit">Activate</button>
     		</form>
     		</div>

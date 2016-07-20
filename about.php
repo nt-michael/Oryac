@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="orientation, academic, career, guide, focus, mentor, counsellor, personality, tips.">
+    <meta name="description" content="Academic Career Orientation.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Oryac">
+    <link rel="icon" type="image/x-icon" href="">s
+
 	<title>ORYAC | About Us...</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">

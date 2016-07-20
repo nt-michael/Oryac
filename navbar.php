@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="orientation, academic, career, guide, focus, mentor, counsellor, personality, tips.">
+    <meta name="description" content="Academic Career Orientation.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Oryac">
     <link rel="icon" type="image/x-icon" href="">
 
     <title>ORYAC | Academic Career Orientation...</title>

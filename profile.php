@@ -5,6 +5,15 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="orientation, academic, career, guide, focus, mentor, counsellor, personality, tips.">
+    <meta name="description" content="Academic Career Orientation.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Oryac">
+    <link rel="icon" type="image/x-icon" href="">
+    
     <title>ORYAC | User profile...</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
@@ -52,12 +61,11 @@ session_start();
 
 <body style="">
 <div class="se-pre-con"></div>
-    <?php include('navbar2.php'); ?>
 
-    <div class="container"> 
-    <div style="text-align: right;padding-right: 14%;">
+    <div class="container">
+    <?php include('navbar2.php'); ?> 
+    <div style="text-align: right;padding-right: 14%;margin-top: 10%">
             <a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
-            <a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
             <a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
     </div>
         <div class="row" style="padding-left: 5%">

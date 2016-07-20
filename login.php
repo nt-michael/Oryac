@@ -24,7 +24,7 @@ if(isset($_POST["submit"])){
         $_SESSION["in"] = 1;
 
 $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`, `password`, `cpassword`, `personality`, `level`, `tel2`, `info` FROM users
-            WHERE email='$email'";
+            WHERE email='$email' || tel='$email'";
 
     $result = mysql_query($sql) or die(mysql_error());
 
@@ -48,7 +48,7 @@ $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`
        
     }
 
-        header("location:home.php?msg2 = succesfully logged in");
+        header("location:verifypay.php?checking status...");
         exit;
         //echo "You logged in successfully";
     } else {

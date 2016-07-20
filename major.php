@@ -1,8 +1,24 @@
-
+<?php
+session_start();
+	include('verify.php');
+	if ($_SESSION['status'] != 1) {
+	header('location:payment.php?status=sorry your account is not up-to date');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="orientation, academic, career, guide, focus, mentor, counsellor, personality, tips.">
+    <meta name="description" content="Academic Career Orientation.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Oryac">
+    <link rel="icon" type="image/x-icon" href="">
+
 	<title>ORYAC | About Us...</title>
+
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
@@ -52,22 +68,22 @@
 <div class="se-pre-con"></div>
 
 <?php
-    require_once('verify.php');
+   	if (!empty($_GET['status'])) {
+            echo  $_GET['status']."<br/>";
+        }
 ?>
 
 	<?php //include('navbar2.php'); ?>
 
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
-		<div style="text-align: right;padding-right: 18%;">
+		<div style="text-align: right;padding-right: 18%;margin-top: 10%">
 			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
 			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
 			<a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 		</div>
-		<div class="row" style="text-align:justify;padding-left:5%;padding-bottom: 5%">
-			<p>Hello User_name...</p>
-		</div>
-		<div class="row" style="padding-left: 5%">
+
+		<div class="row" style="padding-left: 5%;padding-top: 5%">
 			<h2><strong>Different Majors Pertaining To Your Personality</strong></h2>
 			<div style="padding-right: 20%">
 			<?php include('line.php'); ?>
