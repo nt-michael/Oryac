@@ -10,7 +10,7 @@
     <meta name="description" content="Academic Career Orientation.">
     <meta name="robots" content="index,follow">
     <meta name="author" content="Oryac">
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/png" href="img/favicon2.png">
 
     <title>ORYAC | Academic Career Orientation...</title>
 
@@ -70,7 +70,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.php" style="color:white">ORYAC</a>
+                <a class="navbar-brand" href="/" style="color:lightblue">
+                    <b>ORYAC</b>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

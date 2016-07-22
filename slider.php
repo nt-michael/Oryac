@@ -35,7 +35,7 @@
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/back-112.jpg');"></div>
+                <div class="fill" style="background-image:url('img/re.jpeg');"></div>
                 <div class="carousel-caption" style="height: 80%;float: top;">
                 <h1><strong>A Bright Future Awaits</strong></h1>
                 <p style="font-size: 160%;color:black">

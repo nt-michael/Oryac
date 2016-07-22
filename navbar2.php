@@ -11,7 +11,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.php"><strong>ORYAC</strong></a>
+                <a class="navbar-brand page-scroll" href="/" style="color:lightblue"><b>ORYAC</b>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
