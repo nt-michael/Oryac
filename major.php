@@ -1,9 +1,10 @@
 <?php
 session_start();
 	include('verify.php');
-	if ($_SESSION['status'] != 1) {
+	/*if ($_SESSION['status'] != 1) {
 	header('location:payment.php?status=sorry your account is not up-to date');
-}
+	*/
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,7 @@ session_start();
     <meta name="author" content="Oryac">
     <link rel="icon" type="image/png" href="img/favicon2.png">
 
-	<title>ORYAC | About Us...</title>
+	<title>ORYAC | Major...</title>
 
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
@@ -64,7 +65,7 @@ session_start();
 
 </head>
 
-<body style="">
+<body style="font-size: 11px;font-family: Joey; color:#414042;">
 <div class="se-pre-con"></div>
 
 <?php
@@ -78,20 +79,20 @@ session_start();
 	<div class="container">	
 	<?php include('navbar2.php'); ?>
 		<div style="text-align: right;padding-right: 18%;margin-top: 10%">
-			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
-			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
-			<a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+			<a href="home.php"><b>Home</b>&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
+			<a href="profile.php"><b>View profile</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
+			<a href="logout.php"><b>Log out</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 		</div>
 
 		<div class="row" style="padding-left: 5%;padding-top: 5%">
-			<h2><strong>Different Majors Pertaining To Your Personality</strong></h2>
+			<h2><strong style="font-family:Bebas; color:#05774a;">Different Majors Pertaining To Your Personality</strong></h2>
 			<div style="padding-right: 20%">
 			<?php include('line.php'); ?>
 			</div>
 		</div>
 		<div class="row">
 				<div class="col-md-12" style="text-align: justify;padding-left: 6%;padding-right: 20%">
-					<p><br>
+					<p ><br>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum

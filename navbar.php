@@ -58,7 +58,7 @@
 
 </head>
 
-<body id="page-top" style=" font-family:Times New Roman">
+<body id="page-top" style=" font-family: Joey;font-size: 11px; color:#414042">
   <div class="se-pre-con"></div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -70,7 +70,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" style="color:lightblue">
+                <a class="navbar-brand" href="/" style="color:white; font-size: 30px; font-family: Bebas">
                     <b>ORYAC</b>
                 </a>
             </div>

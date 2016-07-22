@@ -55,7 +55,7 @@
 		<div class="row" style="padding-left: 5%">
 
 			<div class="box">
-				<strong>Our <span style="color:orange">Team</span></strong>
+				<b style="color:#414042; font-size: 30px; font-family: Bebas">Our <span style="color:#88CC00; font-size: 30px;font-family: Bebas">Team</span></b>
 			</div>
 			 <br>
 			 <br>
@@ -69,7 +69,7 @@
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
-					<legend>- Founder &amp; CEO</legend>
+					<legend><b style="font-family: Bebas">- Founder &amp; CEO</b></legend>
 						Ioudom Foubi Jephte is a final year student at the Catholic University Institute of Buea , studying management. He is a fellow of the Study of the United States Institutes on Social Entrepreneurship. He is passionate about education , leadership and youth empowerment.
 					</p>
 				</div>
@@ -77,7 +77,7 @@
 			<div class="row">
 				<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
 					<p><br>
-						<legend>- Co-Founder &amp; CTO</legend>
+						<legend><b style="font-family: Bebas">- Co-Founder &amp; CTO</b></legend>
 						NDE T. Micha&euml;l is a Software Developer, and Regional Co-organiser and representative for WordPress in Buea. Very muc passionate about Entrepreneurship, Technology, Education.
 					</p>
 				</div>
@@ -91,7 +91,7 @@
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
-					<legend>- Software Engineer</legend>
+					<legend><b style="font-family: Bebas">- Software Engineer</b></legend>
 						ALANGI Derick is a Software Engineer, and representative of Wikidata Foundation in Cameroon, Currently doing his studies at the University of Buea.
 					</p>
 				</div>

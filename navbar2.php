@@ -11,16 +11,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="/" style="color:lightblue"><b>ORYAC</b>
+                <a class="navbar-brand page-scroll" href="/" style="color:white; font-size: 30px; font-family: Bebas"><b>ORYAC</b>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
+                <ul class="nav navbar-nav navbar-right" style="font-size: 17px;color:white">
+                    
                     <li>
                         <a class="page-scroll" href="about.php">About</a>
                     </li>

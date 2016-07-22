@@ -53,7 +53,7 @@
 	<div class="container">	
 		<div class="row" style="padding-left: 5%">
 			<div class="box">
-				<strong>About <span style="color:orange">Us</span></strong>
+				<b style="color:#414042; font-size: 30px;font-family: Bebas">About <span style="color:#88CC00; font-size: 30px;font-family: Bebas">Us</span></b>
 			</div>
 			 <br>
 			 <br>

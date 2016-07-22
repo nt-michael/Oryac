@@ -2,8 +2,8 @@
 <link rel="stylesheet" type="text/css" href="css/radio.css">
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
-        <ol class="carousel-indicators" style="text-align: center;color:black;">
-           Copyright &copy; ORYAC <?php echo date ("Y"); ?>
+        <ol class="carousel-indicators" style="text-align: center;color:black; font-size: 11px">
+           &copy; Copyright ORYAC <?php echo date ("Y"); ?>
            <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>\
@@ -17,8 +17,9 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/good.jpg');"></div>
                 <div class="carousel-caption" style="height: 80%;float: top;">
-                    <h1><strong style="font-size:150%">ORYAC </strong></h1><h1><small style="color:#f5f5f5;"><strong>Academic Career Orientation Platform</strong></small></h1><br>
-                    <strong style="font-size: 160%;color:lightblue">Join Us &amp; Get To Know Your Values &amp; Many More To Keep You Focused...</strong>
+                    <h1><b style="font-size:62px; font-family: Bebas; color:#22d6c8">ORYAC </b></h1>
+                    <p style="color:#0d3469;font-size: 40px"><b>Academic Career Orientation Platform</b></p><br>
+
                     
                 </div>
             </div>
@@ -26,22 +27,22 @@
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/back-111.jpg');"></div>
                 <div class="carousel-caption" style="height: 80%;float: top;">
-                    <h1><strong>Give you a focus | Build up your mind</strong></h1>
-                    <p style="font-size: 160%;color:black;">
-                    Following the vocational theory by John Holland, the activities people engage in and the work environments in the society can be categorized by a set of common characteristics. <strong style="color:lightblue">Join Us &amp; Get To Know Your Values &amp; Many More...</strong>
+                    <h1><b  style="font-size:62px; font-family: Bebas; color:#22d6c8">Give you a focus</b></h1>
+                    <p style="color:black; font-size: 30px">
+                    Following the vocational theory by John Holland, the activities people engage in and the work environments in the society can be categorized by a set of common characteristics. <b style="color:#88CC00; font-size: 20px">Join Us &amp; Get To Know Your Values &amp; Many More...</b>
                     </p>
-                    
+                    <br>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/re.jpeg');"></div>
                 <div class="carousel-caption" style="height: 80%;float: top;">
-                <h1><strong>A Bright Future Awaits</strong></h1>
-                <p style="font-size: 160%;color:black">
-                    Following the vocational theory by John Holland, the activities people engage in and the work environments in the society can be categorized by a set of common characteristics. <strong style="color:lightblue">Join Us &amp; Get To Know Your Values &amp; Many More...</strong>
+                <h1><b  style="font-size:62px; font-family: Bebas; color:#22d6c8">A Bright Future Awaits</b></h1>
+                <p style="color:black; font-size: 30px">
+                    Following the vocational theory by John Holland, the activities people engage in and the work environments in the society can be categorized by a set of common characteristics. <strong style="color:#88CC00; font-size: 20px">Join Us &amp; Get To Know Your Values &amp; Many More...</strong>
                     </p>
-                
+                    <br>
                 </div>
             </div>
 

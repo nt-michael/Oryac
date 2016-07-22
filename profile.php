@@ -59,17 +59,17 @@ session_start();
 
 </head>
 
-<body style="">
+<body style="font-size: 13px;font-family: joey">
 <div class="se-pre-con"></div>
 
     <div class="container">
     <?php include('navbar2.php'); ?> 
     <div style="text-align: right;padding-right: 14%;margin-top: 10%">
-            <a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
-            <a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+            <a href="home.php"><b>Home</b>&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
+            <a href="logout.php"><b>Log out</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
     </div>
         <div class="row" style="padding-left: 5%">
-            <h2><strong>My Profile</strong></h2>
+            <h2><b style="color:#05774a; font-size: 30px;font-family: Bebas">My Profile</b></h2>
             <div style="padding-right: 20%">
             <?php include('line.php'); ?>
             </div>

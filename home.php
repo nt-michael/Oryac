@@ -1,9 +1,10 @@
 <?php
 session_start();
 	include('verify.php');
-	if ($_SESSION['status'] != 1) {
+	/*if ($_SESSION['status'] != 1) {
 	header('location:payment.php?status=sorry your account is not up-to date');
-}
+	*/
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -64,7 +65,7 @@ session_start();
 
 </head>
 
-<body>
+<body style="font-size: 13px;font-family: joey; color:#414042">
 <div class="se-pre-con"></div>
 	
 	<div class="container">
@@ -79,15 +80,15 @@ session_start();
     ?>
     </div>
 	<div style="text-align: right;padding-right: 18%;padding-bottom: 2%;padding-top: 0%">
-			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
-			<a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+			<a href="profile.php"><b>View profile</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
+			<a href="logout.php"><b>Log out</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 	</div>
 		<div class="row" style="padding-top: 7%">
 				<div class="col-md-3" style="text-align: left;padding-left: 6%;">
 					<img src="" title="home ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-left:10%">
-					<h2><?php echo $_SESSION["apt"]; ?></h2>
+					<h2 style="color:#05774a;font-family: Bebas"><b><?php echo $_SESSION["apt"]; ?></b></h2>
 					<p><ul>
 						<li>Learn more about your Academic Personality</li>
 						<li>What is trending about this personality</li>
@@ -97,7 +98,7 @@ session_start();
 				</div>
 			</div>
 		<div class="row" style="padding-left: 5%">
-			<h2 style="text-align: right; padding-right: 20%"><strong>Description</strong></h2>
+			<h2 style="text-align: right; padding-right: 20%"><strong style="color:#05774a">Description</strong></h2>
 			<div style="padding-right: 20%">
 			<?php include('line.php'); ?>
 			</div>
@@ -114,12 +115,12 @@ session_start();
 					</p>
 				</div>
 				<div class="col-md-5" style="text-align: left;padding-right: 15%">
-					<img src="" title="Co-founder ORYAC" alt="cofounder.jpg" style="width:70%;height: 130px">
+					<!--<img src="" title="Co-founder ORYAC" alt="cofounder.jpg" style="width:70%;height: 130px">-->
 				</div>
 			</div>
 			<div class="row"><br>
 				<div class="col-md-3" style="text-align:right;padding-left: 2%">
-					<img src="" title="home ORYAC" alt="founder.jpg" style="width:70%;height: 130px">
+					<!--<img src="" title="home ORYAC" alt="founder.jpg" style="width:70%;height: 130px">-->
 				</div>
 				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
 					<p>
@@ -135,20 +136,20 @@ session_start();
 			
 		</div>
 		<div class="row" style="padding-left: 5%">
-			<h2 style="text-align:;"><strong>What Are Majors</strong></h2>
+			<h2 style="text-align:;"><strong style="color:#05774a;">What Are Majors</strong></h2>
 			<div style="padding-right: 20%">
 			<?php include('line.php'); ?>
 			</div>
 		</div>
 		<div class="row" style="text-align:justify;padding-left:10%;padding-right: 35%;text-align: justify;">
 					<p><ul>
-						<li>What is a Major:</li>
+						<li><b style="font-size: 17px">What is a Major:</b></li>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 						aute irure dolor in reprehenderit </p>
 
-						<li>Why should you take the IQ test:</li>
+						<li><b style="font-size: 17px;"> Why should you take the IQ test:</b></li>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -156,7 +157,7 @@ session_start();
 						</ul>
 					</p>
 	</div>
-	<p style="text-align: right;padding-right: 22%;font-size: 20px;"><a href="major.php" style="color:black;text-decoration: overline;background-color:orange ">View Majors</a></p>
+	<p style="text-align: right;padding-right: 22%;font-size:17"><a href="major.php" style="color:black;text-decoration: none; color:#05774a;"><b>View Majors Here!</b></a></p>
 	</div>
 
 	<?php include('footer.php'); ?><br>

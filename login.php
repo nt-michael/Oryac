@@ -48,7 +48,7 @@ $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`
        
     }
 
-        header("location:verifypay.php?checking status...");
+        header("location:home.php?status = You are logged-in.");
         exit;
         //echo "You logged in successfully";
     } else {

@@ -1,9 +1,10 @@
 <?php
 session_start();
 	include('verify.php');
-	if ($_SESSION['status'] != 1) {
+	/*if ($_SESSION['status'] != 1) {
 	header('location:payment.php?status=sorry your account is not up-to date');
-}
+	*/
+//}
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,7 @@ session_start();
     <meta name="author" content="Oryac">
     <link rel="icon" type="image/png" href="img/favicon2.png">
 
-	<title>ORYAC | About Us...</title>
+	<title>ORYAC | Sinlge Major...</title>
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1/css/ionicons.min.css">
@@ -63,7 +64,7 @@ session_start();
 
 </head>
 
-<body style="">
+<body style="font-size: 12px;font-family: Joey; color:#414042;">
 <div class="se-pre-con"></div>
 
 	<?php //include('navbar2.php'); ?>
@@ -77,25 +78,25 @@ session_start();
 		            echo  $_GET['status']."<br/>";
 		        }
 		?>
-			<a href="home.php">Home&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
-			<a href="profile.php">View profile&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
-			<a href="logout.php">Log out&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
+			<a href="home.php"><b>Home</b>&nbsp;<span style="color:black;font-size: 20px" class="glyphicon glyphicon-home"></span></a>&nbsp;
+			<a href="profile.php"><b>View profile</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-user"></span></a>&nbsp;
+			<a href="logout.php"><b>Log out</b>&nbsp;<span style="font-size: 20px;color:black" class="glyphicon glyphicon-log-out"></span></a>
 		</div>
 		<div class="row" style="padding-top: 7%">
 			<div class="col-md-3" style="text-align:right;padding-left: 6%;">
 				<img src="" title="major ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
 			</div>
 			<div class="col-md-9" style="text-align:justify;padding-left:10%">
-				<h2>Single Major</h2>
-				<p><ul>
-					<li>Learn more about this major</li>
-					<li>Get To Know Where You Can Study This Major</li>
+				<h2 style="font-family: Bebas; color:#05774a;"><b>Single Major</b></h2>
+				<p><ul style="font-size: 17px">
+					<li><b>Learn more about this major</b></li>
+					<li><b>Get To Know Where You Can Study This Major</b></li>
 				</ul>
 			</p>
 		</div>
 	</div>
 	<div class="row" style="padding-left: 5%;text-align: right">
-		<h2 style="padding-right: 20%"><strong>Brief Description</strong></h2>
+		<h2 style="padding-right: 20%"><strong style="font-family: Bebas;color:#414042;">Brief Description</strong></h2>
 		<div style="padding-right: 20%">
 			<?php include('line.php'); ?>
 		</div>
@@ -117,7 +118,7 @@ session_start();
 		</div><br>
 
 		<div class="row" style="padding-left: 5%;text-align: ">
-			<h2 style="padding-right: 20%"><strong>Background Pre-Requisite</strong></h2>
+			<h2 style="padding-right: 20%"><strong style="font-family: Bebas;color:#05774a;">Background Pre-Requisit</strong></h2>
 			<div style="padding-right: 20%">
 				<?php include('line.php'); ?>
 			</div>
@@ -133,12 +134,13 @@ session_start();
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 					nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 					<p>
-						<ul style="padding-left: 5%">
+						<ul style="padding-left: 5%;font-size: 15px"><b>
 							<li>Sample Pre-Requisit 1</li>
 							<li>Sample Pre-Requisit 2</li>
 							<li>Sample Pre-Requisit 3</li>
 							<li>Sample Pre-Requisit 4</li>
 							<li>Sample Pre-Requisit 5</li>
+							</b>
 						</ul>
 					</p>
 				</p>
@@ -146,7 +148,7 @@ session_start();
 		</div>
 
 		<div class="row" style="padding-left: 5%;text-align: ">
-			<h2 style="padding-right: 20%"><strong>Possible schools</strong></h2>
+			<h2 style="padding-right: 20%"><strong style="color:#05774a; font-family: Bebas">Possible schools</strong></h2>
 			<div style="padding-right: 20%">
 				<?php include('line.php'); ?>
 			</div>
