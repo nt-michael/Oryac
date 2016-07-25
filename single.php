@@ -87,16 +87,17 @@ session_start();
 				<img src="" title="major ORYAC" alt="personality.jpg" style="width:100%;height: 200px">
 			</div>
 			<div class="col-md-9" style="text-align:justify;padding-left:10%">
-				<h2 style="font-family: Bebas; color:#05774a;"><b>Single Major</b></h2>
+				<h2 style="font-family: Bebas; color:#05774a;"><b><?php echo $_SESSION["mj"]; ?></b></h2>
 				<p><ul style="font-size: 17px">
 					<li><b>Learn more about this major</b></li>
 					<li><b>Get To Know Where You Can Study This Major</b></li>
 				</ul>
 			</p>
+			<a href="modal/modal.php">Back to List of Majors</a>
 		</div>
 	</div>
 	<div class="row" style="padding-left: 5%;text-align: right">
-		<h2 style="padding-right: 20%"><strong style="font-family: Bebas;color:#414042;">Brief Description</strong></h2>
+		<h2 style="padding-right: 20%"><strong style="font-family: Bebas;color:#05774a;">Brief Description</strong></h2>
 		<div style="padding-right: 20%">
 			<?php include('line.php'); ?>
 		</div>
@@ -106,11 +107,19 @@ session_start();
 		<div class="row" style="padding-bottom: 10%">
 			<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-					dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum.
+				<?php
+					require "connection.php";
+					$id = $_SESSION["major_id"];
+					$pers = $_SESSION["aptt"];
+					$desc_major = "SELECT `id`, `desc`, `m_id`, `pers_id` FROM `description` WHERE id = '".$id." ' AND pers_id = '".$pers."'";
+					//echo $id;
+					$desc = mysql_query($desc_major);
+					while ($row = mysql_fetch_assoc($desc)) {
+						echo "
+							{$row['desc']}
+						";
+					}
+				?>
 				</p>
 			</div>
 			<div class="col-md-5" style="text-align: left;padding-right: 15%">
@@ -126,20 +135,26 @@ session_start();
 
 		<div class="row" style="padding-bottom: 10%"><br>
 			<div class="col-md-3" style="text-align: right;">
-				<img src="" title="Founder ORYAC" alt="Collaborator.jpg" style="width:60%;height: 150px">
+				
 			</div>
 			<div class="col-md-9" style="text-align:justify;padding-right: 25%">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-					nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+					For you to qualify to do this major, you need to fulfill the following minimum requirements.
 					<p>
 						<ul style="padding-left: 5%;font-size: 15px"><b>
-							<li>Sample Pre-Requisit 1</li>
-							<li>Sample Pre-Requisit 2</li>
-							<li>Sample Pre-Requisit 3</li>
-							<li>Sample Pre-Requisit 4</li>
-							<li>Sample Pre-Requisit 5</li>
+							<?php
+								include "connection.php";
+								$id = $_SESSION["major_id"];
+								$pers = $_SESSION["aptt"];
+								$req_major = "SELECT `r_id`, `requisit`, `major_id`, `apt_id` FROM `requisit` WHERE major_id = '".$id."' AND apt_id = '".$pers."'";
+								//echo $req_major;
+								$rqt = mysql_query($req_major);
+								while ($row = mysql_fetch_assoc($rqt)) {
+									echo "
+										<li>{$row['requisit']}</li>
+									";
+								}
+							?>
 							</b>
 						</ul>
 					</p>
@@ -158,116 +173,63 @@ session_start();
 			</div>
 			<div class="col-md-9" style="text-align:justify;padding-right: 25%">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-					nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+					The following schools offer a Bachelor degree in <?php echo $_SESSION["mj"] ; ?>, which will open the doors to the <?php echo $_GET["mj"]; ?> profession or career. Follow the link to discover more about the university and the specific entry requirements for your major.
 				</p>
 			</div>
 		</div>
-
-		<div class="row" style="padding-left: 5%">
-			
-			<div class="row" style="margin-top: 10%;">
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://pad3.whstatic.com/images/thumb/9/95/Make-a-Study-Timetable-Step-7.jpg/aid676229-728px-Make-a-Study-Timetable-Step-7.jpg);">
-						<header>
-							<h3>
-								<a style="color:white" href="single.php">Sample School A</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Second major -->
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://affairstoday.co.uk/wp-content/uploads/2015/10/elibrary.jpg); ">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School B</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Third major -->
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://pad3.whstatic.com/images/thumb/9/95/Make-a-Study-Timetable-Step-7.jpg/aid676229-728px-Make-a-Study-Timetable-Step-7.jpg);">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School C</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Fourth major -->
-			</div>
-			<!-- Next line -->
-			<div class="row" style="">
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://www.study-habits.com/wp-content/uploads/2012/04/prepare-exams.jpg);">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School D</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Second major -->
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://www.lawsonstate.edu/sites/www/Uploads/images/Programs_Of_Study/Academic_Programs/finalex.jpg); ">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School E</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Third major -->
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://www.careerealism.com/wp-content/uploads/2012/10/Good-Resume-Featured.png);">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School F</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-			</div>
-			<!-- Next -->
-			<div class="row" style="">
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://www.study-habits.com/wp-content/uploads/2012/04/prepare-exams.jpg);">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School G</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Second major -->
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://www.lawsonstate.edu/sites/www/Uploads/images/Programs_Of_Study/Academic_Programs/finalex.jpg); ">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School H</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-				<!-- Third major -->
-				<div class="col-md-3">
-					<div class="module" style="background-image: url(http://www.careerealism.com/wp-content/uploads/2012/10/Good-Resume-Featured.png);">
-						<header>
-							<h3>
-								<a style="color:white" href="#">Sample School J</a>
-							</h3>
-						</header>
-					</div>
-				</div>
-			</div>
+		<div class="row" style="padding-left: 2.5%;padding-right: 18%;margin-top: 3%;">
+				<?php
+					require "connection.php";
+					$id = $_SESSION["major_id"];
+					$major = "SELECT `school_id`, `s_name`, `url`, `img`, `major_id` FROM `schools` WHERE major_id = '".$id."'";
+					//echo $id;
+					$list_of_majors = mysql_query($major);
+					while ($list = mysql_fetch_assoc($list_of_majors)) {
+						echo "
+							<div class=\"col-md-3\">
+								<div class=\"module\" style=\"background-image: url({$list['img']});\">
+									<header>
+										<h3>
+											<a style=\"color:white\" href=\"{$list['url']}\" target=\" _blank\">{$list['s_name']}</a>
+										</h3>
+									</header>
+								</div>
+							</div>
+						";
+					}
+				?>
 		</div>
 	</div>
 </div>
-
 <?php include('footer.php'); ?><br>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="Ub" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:#05774a;font-family: Bebas"><b>University of Buea</b></h4>
+        </div>
+        <div class="modal-body">
+          <p><b>Website:</b> <a href="http://www.ubuea.cm/" target="_blank">http://www.ubuea.cm/</a><br>
+          <b>Google Map:</b><br>
+          <div style="">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.3386250014482!2d9.289787314492806!3d4.153655796980056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb39435ce3c348fb6!2sUniversity+of+Buea+Main+Campus+Entrance!5e0!3m2!1sen!2s!4v1469242657345" width="600" height="450" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
+          </div><br><br>
+          <a href="https://www.google.com/maps/place/University+of+Buea+Main+Campus+Entrance/@4.1536558,9.2897873,17z/data=!4m13!1m7!3m6!1s0x1061319236ca3443:0xbeb6c7b0ea934477!2sUniversity+Of+Buea!3b1!8m2!3d4.1536558!4d9.291976!3m4!1s0x0:0xb39435ce3c348fb6!8m2!3d4.1540588!4d9.2910433?hl=en" target="_blank" style="font-size: 17px">Open Map in new tab</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -282,5 +244,9 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<!--Bootstrap Core JavaScript -->
+<script type='text/javascript' src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

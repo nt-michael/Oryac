@@ -107,30 +107,22 @@ session_start();
 			<div class="row">
 				<div class="col-md-7" style="text-align: justify;padding-left: 6%;">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
+						<?php
+							require "connection.php";
+							$pers = $_SESSION["aptt"];
+							$desc_personality = "SELECT `id`, `type`, `description` FROM `personality` WHERE id = '".$pers."'";
+							//echo $id;
+							$desc = mysql_query($desc_personality);
+							while ($row = mysql_fetch_assoc($desc)) {
+								echo "
+									{$row['description']}
+								";
+							}
+						?>
 					</p>
 				</div>
 				<div class="col-md-5" style="text-align: left;padding-right: 15%">
 					<!--<img src="" title="Co-founder ORYAC" alt="cofounder.jpg" style="width:70%;height: 130px">-->
-				</div>
-			</div>
-			<div class="row"><br>
-				<div class="col-md-3" style="text-align:right;padding-left: 2%">
-					<!--<img src="" title="home ORYAC" alt="founder.jpg" style="width:70%;height: 130px">-->
-				</div>
-				<div class="col-md-9" style="text-align:justify;padding-right: 20%">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-						aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-						deserunt mollit anim id est laborum.
-					</p>
 				</div>
 			</div>
 			
@@ -144,20 +136,11 @@ session_start();
 		<div class="row" style="text-align:justify;padding-left:10%;padding-right: 35%;text-align: justify;">
 					<p><ul>
 						<li><b style="font-size: 17px">What is a Major:</b></li>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-						aute irure dolor in reprehenderit </p>
-
-						<li><b style="font-size: 17px;"> Why should you take the IQ test:</b></li>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-						aute irure dolor in reprehenderit </p>
+						<p>An academic major or major concentration1 is the academic discipline to which a student formally commits. Some academic majors under this personality type include Accounting, Finance, etc. To know more about other majors follow down. </p>
 						</ul>
 					</p>
 	</div>
-	<p style="text-align: right;padding-right: 22%;font-size:17"><a href="major.php" style="color:black;text-decoration: none; color:#05774a;"><b>View Majors Here!</b></a></p>
+	<p style="text-align: right;padding-right: 22%;font-size:17"><a href="modal/modal.php" style="color:black;text-decoration: none; color:#05774a;"><b>View Majors Here!</b></a></p>
 	</div>
 
 	<?php include('footer.php'); ?><br>

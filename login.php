@@ -47,7 +47,29 @@ $sql = "SELECT `id`, `first_name`, `last_name`, `dob`, `email`, `tel`, `country`
         //$_SESSION["personality"] = $profile['personality'];
        
     }
-
+        switch ($_SESSION["apt"]) {
+            case 'Realistic':
+                $_SESSION["aptt"] = 1;
+                break;
+            case 'Investigative':
+                $_SESSION["aptt"] = 2;
+                break;
+            case 'Artistic':
+                $_SESSION["aptt"] = 3;
+                break;
+            case 'Social':
+                $_SESSION["aptt"] = 4;
+                break;
+            case 'Enterprising':
+                $_SESSION["aptt"] = 5;
+                break;
+            case 'Conventional':
+                $_SESSION["aptt"] = 6;
+                break;
+            default:
+                # code...
+                break;
+        }
         header("location:home.php?status = You are logged-in.");
         exit;
         //echo "You logged in successfully";
